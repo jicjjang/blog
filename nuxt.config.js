@@ -10,7 +10,10 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'This blog has been used since 2018 using Nuxtjs with Vuejs' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Inconsolata|Lora|Space+Mono:700' },
+      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css' },
+      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css' }
     ]
   },
   /*
@@ -36,6 +39,13 @@ module.exports = {
     }
   },
   router: {
+    mode: 'hash',
     base: '/'
-  }
+  },
+  css: [
+    '~static/css/main.css'
+  ],
+  modules: [
+    '@nuxtjs/markdownit'
+  ]
 }

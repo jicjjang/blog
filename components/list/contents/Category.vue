@@ -1,5 +1,5 @@
 <template>
-  <div>card</div>
+  <div class="post__category">cateogry</div>
 </template>
 
 <script>

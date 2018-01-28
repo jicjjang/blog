@@ -14,9 +14,11 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "axios": "^0.17.1",
     "nuxt": "^1.0.0"
   },
   "devDependencies": {
+    "@nuxtjs/markdownit": "^1.2.0",
     "babel-eslint": "^8.2.1",
     "eslint": "^4.15.0",
     "eslint-friendly-formatter": "^3.0.0",

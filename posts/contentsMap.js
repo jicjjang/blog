@@ -12,7 +12,40 @@ export default {
   ],
   category: [
     {
-
+      title: 'Etc',
+      image: ''
+    },
+    {
+      title: 'Php',
+      image: ''
+    },
+    {
+      title: 'Java',
+      image: ''
+    },
+    {
+      title: 'Python',
+      image: ''
+    },
+    {
+      title: 'Presentation',
+      image: ''
+    },
+    {
+      title: 'Javascript',
+      image: ''
+    },
+    {
+      title: 'Frontend',
+      image: ''
+    },
+    {
+      title: 'Life',
+      image: ''
+    },
+    {
+      title: 'Review',
+      image: ''
     }
   ]
 }

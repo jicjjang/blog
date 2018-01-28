@@ -12,8 +12,8 @@
         <li class="preview" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
           <a class="preview__link" :href='`${baseUrl}/blog/${post.path}`' itemprop="url">
             <span class="preview__date" itemprop="datePublished" datetime="2017-12-17T00:00:00+00:00">Dec 17, 2017</span>
-            <h2 class="preview__header" itemprop="name">[Review] 2018 IT 트렌트 스페셜 리포트</h2>
-            <p class="preview__excerpt" itemprop="description">오늘은 [2018 IT 트렌트 스페셜 리포트] 도서에 대한 리뷰를 진행해보려 합니다. 한빛미디어에서 진행하는 두번쨰 IT관련 도서 리뷰인데요! 평소에 개발서적만 읽었지 개발 트렌트에 대한 생각은 해본적이 없었기 때문에 뭔가 신선하네요. 이...</p>
+            <h2 class="preview__header" itemprop="name">{{ post.title }}</h2>
+            <p class="preview__excerpt" itemprop="description">{{ post.description }}</p>
             <span class="preview__more">Read More</span>
           </a>
         </li>
@@ -25,7 +25,7 @@
       </div>
 
       <footer class="section-padding--sm footer">
-        <a class="footer__archive" href="https://jicjjang.github.io/archive/">Archive</a>
+        <a class="footer__archive" :href="`${baseUrl}/archive/`">Archive</a>
         <ul class="footer__social">
           <li><a class="fa fa-lg fa-envelope-o" href="mailto:jicjjang12@gmail.com"></a></li>
           <li><a class="fa fa-lg fa-github" href="https://github.com/jicjjang" target="_blank"></a></li>
@@ -36,11 +36,11 @@
     </div>
 
     <div class="tab active" style="display: none;">
-      <ul class="cards">
+      <ul class="cards" v-for="(category, index) in categoryList" :key="index">
         <li class="card">
-          <a class="card__link" :href="`${baseUrl}/category/etc`">
+          <a class="card__link" :href="`${baseUrl}/category/${category.title.toLowerCase()}`">
             <div class="card__img">
-              <figure class="absolute-bg" style="background-image: url('https://jicjjang.github.io/assets/image/etc/jwt/background.jpg');"></figure>
+              <figure class="absolute-bg" :style="`background-image: url('${baseUrl}/assets/image/etc/jwt/background.jpg');`"></figure>
             </div>
             <div class="card__container">
               <h2 class="card__header">Etc</h2>
@@ -69,6 +69,7 @@ export default {
   props: [
     'page',
     'postList',
+    'categoryList',
     'baseUrl'
   ]
 }

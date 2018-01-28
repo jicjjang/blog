@@ -12,7 +12,6 @@
 회사 동료분이 reveal.js를 사용하는  것을 본 기억이 있으니 impress.js를 해보기로 결정!!
 
 <figure style="text-align: center;">
-  <img src="@assets/image/etc/web-presentation/impress-git-architecture.png" alt="image">
   <figcaption><a href="https://github.com/bartaz/impress.js/find/master" title="desciprtion">&lt;impress.js github&gt;</a></figcaption>
 </figure>
 
@@ -49,7 +48,6 @@ github을 찾아봤으나 따로 syntax같은 부분은 설명이 없이, 예제
   우선, impress를 git clone해서 실행을 해보면 바로 알 수 있습니다.
 
   <figure style="text-align: center;">
-    <img src="/assets/image/etc/web-presentation/address.png" alt="image">
   </figure>
 
   id가 있는 div는 주소에 id가 나오게 되고, 없는 div는 step이 나오게 되는데, step- 뒤에 몇번째 슬라이드인지 숫자가 나오게 됩니다.

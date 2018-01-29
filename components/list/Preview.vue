@@ -1,6 +1,8 @@
 <template>
   <div>
-    <figure class="absolute-bg preview__img"></figure>
+    <slot v-for="(post, index) in postList">
+      <figure class="absolute-bg preview__img" :style="getPostStyle(post, index)" :key="index"></figure>
+    </slot>
     <div class="previews__container">
       <span>Welcome to</span>
       <h1>June</h1>
@@ -9,7 +11,19 @@
 </template>
 
 <script>
-
+  export default {
+    props: [
+      'postList',
+      'baseUrl',
+      'previewIndex'
+    ],
+    methods: {
+      getPostStyle(post, index) {
+        let target = this.previewIndex || 0
+        return `background-image: url(https://jicjjang.github.io/${post.image}); display: ${index == target ? 'block' : 'none'}`;
+      }
+    }
+  }
 </script>
 
 <style lang="sass">

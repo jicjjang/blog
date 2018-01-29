@@ -1,7 +1,7 @@
 <template>
   <section class="previews">
-    <app-list-preview :postList="postList" :categoryList="categoryList" :page="page" :baseUrl="baseUrl" />
-    <app-list-contents :postList="postList" :categoryList="categoryList" :page="page" :baseUrl="baseUrl" />
+    <app-list-preview :postList="postList" :baseUrl="baseUrl" :previewIndex="previewIndex"/>
+    <app-list-contents :postList="postList" :categoryList="categoryList" :page="page" :baseUrl="baseUrl" :setPreviewIndex="setPreviewIndex" />
   </section>
 </template>
 
@@ -24,15 +24,21 @@
         categoryList: ContentsMap.category,
         page: {
           index: this.pageIndex || 1,
-          hasNext: ContentsMap.post.length > (this.pageIndex * 10),
-          hasPrevious: this.pageIndex > 1
-        }
+          hasNext: ContentsMap.post.length > (this.pageIndex || 1) * 5,
+          hasPrevious: (this.pageIndex || 1) > 1
+        },
+        previewIndex: 0
       }
     },
     created () {
       this.postList = this.postList.filter((v, i) => {
-        return i >= (this.page.index-1)*10 && i < this.page.index*10
+        return i >= (this.page.index-1)*5 && i < this.page.index*5
       });
+    },
+    methods: {
+      setPreviewIndex (previewIndex) {
+        this.previewIndex = previewIndex
+      }
     }
   }
 </script>

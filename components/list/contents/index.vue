@@ -9,9 +9,9 @@
 
     <div class="tab" style="display: block;">
       <ul itemscope="" itemtype="http://schema.org/Blog" v-for="(post, index) in postList" :key="index">
-        <li class="preview" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <li class="preview" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting" @mouseover="setPreviewIndex(index)">
           <a class="preview__link" :href='`${baseUrl}/blog/${post.path}`' itemprop="url">
-            <span class="preview__date" itemprop="datePublished" datetime="2017-12-17T00:00:00+00:00">Dec 17, 2017</span>
+            <span class="preview__date" itemprop="datePublished" :datetime="new Date(post.time)">{{ postDate(post.time) }}</span>
             <h2 class="preview__header" itemprop="name">{{ post.title }}</h2>
             <p class="preview__excerpt" itemprop="description">{{ post.description }}</p>
             <span class="preview__more">Read More</span>
@@ -20,8 +20,8 @@
       </ul>
 
       <div class="pagination">
-        <a :href="`${baseUrl}/blog/${page.index-1}`" v-if="page.hasPrevious">Previous</a>
-        <a :href="`${baseUrl}/blog/${page.index+1}`" v-if="page.hasNext">Next</a>
+        <a :href="`${baseUrl}/blog/${parseInt(page.index)-1}`" v-if="page.hasPrevious">Previous</a>
+        <a :href="`${baseUrl}/blog/${parseInt(page.index)+1}`" v-if="page.hasNext">Next</a>
       </div>
 
       <footer class="section-padding--sm footer">
@@ -38,7 +38,7 @@
     <div class="tab active" style="display: none;">
       <ul class="cards" v-for="(category, index) in categoryList" :key="index">
         <li class="card">
-          <a class="card__link" :href="`${baseUrl}/category/${category.title.toLowerCase()}`">
+          <a class="card__link" :href="`${baseUrl}/blog/category/${category.title.toLowerCase()}`">
             <div class="card__img">
               <figure class="absolute-bg" :style="`background-image: url('${baseUrl}/assets/image/etc/jwt/background.jpg');`"></figure>
             </div>
@@ -52,7 +52,7 @@
       </ul>
 
       <footer class="section-padding--sm footer">
-        <a class="footer__archive" :href="`${baseUrl}/archive`">Archive</a>
+        <a class="footer__archive" :href="`${baseUrl}/blog/archive`">Archive</a>
         <ul class="footer__social">
           <li><a class="fa fa-lg fa-envelope-o" href="mailto:jicjjang12@gmail.com"></a></li>
           <li><a class="fa fa-lg fa-github" href="https://github.com/jicjjang" target="_blank"></a></li>
@@ -70,8 +70,15 @@ export default {
     'page',
     'postList',
     'categoryList',
-    'baseUrl'
-  ]
+    'baseUrl',
+    'setPreviewIndex'
+  ],
+  methods: {
+    postDate(time) {
+      let postDate = new Date(time)
+      return `${postDate.getDate()} ${postDate.getMonth() + 1}, ${postDate.getFullYear()}`
+    }
+  }
 }
 </script>
 

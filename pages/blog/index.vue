@@ -1,6 +1,10 @@
 <template>
   <section class="previews">
     <div>
+      <a class="nav nav--white" :href="`${baseUrl}`" v-if="isCategoryPage()">
+        <i class="fa fa-lg fa-arrow-left"></i>
+        <span>Back to Posts</span>
+      </a>
       <slot v-for="(post, index) in filteredPostList">
         <figure class="absolute-bg preview__img" :style="getPostStyle(post, index)" :key="index"></figure>
       </slot>
@@ -64,7 +68,10 @@
   import Category from '~/components/home/Category'
 
   export default {
-    props: ['pageIndex'],
+    props: [
+      'pageIndex',
+      'categoryName'
+    ],
     components: {
       appHomePost: Post,
       appHomeCategory: Category
@@ -85,9 +92,15 @@
     },
     created () {
       if (this.postList) {
-        this.filteredPostList = this.postList.filter((v, i) => {
-          return i >= (this.page - 1) * 5 && i < this.page * 5
-        });
+        if (!this.categoryName) {
+          this.filteredPostList = this.postList.filter((v, i) => {
+            return i >= (this.page - 1) * 5 && i < this.page * 5
+          });
+        } else {
+          this.filteredPostList = this.postList.filter((v, i) => {
+            return v.category.toLowerCase() === this.categoryName.toLowerCase()
+          });
+        }
       }
     },
     methods: {
@@ -99,10 +112,13 @@
         this.previewIndex = previewIndex
       },
       hasNext() {
-        return this.postList.length > this.page * 5
+        return this.postList.length > this.page * 5 && !this.categoryName
       },
       hasPrevious() {
-        return this.page > 1
+        return this.page > 1 && !this.categoryName
+      },
+      isCategoryPage() {
+        return !!this.categoryName
       },
       toggleTab(e) {
         const siblingsPage = document.getElementsByClassName('tab');

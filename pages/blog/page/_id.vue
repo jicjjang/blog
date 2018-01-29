@@ -9,9 +9,9 @@
     components: {
       'appHome': Home
     },
-    asyncData ({params}) {
+    asyncData ({ params }) {
       return {
-        id: params.id
+        id: params.id || 1
       }
     }
   }

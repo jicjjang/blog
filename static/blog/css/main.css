@@ -2,8 +2,6 @@
     box-sizing:border-box
 }
 body{
-    font-family:"Inconsolata",monospace;
-    font-feature-settings:'liga' 0;
     font-size:100%;
     line-height:1.6
 }
@@ -39,7 +37,6 @@ body{
 }
 h1,h2{
     margin:0;
-    font-family:"Space Mono",monospace
 }
 @media (min-width: 54em){
     h1{
@@ -846,12 +843,12 @@ section{
     background-position:50%
 }
 .bg-black{
-    background-color:#0a0a0a
+    background-color:#0a0a0a;
 }
 .bg-white{
-    background-color:#fff
+    background-color:#fff;
 }
 pre{
-    overflow-x:auto
+    overflow-x:auto;
+    background-color: rgba(27,31,35,.05) !important;
 }
- 

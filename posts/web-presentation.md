@@ -1,13 +1,3 @@
-<template lang="md">
-  ---
-"layout": "post",
-"title": "Web Presentation",
-"date": "2015-02-11",
-"categories": [ "Etc" ],
-"description": "prezi와 같은 web presentation을 직접 코드로 동작해보기",
-"image": "/assets/image/etc/web-presentation/web-presentation.png",
-"image-sm": "/assets/image/etc/web-presentation/web-presentation.png"
----
 블로그를 만들면서 예전부터 써보고 싶었던 라이브러리들을 사용해보기로 했습니다. 검색해보니 reveal.js, impress.js 두개가 1, 2위를 다투고 있었습니다.
 회사 동료분이 reveal.js를 사용하는  것을 본 기억이 있으니 impress.js를 해보기로 결정!!
 
@@ -74,5 +64,3 @@ github을 찾아봤으나 따로 syntax같은 부분은 설명이 없이, 예제
   첫 포스팅을 간단하게 마무리 하겠습니다. 마지막으로 impress.js의 예제 동영상으로 효과가 어떻게 나오는지 보여드리면서 간단하게 포스팅을 이렇게 마치겠습니다.
 
   <iframe style="width:100%;height:420px;"  src="https://www.youtube.com/embed/S_0E1iOwoe8?autoplay=1&autohide=1&loop=1&playlist=S_0E1iOwoe8" frameborder="0" allowfullscreen></iframe>
-
-</template>

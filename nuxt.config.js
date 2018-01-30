@@ -3,14 +3,22 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'jicjjang.github.io',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'This blog has been used since 2018 using Nuxtjs with Vuejs' }
+      { hid: 'description', name: 'description', content: 'This blog has been used since 2018 using Nuxtjs with Vuejs' },
+      { hid: 'author', name: 'author', content: 'Junseok, Choi <jicjjang12@gmail.com>' },
+      { hid: 'og:type', name: 'og:type', content: 'blog' },
+      { hid: 'twitter:card', name: 'twitter:card', content: 'summary' },
+      { hid: 'twitter:creator', name: 'twitter:creator', content: '@jicjjang' },
+      { hid: 'twitter:site', name: 'twitter:site', content: 'June' },
+      { hid: 'twitter:domain', name: 'twitter:domain', content: 'https://jicjjang.github.io' },
+    ],
+    script: [
+      { type: 'text/javascript', src: '/blog/script/google-analytics.js' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/blog/favicon.png' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Inconsolata|Lora|Space+Mono:700' },
       { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css' },
       { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css' }
@@ -42,9 +50,12 @@ module.exports = {
     base: '/'
   },
   css: [
-    '~static/css/main.css'
+    '~static/blog/css/main.css'
   ],
   modules: [
     '@nuxtjs/markdownit'
-  ]
+  ],
+  markdownit: {
+    injected: true
+  }
 }

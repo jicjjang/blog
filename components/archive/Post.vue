@@ -2,7 +2,7 @@
   <article class="card" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
     <a class="card__link" :href="`${baseUrl}/${post.path}`" itemprop="url">
       <div class="card__img">
-        <figure class="absolute-bg wow" :style="`background-image: url(${baseUrl}/assets/image/etc/web-presentation/web-presentation.png); visibility: hidden; animation-name: none;`"></figure>
+        <figure class="absolute-bg wow" :style="`background-image: url(${baseUrl}/${post.image});`"></figure>
       </div>
       <div class="card__container">
         <h2 class="card__header" itemprop="name">{{ post.title }}</h2>
@@ -24,7 +24,7 @@
     methods: {
       postDate(time) {
         const postDate = new Date(time);
-        return `${postDate.getDate()} ${postDate.getMonth() + 1}, ${postDate.getFullYear()}`
+        return `${postDate.getMonth() + 1} ${postDate.getDate()}, ${postDate.getFullYear()}`
       }
     }
   }

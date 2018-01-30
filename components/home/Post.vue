@@ -21,7 +21,7 @@
     methods: {
       postDate(time) {
         const postDate = new Date(time);
-        return `${postDate.getDate()} ${postDate.getMonth() + 1}, ${postDate.getFullYear()}`
+        return `${postDate.getMonth() + 1} ${postDate.getDate()}, ${postDate.getFullYear()}`
       }
     }
   }

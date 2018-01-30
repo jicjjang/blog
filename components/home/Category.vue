@@ -2,7 +2,7 @@
   <li class="card">
     <a class="card__link" :href="`${baseUrl}/category/${category.title.toLowerCase()}`">
       <div class="card__img">
-        <figure class="absolute-bg" :style="`background-image: url(${baseUrl}/assets/image/etc/jwt/background.jpg);`"></figure>
+        <figure class="absolute-bg" :style="`background-image: url(${baseUrl}/${category.image});`"></figure>
       </div>
       <div class="card__container">
         <h2 class="card__header">{{ category.title }}</h2>

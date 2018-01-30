@@ -6,7 +6,7 @@
         <span>Back to Posts</span>
       </a>
       <slot v-for="(post, index) in filteredPostList">
-        <figure class="absolute-bg preview__img" :style="getPostStyle(post, index)" :key="index"></figure>
+        <figure class="absolute-bg preview__img" :style="getPostPreviewImage(post, index)" :key="index"></figure>
       </slot>
       <div class="previews__container">
         <span>Welcome to</span>
@@ -104,9 +104,9 @@
       }
     },
     methods: {
-      getPostStyle(post, index) {
+      getPostPreviewImage(post, index) {
         const target = this.previewIndex || 0;
-        return `background-image: url(https://jicjjang.github.io/${post.image}); display: ${index === target ? 'block' : 'none'}`;
+        return `background-image: url(${this.baseUrl}/${post.image}); display: ${index === target ? 'block' : 'none'}`;
       },
       setPreviewIndex (previewIndex) {
         this.previewIndex = previewIndex

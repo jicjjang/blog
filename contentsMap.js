@@ -20,6 +20,26 @@ export default {
       description: "RESTful한 코드작성과 REST, CRUD에 대해",
       image: "image/etc/RESTful/restful-web-services.jpg"
     },
+    {
+      layout: "post",
+      path: "post/php-fastcgi",
+      title: "Fast CGI",
+      date: "2015-07-11",
+      time: 1436572800000,
+      category: "Php",
+      description: "ERROR: An another FPM instance seems to already listen on /var/run/php5-fpm.sock 오류 해결하기",
+      image: "image/php/fastcgi/fastcgi.jpg"
+    },
+    {
+      layout: "post",
+      path: "post/malware",
+      title: "여행중인 나를 당황하게 한 멀웨어 공격",
+      date: "2015-07-20",
+      time: 1437350400000,
+      category: "Etc",
+      description: "Ringing at your dorbell",
+      image: "image/etc/malware/security.jpg"
+    },
   ],
   category: [
     {

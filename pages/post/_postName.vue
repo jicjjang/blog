@@ -84,7 +84,7 @@
         'postList'
       ]),
       postContent() {
-        return Marked(require(`~/posts/${this.postName}.md`))
+        return Marked(require(`~/static/posts/${this.postName}.md`))
       }
     },
     methods: {

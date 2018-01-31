@@ -1,5 +1,5 @@
 import Vuex from 'vuex'
-import ContentsMap from '../posts/contentsMap.js'
+import ContentsMap from '../contentsMap.js'
 
 const store = () => new Vuex.Store({
   state: {

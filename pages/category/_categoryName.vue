@@ -13,6 +13,11 @@
       return {
         categoryName: params.categoryName
       }
+    },
+    mounted () {
+      if (!this.categoryName) {
+        location.href = '/blog'
+      }
     }
   }
 </script>

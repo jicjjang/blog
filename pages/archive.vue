@@ -1,9 +1,9 @@
 <template>
   <section class="archives" itemscope="" itemtype="http://schema.org/Blog">
-    <nuxt-link class="nav nav--black" to="/" itemprop="url">
+    <a class="nav nav--black" :href="baseUrl">
       <i class="fa fa-lg fa-arrow-left"></i>
       <span>Back to Posts</span>
-    </nuxt-link>
+    </a>
     <header class="archives__header">
       <span>Archive</span>
     </header>
@@ -28,7 +28,7 @@
         'baseUrl',
         'postList'
       ])
-    },
+    }
   }
 </script>
 

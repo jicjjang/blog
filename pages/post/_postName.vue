@@ -101,6 +101,11 @@
           break;
         }
       }
+    },
+    mounted () {
+      if (!this.postName) {
+        location.href = '/blog'
+      }
     }
   }
 </script>

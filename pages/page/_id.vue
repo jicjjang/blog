@@ -13,6 +13,11 @@
       return {
         id: params.id || 1
       }
+    },
+    mounted () {
+      if (!this.id) {
+        location.href = '/blog'
+      }
     }
   }
 </script>

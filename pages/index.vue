@@ -1,10 +1,10 @@
 <template>
   <section class="previews">
     <div>
-      <a class="nav nav--white" :href="`${baseUrl}`" v-if="isCategoryPage()">
+      <nuxt-link class="nav nav--white" to="/" itemprop="url" v-if="isCategoryPage()">
         <i class="fa fa-lg fa-arrow-left"></i>
         <span>Back to Posts</span>
-      </a>
+      </nuxt-link>
       <slot v-for="(post, index) in filteredPostList">
         <figure class="absolute-bg preview__img" :style="getPostPreviewImage(post, index)" :key="index"></figure>
       </slot>
@@ -27,8 +27,8 @@
         </ul>
 
         <div class="pagination">
-          <a :href="`${baseUrl}/page/${parseInt(page)-1}`" v-if="hasPrevious()">Previous</a>
-          <a :href="`${baseUrl}/page/${parseInt(page)+1}`" v-if="hasNext()">Next</a>
+          <nuxt-link :to="`/page/${parseInt(page)-1}`" itemprop="url" v-if="hasPrevious()">Previous</nuxt-link>
+          <nuxt-link :to="`/page/${parseInt(page)+1}`" itemprop="url" v-if="hasNext()">Next</nuxt-link>
         </div>
 
         <app-home-sns :baseUrl="baseUrl"/>

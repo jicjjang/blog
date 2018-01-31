@@ -1,6 +1,6 @@
 <template>
   <article class="card" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
-    <a class="card__link" :href="`${baseUrl}/${post.path}`" itemprop="url">
+    <nuxt-link class="card__link" :to="`/${post.path}`" itemprop="url">
       <div class="card__img">
         <figure class="absolute-bg wow" :style="`background-image: url(${baseUrl}/${post.image});`"></figure>
       </div>
@@ -9,7 +9,7 @@
         <p class="card__count" itemprop="datePublished" :datetime="new Date(post.time)">{{ `${postDate(post.time)} in ${post.category}` }}</p>
         <span class="card__more">Read Post</span>
       </div>
-    </a>
+    </nuxt-link>
   </article>
 </template>
 

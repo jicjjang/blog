@@ -1,6 +1,6 @@
 <template>
   <li class="card">
-    <a class="card__link" :href="`${baseUrl}/category/${category.title.toLowerCase()}`">
+    <nuxt-link class="card__link" :to="`/category/${category.title.toLowerCase()}`" itemprop="url">
       <div class="card__img">
         <figure class="absolute-bg" :style="`background-image: url(${baseUrl}/${category.image});`"></figure>
       </div>
@@ -9,7 +9,7 @@
         <p class="card__count">9 Posts</p>
         <span class="card__more">View All</span>
       </div>
-    </a>
+    </nuxt-link>
   </li>
 </template>
 

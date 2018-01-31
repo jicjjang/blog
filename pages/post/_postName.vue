@@ -2,10 +2,10 @@
   <main>
     <article itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
     <header class="section-padding--lg mast">
-      <a class="nav nav--white" :href="baseUrl">
+      <nuxt-link class="nav nav--white" to="/" itemprop="url">
         <i class="fa fa-lg fa-arrow-left"></i>
         <span>Back to Posts</span>
-      </a>
+      </nuxt-link>
       <figure class="absolute-bg mast__img" :style="`background-image: url(${baseUrl}/${post.image});`"></figure>
       <div class="mast__container">
         <span><time :datetime="new Date(post.time)" itemprop="datePublished">{{ postDate(post.time) }}</time></span>
@@ -34,12 +34,12 @@
     </section>
   </article>
   <section class="next" v-if="index > -1 && this.postList[index+1]">
-    <a class="next__link" :href="`${baseUrl}/${this.postList[index+1].path}`" :style="`background-image: url('${baseUrl}/${this.postList[index+1].image}');`">
+    <nuxt-link class="next__link" :to="`/${this.postList[index+1].path}`" :itemprop="url" :style="`background-image: url('${baseUrl}/${this.postList[index+1].image}');`">
       <div class="next__container">
         <span>Read Next</span>
         <h2>{{ this.postList[index+1].title }}</h2>
       </div>
-    </a>
+    </nuxt-link>
   </section>
   </main>
 </template>

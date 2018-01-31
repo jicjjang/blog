@@ -50,6 +50,7 @@ module.exports = {
     }
   },
   router: {
+    mode: 'hash',
     base: '/blog/'
   },
   modules: [

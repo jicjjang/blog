@@ -50,7 +50,7 @@ module.exports = {
     }
   },
   router: {
-    base: '/'
+    base: '/blog/'
   },
   modules: [
     '@nuxtjs/markdownit'

@@ -31,15 +31,7 @@
           <a :href="`${baseUrl}/page/${parseInt(page)+1}`" v-if="hasNext()">Next</a>
         </div>
 
-        <footer class="section-padding--sm footer">
-          <a class="footer__archive" :href="`${baseUrl}/archive/`">Archive</a>
-          <ul class="footer__social">
-            <li><a class="fa fa-lg fa-envelope-o" href="mailto:jicjjang12@gmail.com"></a></li>
-            <li><a class="fa fa-lg fa-github" href="https://github.com/jicjjang" target="_blank"></a></li>
-            <li><a class="fa fa-lg fa-linkedin" href="https://www.linkedin.com/in/jicjjang" target="_blank"></a></li>
-            <li><a class="fa fa-lg fa-instagram" href="https://instagram.com/jicjjang12" target="_blank"></a></li>
-          </ul>
-        </footer>
+        <app-home-sns :baseUrl="baseUrl"/>
       </div>
 
       <div class="tab">
@@ -47,15 +39,7 @@
           <app-home-category v-for="(category, index) in categoryList" :key="index" :index="index" :category="category" :baseUrl="baseUrl" />
         </ul>
 
-        <footer class="section-padding--sm footer">
-          <a class="footer__archive" :href="`${baseUrl}/archive`">Archive</a>
-          <ul class="footer__social">
-            <li><a class="fa fa-lg fa-envelope-o" href="mailto:jicjjang12@gmail.com"></a></li>
-            <li><a class="fa fa-lg fa-github" href="https://github.com/jicjjang" target="_blank"></a></li>
-            <li><a class="fa fa-lg fa-linkedin" href="https://www.linkedin.com/in/jicjjang" target="_blank"></a></li>
-            <li><a class="fa fa-lg fa-instagram" href="https://instagram.com/jicjjang12" target="_blank"></a></li>
-          </ul>
-        </footer>
+        <app-home-sns :baseUrl="baseUrl"/>
       </div>
     </div>
   </section>
@@ -66,6 +50,7 @@
 
   import Post from '~/components/home/Post'
   import Category from '~/components/home/Category'
+  import Sns from '~/components/home/Sns'
 
   export default {
     props: [
@@ -74,7 +59,8 @@
     ],
     components: {
       appHomePost: Post,
-      appHomeCategory: Category
+      appHomeCategory: Category,
+      appHomeSns: Sns
     },
     computed: {
       ...mapGetters([

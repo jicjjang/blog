@@ -8,7 +8,7 @@
       </nuxt-link>
       <figure class="absolute-bg mast__img" :style="`background-image: url(${baseUrl}/${post.image});`"></figure>
       <div class="mast__container">
-        <span><time :datetime="new Date(post.time)" itemprop="datePublished">{{ postDate(post.time) }}</time></span>
+        <span><time :datetime="new Date(post.date).getTime()" itemprop="datePublished">{{ postDate(post.date) }}</time></span>
         <h1 itemprop="name headline">{{ post.title }}</h1>
         <span>Posted in {{ post.category }}</span>
       </div>
@@ -88,8 +88,8 @@
       }
     },
     methods: {
-      postDate(time) {
-        const postDate = new Date(time);
+      postDate(date) {
+        const postDate = new Date(date);
         return `${postDate.getMonth() + 1} ${postDate.getDate()}, ${postDate.getFullYear()}`
       }
     },

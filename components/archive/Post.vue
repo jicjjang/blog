@@ -6,7 +6,7 @@
       </div>
       <div class="card__container">
         <h2 class="card__header" itemprop="name">{{ post.title }}</h2>
-        <p class="card__count" itemprop="datePublished" :datetime="new Date(post.time)">{{ `${postDate(post.time)} in ${post.category}` }}</p>
+        <p class="card__count" itemprop="datePublished" :datetime="new Date(post.date).getTime()">{{ `${postDate(post.date)} in ${post.category}` }}</p>
         <span class="card__more">Read Post</span>
       </div>
     </nuxt-link>
@@ -22,8 +22,8 @@
       'baseUrl'
     ],
     methods: {
-      postDate(time) {
-        const postDate = new Date(time);
+      postDate(date) {
+        const postDate = new Date(date);
         return `${postDate.getMonth() + 1} ${postDate.getDate()}, ${postDate.getFullYear()}`
       }
     }

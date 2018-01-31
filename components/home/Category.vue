@@ -6,7 +6,7 @@
       </div>
       <div class="card__container">
         <h2 class="card__header">{{ category.title }}</h2>
-        <p class="card__count">9 Posts</p>
+        <p class="card__count"></p>
         <span class="card__more">View All</span>
       </div>
     </nuxt-link>

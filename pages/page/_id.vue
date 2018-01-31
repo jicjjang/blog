@@ -1,9 +1,9 @@
 <template>
-  <app-home :categoryName="categoryName" />
+  <app-home :pageIndex="id" />
 </template>
 
 <script>
-  import Home from '~/pages/blog'
+  import Home from '~/pages'
 
   export default {
     components: {
@@ -11,12 +11,8 @@
     },
     asyncData ({ params }) {
       return {
-        categoryName: params.categoryName
+        id: params.id || 1
       }
     }
   }
 </script>
-
-<style>
-
-</style>

@@ -61,13 +61,13 @@
           {hid: 'og:site_name', name: 'og:site_name', content: 'June'},
           {hid: 'og:description', name: 'og:description', content: this.post.description || 'June\'s blog'},
           {hid: 'og:image', name: 'og:image', content: this.post.image ?
-              `https://jicjjang.github.io/blog/${this.post.image}}` :
+              `https://jicjjang.github.io/blog/${this.post.image}` :
               'https://jicjjang.github.io/blog/image/mine.jpg'},
           {hid: 'twitter:description', name: 'twitter:description', content: this.post.description || 'June\'s blog'},
           {hid: 'twitter:title', name: 'twitter:title', content: this.post.title || 'June'},
           {hid: 'twitter:url', name: 'twitter:url', content: `https://jicjjang.github.io/blog/${this.post.path}`},
           {hid: 'twitter:image', name: 'twitter:image', content: this.post.image ?
-              `https://jicjjang.github.io/blog/${this.post.image}}` :
+              `https://jicjjang.github.io/blog/${this.post.image}` :
               'https://jicjjang.github.io/blog/image/mine.jpg'},
         ]
       }

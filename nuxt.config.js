@@ -1,4 +1,9 @@
 const contentsMap = require('./contentsMap.js');
+var pages = [];
+
+for (var i=1; i<100; i++) {
+  pages.push('page/' + i);
+}
 
 module.exports = {
   /*
@@ -52,7 +57,7 @@ module.exports = {
     }
   },
   generate: {
-    routes: contentsMap.post.map(v => v.path)
+    routes: (contentsMap.post.map(v => v.path)).concat(contentsMap.category.map(v => 'category/'+v.title.toLowerCase())).concat(pages)
   },
   router: {
     mode: 'history',

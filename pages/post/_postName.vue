@@ -66,11 +66,6 @@
         { hid: 'twitter:image', name: 'twitter:image', content: 'https://jicjjang.github.io/blog/image/mine.jpg' },
       ]
     },
-    asyncData ({ params }) {
-      return {
-        postName: params.postName || 1
-      }
-    },
     data() {
       return {
         post: {},
@@ -94,6 +89,8 @@
       }
     },
     created() {
+      this.postName = this.$route.params.postName || 1;
+
       for (let i in this.postList) {
         if (this.postList[i].path.split('post/')[1] === this.postName) {
           this.post = this.postList[i];

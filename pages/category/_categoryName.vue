@@ -9,10 +9,13 @@
     components: {
       'appHome': Home
     },
-    asyncData ({ params }) {
+    data () {
       return {
-        categoryName: params.categoryName
+        categoryName: ''
       }
+    },
+    created () {
+      this.categoryName = this.$route.params.categoryName || ''
     }
   }
 </script>

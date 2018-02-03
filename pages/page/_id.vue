@@ -9,10 +9,13 @@
     components: {
       'appHome': Home
     },
-    asyncData ({ params }) {
+    data () {
       return {
-        id: params.id || 1
+        id: 0
       }
+    },
+    created () {
+      this.id = this.$route.params.id || 1;
     }
   }
 </script>

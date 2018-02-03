@@ -1,3 +1,5 @@
+const contentsMap = require('./contentsMap.js');
+
 module.exports = {
   /*
   ** Headers of the page
@@ -48,6 +50,9 @@ module.exports = {
         })
       }
     }
+  },
+  generate: {
+    routes: contentsMap.post.map(v => v.path)
   },
   router: {
     mode: 'history',

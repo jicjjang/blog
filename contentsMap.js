@@ -151,7 +151,7 @@ module.exports = {
       date: "2017-02-05",
       category: "Javascript",
       description: "자바스크립트의 동기",
-      image: "image/javascript/background.jpg"
+      image: "image/javascript/javascript.jpg"
     },
     {
       layout: "post",
@@ -303,19 +303,19 @@ module.exports = {
     },
     {
       title: 'Javascript',
-      image: 'image/javascript/background.jpg'
+      image: 'image/javascript/javascript.jpg'
     },
     {
       title: 'Frontend',
-      image: 'image/frontend/frontend.png'
+      image: 'image/frontend/frontend.jpg'
     },
     {
       title: 'Life',
-      image: 'image/life/life.png'
+      image: 'image/life/life.jpg'
     },
     {
       title: 'Review',
-      image: 'image/review/review.png'
+      image: 'image/review/review.jpg'
     }
   ]
 }

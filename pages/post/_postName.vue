@@ -34,7 +34,7 @@
     </section>
   </article>
   <section class="next" v-if="index > -1 && this.postList[index+1]">
-    <nuxt-link class="next__link" :to="`/${this.postList[index+1].path}`" :itemprop="url" :style="`background-image: url('${baseUrl}/${this.postList[index+1].image}');`">
+    <nuxt-link class="next__link" :to="`/${this.postList[index+1].path}`" itemprop="url" :style="`background-image: url('${baseUrl}/${this.postList[index+1].image}');`">
       <div class="next__container">
         <span>Read Next</span>
         <h2>{{ this.postList[index+1].title }}</h2>
@@ -100,11 +100,6 @@
           this.index = parseInt(i);
           break;
         }
-      }
-    },
-    mounted () {
-      if (!this.postName) {
-        location.href = '/blog'
       }
     }
   }

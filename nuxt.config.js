@@ -54,8 +54,7 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    },
-    vendor: ['~/static/static/slides/js/reveal.js']
+    }
   },
   generate: {
     routes: (contentsMap.post.map(v => v.path)).concat(contentsMap.category.map(v => 'category/'+v.title.toLowerCase())).concat(pages)

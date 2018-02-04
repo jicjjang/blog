@@ -31,6 +31,7 @@
               'https://jicjjang.github.io/blog/image/mine.jpg'},
         ],
         script: [
+          { type: 'text/javascript', src: '/blog/static/slides/js/reveal.js' },
           { type: 'text/javascript', src: '/blog/static/slides/lib/js/head.min.js' },
         ],
         link: [

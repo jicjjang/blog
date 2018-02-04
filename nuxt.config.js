@@ -22,6 +22,7 @@ module.exports = {
       { hid: 'twitter:domain', name: 'twitter:domain', content: 'https://jicjjang.github.io' },
     ],
     script: [
+      { type: 'text/javascript', src: '/blog/static/slides/js/reveal.js', async: false },
       { type: 'text/javascript', src: '/blog/static/script/google-analytics.js' },
     ],
     link: [

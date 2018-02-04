@@ -31,7 +31,6 @@
               'https://jicjjang.github.io/blog/image/mine.jpg'},
         ],
         script: [
-          { type: 'text/javascript', src: '/blog/static/slides/js/reveal.js' },
           { type: 'text/javascript', src: '/blog/static/slides/lib/js/head.min.js' },
         ],
         link: [
@@ -66,14 +65,16 @@
       }
     },
     mounted () {
-      Reveal.initialize({
-        dependencies: [
-          { src: '/blog/static/slides/plugin/markdown/marked.js' },
-          { src: '/blog/static/slides/plugin/markdown/markdown.js' },
-          { src: '/blog/static/slides/plugin/notes/notes.js', async: true },
-          { src: '/blog/static/slides/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-        ]
-      });
+      setTimeout(() => {
+        Reveal.initialize({
+          dependencies: [
+            { src: '/blog/static/slides/plugin/markdown/marked.js' },
+            { src: '/blog/static/slides/plugin/markdown/markdown.js' },
+            { src: '/blog/static/slides/plugin/notes/notes.js', async: true },
+            { src: '/blog/static/slides/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+          ]
+        });
+      }, 500);
     }
   }
 </script>

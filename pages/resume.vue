@@ -3,7 +3,7 @@
     <div class="wrapper">
       <div class="sidebar-wrapper">
         <div class="profile-container">
-          <img class="profile" :style="`width: 160px; height: 160px; border-radius: 80px; background: url(${this.baseUrl}/image/resume/profile.jpg) 0px 0px / 160px 212px no-repeat;`" />
+          <img class="profile" :style="`width: 160px; height: 160px; border-radius: 80px; background: url(${this.baseUrl}/static/resume/image/profile.jpg) 0px 0px / 160px 212px no-repeat;`" />
           <h1 class="name">최준석</h1>
           <h3 class="tagline">프론트를 좋아하는<br/>서버 개발자</h3>
         </div><!--//profile-container-->
@@ -212,7 +212,7 @@
             <h4 class="title">발표자료 설명</h4>
             <div>17년 OSS 개발자 방학 캠프에서 발표한 발표자료 입니다.<br />제가 개발을 하면서 현재까지 오게 된 과정에 대해 설명해보았습니다.</div>
           </div><br/>
-          <iframe src="https://jicjjang.github.io/2017/07/15/developer-life" width="100%" height="400px" style="border: none;"></iframe>
+          <iframe src="//jicjjang.github.io/2017/07/15/developer-life" width="100%" height="400px" style="border: none;"></iframe>
           <div>&lt;포커스를 프레젠테이션에 두고 's' 키를 누르면 발표자 화면이 나옵니다.&gt;</div>
           <div>&lt;포커스를 프레젠테이션에 두고 'f' 키를 누르면 전체 화면이 나옵니다.&gt;</div>
         </section>

@@ -6,8 +6,8 @@
   import Home from '~/pages'
 
   export default {
-    name: 'category',
-    layout: 'post',
+    name: 'category__categoryName',
+    layout: 'category',
     head () {
       return {
         title: 'June',

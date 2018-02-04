@@ -15,7 +15,7 @@
 
 <script>
   export default {
-    name: "category",
+    name: "homeComponent__category",
     props: [
       'category',
       'baseUrl',

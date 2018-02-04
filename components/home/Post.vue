@@ -11,7 +11,7 @@
 
 <script>
   export default {
-    name: "post",
+    name: "homeComponent__post",
     props: [
       'index',
       'post',

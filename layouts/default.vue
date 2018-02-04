@@ -4,6 +4,7 @@
 
 <script>
   export default {
+    name: "defaultLayout",
     head () {
       return {
         title: 'June',

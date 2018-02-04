@@ -12,7 +12,7 @@
 
 <script>
   export default {
-    name: "sns",
+    name: "homeComponent__sns",
     props: ['baseUrl']
   }
 </script>

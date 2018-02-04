@@ -15,7 +15,7 @@
 
 <script>
   export default {
-    name: "post",
+    name: "archiveComponent__post",
     props: [
       'index',
       'post',

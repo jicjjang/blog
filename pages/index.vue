@@ -53,6 +53,7 @@
   import Sns from '~/components/home/Sns'
 
   export default {
+    name: "index",
     props: [
       'pageIndex',
       'categoryName'

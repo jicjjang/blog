@@ -6,6 +6,7 @@
   import Home from '~/pages'
 
   export default {
+    name: "page__id",
     components: {
       'appHome': Home
     },

@@ -1,7 +1,7 @@
 {
-  "name": "jicjjang.github.io",
+  "name": "blog",
   "version": "1.0.0",
-  "description": "This blog has been used since 2018 using Nuxtjs with vuejs",
+  "description": "This blog has been used since 2018 using Nuxtjs with vuejs for github pages blog",
   "author": "jicjjang <jicjjang12@gmail.com>",
   "private": true,
   "scripts": {

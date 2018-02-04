@@ -1,13 +1,22 @@
 module.exports = {
   post: [
     {
+      layout: "slides",
+      path: "slides/vue-basic-presentation",
+      title: "[Presentation] Vue.js basic",
+      date: "2017-04-08",
+      category: "Presentation",
+      description: "Vuetiful 발표 자료",
+      image: "static/image/javascript/vue/background.jpg"
+    },
+    {
       layout: "post",
       path: "post/review-2018-it-trend-special-report",
       title: "[Review] 2018 IT 트렌트 스페셜 리포트",
       date: "2017-12-17",
       category: "Review",
       description: "[Review] 2018 IT 트렌트 스페셜 리포트",
-      image: "image/review/ittrend/background.jpg"
+      image: "static/image/review/ittrend/background.jpg"
     },
     {
       layout: "post",
@@ -16,7 +25,7 @@ module.exports = {
       date: "2017-12-13",
       category: "Life",
       description: "일상",
-      image: "image/beat.png"
+      image: "static/image/beat.png"
     },
     {
       layout: "post",
@@ -25,7 +34,7 @@ module.exports = {
       date: "2017-11-11",
       category: "Javascript",
       description: "2017 서울 앱 공모전",
-      image: "image/javascript/seoul-app-contest/background.jpg"
+      image: "static/image/javascript/seoul-app-contest/background.jpg"
     },
     {
       layout: "post",
@@ -34,7 +43,7 @@ module.exports = {
       date: "2017-08-20",
       category: "Review",
       description: "[Review] 중급자를 위한 You don't know JS",
-      image: "image/review/youdontknowjs/you-dont-know-js.jpg"
+      image: "static/image/review/youdontknowjs/you-dont-know-js.jpg"
     },
     {
       layout: "post",
@@ -43,7 +52,7 @@ module.exports = {
       date: "2017-08-09",
       category: "Etc",
       description: "JWT에 대해",
-      image: "image/etc/jwt/background.jpg"
+      image: "static/image/etc/jwt/background.jpg"
     },
     {
       layout: "post",
@@ -52,7 +61,7 @@ module.exports = {
       date: "2017-06-27",
       category: "Etc",
       description: "사내 메신저 봇 스케쥴러 만들기",
-      image: "image/etc/dooray/background.png"
+      image: "static/image/etc/dooray/background.png"
     },
     {
       layout: "post",
@@ -61,7 +70,7 @@ module.exports = {
       date: "2017-06-27",
       category: "Etc",
       description: "사내 메신저 봇 스케쥴러 만들기",
-      image: "image/etc/dooray/background.png"
+      image: "static/image/etc/dooray/background.png"
     },
     {
       layout: "post",
@@ -70,7 +79,7 @@ module.exports = {
       date: "2017-06-13",
       category: "Life",
       description: "시카고에서 터진 일에 대한 Airbnb의 대처",
-      image: "image/life/airbnb/background.jpg"
+      image: "static/image/life/airbnb/background.jpg"
     },
     {
       layout: "post",
@@ -79,7 +88,7 @@ module.exports = {
       date: "2017-05-20",
       category: "Javascript",
       description: "자바스크립트 성능 최적화 8",
-      image: "image/javascript/optimize/background.jpg"
+      image: "static/image/javascript/optimize/background.jpg"
     },
     {
       layout: "post",
@@ -88,7 +97,7 @@ module.exports = {
       date: "2017-05-19",
       category: "Javascript",
       description: "자바스크립트 성능 최적화 7",
-      image: "image/javascript/optimize/background.jpg"
+      image: "static/image/javascript/optimize/background.jpg"
     },
     {
       layout: "post",
@@ -97,7 +106,7 @@ module.exports = {
       date: "2017-05-19",
       category: "Javascript",
       description: "자바스크립트 성능 최적화 6",
-      image: "image/javascript/optimize/background.jpg"
+      image: "static/image/javascript/optimize/background.jpg"
     },
     {
       layout: "post",
@@ -106,7 +115,7 @@ module.exports = {
       date: "2017-05-19",
       category: "Javascript",
       description: "자바스크립트 성능 최적화 4",
-      image: "image/javascript/optimize/background.jpg"
+      image: "static/image/javascript/optimize/background.jpg"
     },
     {
       layout: "post",
@@ -115,7 +124,7 @@ module.exports = {
       date: "2017-05-18",
       category: "Javascript",
       description: "자바스크립트 성능 최적화 3",
-      image: "image/javascript/optimize/background.jpg"
+      image: "static/image/javascript/optimize/background.jpg"
     },
     {
       layout: "post",
@@ -124,7 +133,7 @@ module.exports = {
       date: "2017-05-18",
       category: "Javascript",
       description: "자바스크립트 성능 최적화 2",
-      image: "image/javascript/optimize/background.jpg"
+      image: "static/image/javascript/optimize/background.jpg"
     },
     {
       layout: "post",
@@ -133,7 +142,7 @@ module.exports = {
       date: "2017-05-18",
       category: "Javascript",
       description: "자바스크립트 성능 최적화 1",
-      image: "image/javascript/optimize/background.jpg"
+      image: "static/image/javascript/optimize/background.jpg"
     },
     {
       layout: "post",
@@ -142,7 +151,7 @@ module.exports = {
       date: "2017-04-25",
       category: "Frontend",
       description: "매우 기본적인 front end 개발 질문에 대한 응답",
-      image: "image/frontend/background.jpg"
+      image: "static/image/frontend/background.jpg"
     },
     {
       layout: "post",
@@ -151,7 +160,7 @@ module.exports = {
       date: "2017-02-05",
       category: "Javascript",
       description: "자바스크립트의 동기",
-      image: "image/javascript/javascript.jpg"
+      image: "static/image/javascript/javascript.jpg"
     },
     {
       layout: "post",
@@ -160,7 +169,7 @@ module.exports = {
       date: "2016-12-30",
       category: "Etc",
       description: "React 프로젝트 시작하기",
-      image: "image/etc/server-setting/background.jpg"
+      image: "static/image/etc/server-setting/background.jpg"
     },
     {
       layout: "post",
@@ -169,7 +178,7 @@ module.exports = {
       date: "2016-12-28",
       category: "Javascript",
       description: "React 프로젝트 시작하기",
-      image: "image/javascript/react/background.jpg"
+      image: "static/image/javascript/react/background.jpg"
     },
     {
       layout: "post",
@@ -178,7 +187,7 @@ module.exports = {
       date: "2016-06-26",
       category: "Python",
       description: "PIP로 라이브러리 배포 및 사용하기",
-      image: "image/python/pip/background.jpg"
+      image: "static/image/python/pip/background.jpg"
     },
     {
       layout: "post",
@@ -187,7 +196,7 @@ module.exports = {
       date: "2015-11-20",
       category: "Etc",
       description: "Yosemite 에서 El Capitan 업그레이드 후 발생한 문제 리뷰",
-      image: "image/etc/el-capitan/background.jpg"
+      image: "static/image/etc/el-capitan/background.jpg"
     },
     {
       layout: "post",
@@ -196,7 +205,7 @@ module.exports = {
       date: "2015-11-08",
       category: "Python",
       description: "2015 서울 앱 공모전",
-      image: "image/python/seoul-app-contest/background.png"
+      image: "static/image/python/seoul-app-contest/background.png"
     },
     {
       layout: "post",
@@ -205,7 +214,7 @@ module.exports = {
       date: "2015-09-02",
       category: "Java",
       description: "component에 색상 넣기",
-      image: "image/java/java.jpg"
+      image: "static/image/java/java.jpg"
     },
     {
       layout: "post",
@@ -214,7 +223,7 @@ module.exports = {
       date: "2015-08-30",
       category: "Java",
       description: "generic에서 타입 제한하기",
-      image: "image/java/java.jpg"
+      image: "static/image/java/java.jpg"
     },
     {
       layout: "post",
@@ -223,7 +232,7 @@ module.exports = {
       date: "2015-08-29",
       category: "Java",
       description: "map에서 iterator 사용하기",
-      image: "image/java/java.jpg"
+      image: "static/image/java/java.jpg"
     },
     {
       layout: "post",
@@ -232,7 +241,7 @@ module.exports = {
       date: "2015-08-28",
       category: "Java",
       description: "next(), nextLine() 차이점",
-      image: "image/java/java.jpg"
+      image: "static/image/java/java.jpg"
     },
     {
       layout: "post",
@@ -241,7 +250,7 @@ module.exports = {
       date: "2015-08-11",
       category: "Etc",
       description: "Browserify와 Watchify의 관계",
-      image: "image/etc/browserify/browserify.jpg"
+      image: "static/image/etc/browserify/browserify.jpg"
     },
     {
       layout: "post",
@@ -250,7 +259,7 @@ module.exports = {
       date: "2015-07-20",
       category: "Etc",
       description: "Ringing at your dorbell",
-      image: "image/etc/malware/security.jpg"
+      image: "static/image/etc/malware/security.jpg"
     },
     {
       layout: "post",
@@ -259,7 +268,7 @@ module.exports = {
       date: "2015-07-11",
       category: "Php",
       description: "ERROR: An another FPM instance seems to already listen on /var/run/php5-fpm.sock 오류 해결하기",
-      image: "image/php/fastcgi/fastcgi.jpg"
+      image: "static/image/php/fastcgi/fastcgi.jpg"
     },
     {
       layout: "post",
@@ -268,7 +277,7 @@ module.exports = {
       date: "2015-06-24",
       category: "Etc",
       description: "RESTful한 코드작성과 REST, CRUD에 대해",
-      image: "image/etc/RESTful/restful-web-services.jpg"
+      image: "static/image/etc/RESTful/restful-web-services.jpg"
     },
     {
       layout: "post",
@@ -277,45 +286,45 @@ module.exports = {
       date: "2015-02-11",
       category: "Etc",
       description: "prezi와 같은 web presentation을 직접 코드로 동작해보기",
-      image: "image/etc/web-presentation/web-presentation.png"
+      image: "static/image/etc/web-presentation/web-presentation.png"
     },
   ],
   category: [
     {
       title: 'Etc',
-      image: 'image/etc/etc.jpg'
+      image: 'static/image/etc/etc.jpg'
     },
     {
       title: 'Php',
-      image: 'image/php/php.jpg'
+      image: 'static/image/php/php.jpg'
     },
     {
       title: 'Java',
-      image: 'image/java/java.jpg'
+      image: 'static/image/java/java.jpg'
     },
     {
       title: 'Python',
-      image: 'image/python/python.jpg'
+      image: 'static/image/python/python.jpg'
     },
     {
       title: 'Presentation',
-      image: 'image/presentation/presentation.jpg'
+      image: 'static/image/presentation/presentation.jpg'
     },
     {
       title: 'Javascript',
-      image: 'image/javascript/javascript.jpg'
+      image: 'static/image/javascript/javascript.jpg'
     },
     {
       title: 'Frontend',
-      image: 'image/frontend/frontend.jpg'
+      image: 'static/image/frontend/frontend.jpg'
     },
     {
       title: 'Life',
-      image: 'image/life/life.jpg'
+      image: 'static/image/life/life.jpg'
     },
     {
       title: 'Review',
-      image: 'image/review/review.jpg'
+      image: 'static/image/review/review.jpg'
     }
   ]
 }

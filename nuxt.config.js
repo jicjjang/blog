@@ -22,15 +22,15 @@ module.exports = {
       { hid: 'twitter:domain', name: 'twitter:domain', content: 'https://jicjjang.github.io' },
     ],
     script: [
-      { type: 'text/javascript', src: '/blog/script/google-analytics.js' }
+      { type: 'text/javascript', src: '/blog/static/script/google-analytics.js' },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
+      { rel: 'icon', type: 'image/x-icon', href: '/blog/static/favicon.png' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Inconsolata|Lora|Space+Mono:700' },
       { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css' },
       { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css' },
       { rel: 'stylesheet', href: '//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css' },
-      { rel: 'stylesheet', href: '/blog/css/main.css' },
+      { rel: 'stylesheet', href: '/blog/static/css/main.css' },
       { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css' }
     ]
   },
@@ -54,7 +54,8 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    }
+    },
+    vendor: ['~/static/static/slides/js/reveal.js']
   },
   generate: {
     routes: (contentsMap.post.map(v => v.path)).concat(contentsMap.category.map(v => 'category/'+v.title.toLowerCase())).concat(pages)

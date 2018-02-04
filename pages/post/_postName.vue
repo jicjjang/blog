@@ -10,7 +10,7 @@
     layout: 'post',
     computed: {
       postContent() {
-        return Marked(require(`~/static/posts/${this.postName}.md`))
+        return Marked(require(`~/static/static/posts/${this.postName}.md`))
       }
     },
     created() {

@@ -122,7 +122,7 @@
       <section>
         <h2>Redux</h2>
         <p style="width: 80%; margin: 0 auto;">
-          <img src="/blog/static/slides/image/react-basic/Redux1.png" />
+          <img src="/blog/static/slides/image/react-basic/redux1.png" />
         </p>
         <aside class="notes">
           이를 해결하기 위해 Flux 기반의 Redux 라이브러리를 사용합니다.

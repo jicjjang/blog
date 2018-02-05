@@ -66,7 +66,7 @@ module.exports = {
     {
       layout: "slides",
       path: "slides/developer-life",
-      title: "[Presentation] 현실적인 개발로 먹고살기 (presentation)",
+      title: "[Presentation] 현실적인 개발로 먹고살기",
       date: "2017-07-15",
       category: "Presentation",
       description: "OSS 개발자 포럼 발표 자료",

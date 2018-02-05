@@ -53,7 +53,7 @@
 
     <section>
       <section>
-        <h2>1. 별거없는 발자취</h2><br/><br/>
+        <h2>1. 별거없는 발자취</h2><br/>
         <div class="fragment" style="display: inline-block; vertical-align: top;">
           <h4>OSS 개발자 포럼에서<br/>만난 여러분의 모습</h4>
           <img src="/blog/static/slides/image/oss/jjal1.jpg" />
@@ -77,11 +77,13 @@
       <section>
         <div>
           <h2 class="fragment">Hello World 다음은?</h2>
-          <div class="fragment">
-            <img class="fragment fade-out" style="display: block; margin: auto;" src="/blog/static/slides/image/oss/billiards.jpg" />
-            <img class="fragment fade-up" src="/blog/static/slides/image/oss/jjal3.jpg" />
+          <div class="fragment fade-up" style="position: absolute; width: 100%; margin: 0 auto;">
+            <img style="display: block; margin: auto;" src="/blog/static/slides/image/oss/billiards.jpg" />
           </div>
-          <div class="fragment">3~4시간...</div>
+          <div class="fragment fade-up" style="position: absolute; width: 100%; margin: 0 auto;">
+            <img style="display: block; margin: auto;" src="/blog/static/slides/image/oss/jjal3.jpg" />
+            <div class="fragment">3~4시간...</div>
+          </div>
         </div>
         <aside class="notes">
           원하는 과에 들어왔지만, 이전까지 코딩을 해본적도 없고, 공부도 엄청 좋아하진 않았어요.<br/>
@@ -96,8 +98,8 @@
       <section>
         <div>
           <h2 class="fragment">도피</h2>
-          <div class="fragment">
-            <img src="/blog/static/slides/image/oss/mil.jpg" />
+          <div class="fragment" style="width: 80%; margin: 0 auto;">
+            <img style="display: block; margin: 0 auto;" src="/blog/static/slides/image/oss/mil.jpg" />
           </div>
         </div>
         <aside class="notes">
@@ -111,8 +113,8 @@
       <section>
         <div>
           <h2 class="fragment">뭐먹고 살지?</h2>
-          <div class="fragment">
-            <img src="/blog/static/slides/image/oss/jjal4.jpg" />
+          <div class="fragment" style="width: 80%; margin: 0 auto;">
+            <img style="display: block; margin: 0 auto;" src="/blog/static/slides/image/oss/jjal4.jpg" />
             <div style="font-size: 15px;">출처 - 무한도전</div>
           </div>
         </div>
@@ -129,13 +131,13 @@
           <h2>
             <span class="fragment">창업 </span><span class="fragment"> 동아리</span>
           </h2>
-          <div class="fragment fade-out">
-            <img style="display: block; width: 600px; margin: auto;" src="/blog/static/slides/image/oss/jjal5.jpg" />
+          <div class="fragment fade-out" style="position: absolute; width: 100%;">
+            <img style="display: block; width: 80%; margin: auto;" src="/blog/static/slides/image/oss/jjal5.jpg" />
             <div style="font-size: 15px; margin-top: 10px;">출처 - 클리앙</div>
           </div>
           <div class="fragment fade-up">
-            <img style="width: 250px;" src="/blog/static/slides/image/oss/parangsae1.jpg" />
-            <img style="width: 342px;" src="/blog/static/slides/image/oss/parangsae2.jpg" />
+            <img style="width: 20%; margin: 0 5%; display: inline-block; vertical-align: top;" src="/blog/static/slides/image/oss/parangsae1.jpg" />
+            <img style="width: 50%; margin: 0 5%; display: inline-block;" src="/blog/static/slides/image/oss/parangsae2.jpg" />
           </div>
         </div>
         <aside class="notes">
@@ -155,7 +157,7 @@
         <div style="text-align: right; font-size: 25px;">23살 - 창업 동아리</div>
         <h2 class="fragment">졸업 프로젝트...?</h2>
         <div class="fragment">
-          <img style="width: 600px;" src="/blog/static/slides/image/oss/mypi.png" />
+          <img style="width: 80%; margin: 0 auto;" src="/blog/static/slides/image/oss/mypi.png" />
         </div>
         <aside class="notes">
           엥?? 24살에 무슨 졸업 프로젝트???<br/>
@@ -171,7 +173,7 @@
         <div style="text-align: right; font-size: 25px;">23살 - 창업 동아리</div>
         <h2 class="fragment">인생의 터닝포인트</h2>
         <div class="fragment">
-          <img style="width: 600px;" src="/blog/static/slides/image/oss/tastelab1.jpg" />
+          <img style="width: 80%; margin: 0 auto;" src="/blog/static/slides/image/oss/tastelab1.jpg" />
         </div>
         <aside class="notes">
           졸업 프로젝트를 3학년 1학기에 마치고, 인턴을 하게 되었습니다. 창업 동아리를 기반으로 했던<br/>
@@ -189,7 +191,7 @@
         <div style="text-align: right; font-size: 25px;">24살 - 졸업 프로젝트, 인턴</div>
         <h2 class="fragment">휴식</h2>
         <div class="fragment">
-          <img style="width: 600px;" src="/blog/static/slides/image/oss/jjal6.jpg" />
+          <img style="width: 80%; margin: 0 auto;" src="/blog/static/slides/image/oss/jjal6.jpg" />
           <div style="font-size: 15px; margin-top: 10px;">출처 - 어드벤처 타임</div>
         </div>
         <aside class="notes">
@@ -203,7 +205,7 @@
         <div style="text-align: right; font-size: 25px;">24살 - 졸업 프로젝트, 인턴</div>
         <h2 class="fragment">공모전</h2>
         <div class="fragment">
-          <img style="width: 400px;" src="/blog/static/slides/image/oss/competition.jpg" />
+          <img style="width: 50%; margin: 0 auto;" src="/blog/static/slides/image/oss/competition.jpg" />
         </div>
         <aside class="notes">
           서울시 공공 데이터 앱 개발 공모전에 나가기로 했어요.<br/>
@@ -225,7 +227,7 @@
         <div style="text-align: right; font-size: 25px;">25살 - 인턴, 공모전</div>
         <h2 class="fragment">졸업 프로젝트 2</h2>
         <div class="fragment">
-          <img style="width: 400px;" src="/blog/static/slides/image/oss/sosanara.jpg" />
+          <img style="width: 50%; margin: 0 auto;" src="/blog/static/slides/image/oss/sosanara.jpg" />
         </div>
         <aside class="notes">
           작년, 4학년일 때 입니다. 방학 1달동안 어학연수를 다녀오고 졸업 전시회을 시작했죠.<br/>
@@ -262,7 +264,7 @@
         <h2>2. 별게 되기위한 노력</h2>
         <h3 class="fragment">와 졸업도 하고 취직도 하고 짝짝짝</h3>
         <div class="fragment">
-          <img style="width: 300px;" src="/blog/static/slides/image/oss/jjal11.jpg" />
+          <img style="width: 40%; margin: 0 auto;" src="/blog/static/slides/image/oss/jjal11.jpg" />
         </div>
         <aside class="notes">
           ㅋㅋㅋ 여러분 지금 방학이죠? 방학이 없습니다... 네....<br/>
@@ -278,12 +280,12 @@
         <h3>
           <a href="http://115.71.238.136" target="_blank">Mclang</a>
         </h3>
-        <div style="display: inline-block; width: 361px; vertical-align: top;">
-          <img class="fragment" style="width: 500px;" src="/blog/static/slides/image/oss/mclang1.jpg" />
-          <img class="fragment" style="width: 500px;" src="/blog/static/slides/image/oss/mclang3.jpg" />
+        <div style="display: inline-block; width: 40%; margin: 0 2%; vertical-align: top;">
+          <img class="fragment" src="/blog/static/slides/image/oss/mclang1.jpg" />
+          <img class="fragment" src="/blog/static/slides/image/oss/mclang3.jpg" />
         </div>
-        <div class="fragment" style="display: inline-block;">
-          <img style="width: 350px;" src="/blog/static/slides/image/oss/mclang2.jpg" />
+        <div class="fragment" style="display: inline-block; width: 40%; margin: 0 2%;">
+          <img src="/blog/static/slides/image/oss/mclang2.jpg" />
         </div>
         <aside class="notes">
           맥랑이라는 프로젝트를 시작합니다. 인턴십을 함께 했던 디자이너의 졸업 프로젝트였는데요,<br/>
@@ -297,7 +299,7 @@
           <a href="https://github.com/jicjjang/archiver" target="_blank">Archiver</a>
         </h3>
         <div>
-          <img class="fragment" style="width: 500px;" src="/blog/static/slides/image/oss/archiver.gif" />
+          <img class="fragment" style="width: 50%; margin: 0 auto;" src="/blog/static/slides/image/oss/archiver.gif" />
         </div>
         <aside class="notes">
           Vuejs에 관심이 생겨 공부합니다. electron까지 한번에 같이하게 되었어요.<br/>
@@ -311,7 +313,7 @@
           <a href="https://github.com/jicjjang/vue-card-layer" target="_blank">vue-card-layer</a>
         </h3>
         <div>
-          <img class="fragment" style="width: 500px;" src="/blog/static/slides/image/oss/vue-card-layer.gif" />
+          <img class="fragment" style="width: 50%; margin: 0 auto;" src="/blog/static/slides/image/oss/vue-card-layer.gif" />
         </div>
         <aside class="notes">
           react보다는 vue가 사용하기 쉽고, 사용에 있어서 명확함, 개인적인 의견으로 페이스북에서 만든<br/>
@@ -323,13 +325,13 @@
         <h3 class="fragment" data-fragment-index="0">
           <a href="https://github.com/jicjjang/DoorayHooker" target="_blank">Dooray bot</a>
         </h3>
-        <div class="fragment fade-out" data-fragment-index="2">
-          <img class="fragment" data-fragment-index="1" style="width: 200px;" src="/blog/static/slides/image/oss/dooray1.jpg" />
-          <img class="fragment" data-fragment-index="1" style="width: 200px;" src="/blog/static/slides/image/oss/dooray2.jpg" />
-          <img class="fragment" data-fragment-index="1" style="width: 200px;" src="/blog/static/slides/image/oss/dooray3.jpg" />
+        <div class="fragment fade-out" data-fragment-index="2" style="position: absolute; width: 100%;">
+          <img class="fragment" data-fragment-index="1" style="display: inline-block; width: 30%; margin: 0 1%;" src="/blog/static/slides/image/oss/dooray1.jpg" />
+          <img class="fragment" data-fragment-index="1" style="display: inline-block; width: 30%; margin: 0 1%;" src="/blog/static/slides/image/oss/dooray2.jpg" />
+          <img class="fragment" data-fragment-index="1" style="display: inline-block; width: 30%; margin: 0 1%;" src="/blog/static/slides/image/oss/dooray3.jpg" />
         </div>
         <div class="fragment fade-up" style="width: 100%;" data-fragment-index="3">
-          <img style="width: 100%;" src="/blog/static/slides/image/oss/dooray4.jpg" />
+          <img src="/blog/static/slides/image/oss/dooray4.jpg" />
         </div>
         <div class="fragment">여기서 알 수 있는 사실!</div>
         <div class="fragment">"아 이 회사 사람들은 밥 메뉴가 정말 중요하구나...!"</div>
@@ -354,9 +356,9 @@
         <div style="text-align: right; font-size: 22px;">27살 - 공모전, Mclang, Dooray 봇...</div>
         <h2>3. 그래서 넌?</h2>
         <h3>너가 그렇게 했구나... 근데?</h3>
-        <div class="fragment">
-          <img class="fragment fade-out" style="width: 300px; display: block; margin: 0 auto;" src="/blog/static/slides/image/oss/jjal7.jpg" />
-          <img class="fragment fade-up" style="width: 600px;" src="/blog/static/slides/image/oss/jjal8.jpg" />
+        <div class="fragment" style="width: 100%;">
+          <img class="fragment fade-out" style="position: absolute; width: 30%; margin: 0 33%;" src="/blog/static/slides/image/oss/jjal7.jpg" />
+          <img class="fragment fade-up" style="width: 60%; margin: 0 auto;" src="/blog/static/slides/image/oss/jjal8.jpg" />
         </div>
         <aside class="notes">
           운좋게 졸업 전에 취직을 해서 다니고 있습니다.<br/>
@@ -380,7 +382,7 @@
         <div>
           <h3 class="fragment">결국 제가 하고싶은 말은...</h3>
           <div class="fragment">
-            <img style="width: 400px;" src="/blog/static/slides/image/oss/jjal9.jpg" />
+            <img style="display: block; width: 50%; margin: 0 auto;" src="/blog/static/slides/image/oss/jjal9.jpg" />
             <div style="font-size: 15px;">출처 - 어드벤처 타임</div>
           </div>
         </div>
@@ -399,7 +401,7 @@
         <div class="fragment" data-fragment-index="3" style="text-align: right; font-size: 22px;">+ OSS 개발자 포럼 발표</div>
         <div>
           <h3 class="fragment" data-fragment-index="0">여기!!</h3>
-          <img class="fragment" data-fragment-index="1" style="width: 400px;background-color: rgb(34, 34, 34);border: none;box-shadow: none;"
+          <img class="fragment" data-fragment-index="1" style="display: block; width: 40%; margin: 0 auto; background-color: rgb(34, 34, 34); border: none;box-shadow: none;"
                src="/blog/static/slides/image/oss/arrow.png" />
           <h3 class="fragment" data-fragment-index="2">여기를 채우는건 자신의 몫</h3>
         </div>
@@ -415,8 +417,8 @@
     <section>
       <section>
         <h1>Q&amp;A</h1>
-        <div>
-          <img src="/blog/static/slides/image/oss/jjal10.jpg">
+        <div style="width: 100%; margin: 0 auto;">
+          <img style="display: block; width: 80%; margin: 0 auto;" src="/blog/static/slides/image/oss/jjal10.jpg">
           <div style="font-size: 15px;">출처 - 어드벤처 타임</div>
         </div>
       </section>
@@ -430,17 +432,17 @@
           => 구글링을 해보세요. (코드카데미, 오픈튜토리얼 등등...)<br/>
           => 문서를 보세요. (안나올때 물어봐도 안늦음)
         </div>
-        <div class="fragment" style="width: 500px; margin: auto;">
-          <img src="/blog/static/slides/image/oss/search1.jpg">
+        <div class="fragment" style="width: 100%; margin: 0 auto;">
+          <img style="display: block; width: 50%; margin: 0 auto;" src="/blog/static/slides/image/oss/search1.jpg">
         </div>
       </section>
       <section>
         <h2>질문이 없을까봐 준비한 self Q2</h2><br/>
-        <div style="display: inline-block; vertical-align: top;">
+        <div style="display: inline-block; width: 40%; margin: 0 2%; vertical-align: top;">
           <h4 style="color: #42affa;">&lt;혹시 웹 프론트엔드에 대한<br/>로드맵이 있을까요?&gt;</h4>
           <a class="fragment" href="https://jicjjang.github.io/2017/04/25/front-end-question/" target="_blank">여기를 확인해주세요.</a>
         </div>
-        <div class="fragment" style="display: inline-block; width: 400px;">
+        <div class="fragment" style="display: inline-block; width: 40%; margin: 0 2%;">
           <img src="/blog/static/slides/image/oss/roadmap.jpg">
         </div>
       </section>

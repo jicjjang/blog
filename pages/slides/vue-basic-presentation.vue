@@ -159,7 +159,3 @@
     layout: 'slides',
   }
 </script>
-
-<style scoped>
-
-</style>

@@ -1,15 +1,6 @@
 module.exports = {
   post: [
     {
-      layout: "slides",
-      path: "slides/vue-basic-presentation",
-      title: "[Presentation] Vue.js basic",
-      date: "2017-04-08",
-      category: "Presentation",
-      description: "Vuetiful 발표 자료",
-      image: "static/image/javascript/vue/background.jpg"
-    },
-    {
       layout: "post",
       path: "post/review-2018-it-trend-special-report",
       title: "[Review] 2018 IT 트렌트 스페셜 리포트",
@@ -28,6 +19,15 @@ module.exports = {
       image: "static/image/beat.png"
     },
     {
+      layout: "slides",
+      path: "slides/vue-pwa-start",
+      title: "[Presentation] Vue pwa 시작하기",
+      date: "2017-11-30",
+      category: "Presentation",
+      description: "Vuetiful korea 3rd 발표자료",
+      image: "static/image/javascript/vue/background.jpg"
+    },
+    {
       layout: "post",
       path: "post/seoul-app-contest-with-node-and-react-native",
       title: "seoul app contest with node and react native",
@@ -35,6 +35,15 @@ module.exports = {
       category: "Javascript",
       description: "2017 서울 앱 공모전",
       image: "static/image/javascript/seoul-app-contest/background.jpg"
+    },
+    {
+      layout: "slides",
+      path: "slides/how-to-use-rxjs",
+      title: "[Presentation] How to use RxJs",
+      date: "2017-11-30",
+      category: "Presentation",
+      description: "NHN벅스 웹서비스팀 세미나 자료",
+      image: "static/slides/image/rxjs/background.jpg"
     },
     {
       layout: "post",
@@ -53,6 +62,15 @@ module.exports = {
       category: "Etc",
       description: "JWT에 대해",
       image: "static/image/etc/jwt/background.jpg"
+    },
+    {
+      layout: "slides",
+      path: "slides/developer-life",
+      title: "[Presentation] 현실적인 개발로 먹고살기 (presentation)",
+      date: "2017-07-15",
+      category: "Presentation",
+      description: "OSS 개발자 포럼 발표 자료",
+      image: "static/slides/image/oss/background.jpg"
     },
     {
       layout: "post",
@@ -154,6 +172,15 @@ module.exports = {
       image: "static/image/frontend/background.jpg"
     },
     {
+      layout: "slides",
+      path: "slides/vue-basic-presentation",
+      title: "[Presentation] Vue.js basic",
+      date: "2017-04-08",
+      category: "Presentation",
+      description: "NHN벅스 팀 세미나 발표 자료",
+      image: "static/image/javascript/vue/background.jpg"
+    },
+    {
       layout: "post",
       path: "post/promise-and-async-await",
       title: "자바스크립트 promise와 async/await",
@@ -178,6 +205,15 @@ module.exports = {
       date: "2016-12-28",
       category: "Javascript",
       description: "React 프로젝트 시작하기",
+      image: "static/image/javascript/react/background.jpg"
+    },
+    {
+      layout: "slides",
+      path: "slides/react-basic",
+      title: "[Presentation] React basic",
+      date: "2016-11-23",
+      category: "Presentation",
+      description: "NHN벅스 팀 세미나 발표 자료",
       image: "static/image/javascript/react/background.jpg"
     },
     {

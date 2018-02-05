@@ -30,9 +30,9 @@
       <section>
         <h2>1. Rx란 뭔가요?</h2>
         <h3 class="fragment">Rx에 대한 정의</h3>
-        <div class="fragment" style="max-width: 550px; margin: auto;">
-          <img src="/blog/static/slides/image/rxjs/intro1.jpg" />
-          <img src="/blog/static/slides/image/rxjs/intro1_trans.jpg" />
+        <div class="fragment" style="width: 70%; margin: 0 auto;">
+          <img style="display: block; margin: 5px auto;" src="/blog/static/slides/image/rxjs/intro1.jpg" />
+          <img style="display: block; margin: 5px auto;" src="/blog/static/slides/image/rxjs/intro1_trans.jpg" />
         </div>
         <aside class="notes">
           Rx라는건 ReactiveX의 약자입니다. 요즘 많이들 사용한다는
@@ -42,8 +42,8 @@
       </section>
       <section>
         <h3>반응형이란건</h3>
-        <div class="fragment" style="max-width: 550px; margin: auto;">
-          <img src="/blog/static/slides/image/rxjs/example.jpg" />
+        <div class="fragment" style="width: 100%; margin: 0 auto;">
+          <img style="display: block; width: 60%; margin: 0 auto;" src="/blog/static/slides/image/rxjs/example.jpg" />
         </div>
         <aside class="notes">
           반응형이란건 이 코드와 같습니다. 뒤에 수정된 결과 값에
@@ -52,8 +52,8 @@
       </section>
       <section>
         <h3>가장 대표적인 예제</h3>
-        <div class="fragment" style="max-width: 550px; margin: auto;">
-          <img src="/blog/static/slides/image/rxjs/excel.jpg" />
+        <div class="fragment" style="max-width: 100%; margin: auto;">
+          <img style="display: block; width: 60%; margin: 0 auto;" src="/blog/static/slides/image/rxjs/excel.jpg" />
         </div>
         <aside class="notes">
           가장 대표적인 예제는 엑셀입니다. 앞에서 정의된 수식도
@@ -81,17 +81,17 @@
       <section>
         <h3>Observer Pattern</h3>
         <div class="fragment">
-          <div class="fragment fade-out">
-            <div style="display: inline-block; max-width: 450px; margin: auto;">
-              <img src="/blog/static/slides/image/rxjs/observer.jpg">
+          <div class="fragment fade-out" style="position: absolute;">
+            <div style="display: inline-block; width: 40%; margin: 0 1%;">
+              <img style="display: block; width: 100%; margin: 0 auto;" src="/blog/static/slides/image/rxjs/observer.jpg">
               <div style="font-size: 15px;"><a href="https://ko.wikipedia.org/wiki/%EC%98%B5%EC%84%9C%EB%B2%84_%ED%8C%A8%ED%84%B4" target="_blank" style="word-break: break-all;">출처 - https://ko.wikipedia.org/wiki/%EC%98%B5%EC%84%9C%EB%B2%84_%ED%8C%A8%ED%84%B4</a></div>
             </div>
-            <div style="display: inline-block; max-width: 450px; margin: auto; vertical-align: top;">
-              <img src="/blog/static/slides/image/rxjs/rx_observer.jpg">
+            <div style="display: inline-block; width: 40%; margin: 0 1%; vertical-align: top;">
+              <img style="display: block; width: 100%; margin: 0 auto;" src="/blog/static/slides/image/rxjs/rx_observer.jpg">
             </div>
           </div>
           <div class="fragment fade-in">
-            <div style="display: inline-block; margin: 0 20px;" class="fragment">
+            <div style="display: inline-block; margin: 0 20px;">
               <img style="background: none; border: none; box-shadow: none;" src="/blog/static/slides/image/rxjs/arrow_left_down.png">
               <div style="text-align: left;">Observable</div>
             </div>
@@ -117,12 +117,12 @@
         <h3>Observable</h3>
         <div style="display: inline-block; max-width: 400px; vertical-align: top; margin: 0 20px;">
           <div class="fragment" data-fragment-index="0" style="text-align: center;">Hot Observable</div>
-          <img class="fragment" data-fragment-index="3" style="background: none; border: none; box-shadow: none;" src="/blog/static/slides/image/rxjs/youtube_live.jpg">
+          <img class="fragment" data-fragment-index="3" style="display: block; margin: 0 auto;" src="/blog/static/slides/image/rxjs/youtube_live.jpg">
         </div>
         <span class="fragment" data-fragment-index="1" style="color: red; vertical-align: top;">vs</span>
         <div style="display: inline-block; max-width: 400px; vertical-align: top; margin: 0 20px;">
           <div class="fragment" data-fragment-index="2" style="text-align: center;">Cold Observable</div>
-          <img class="fragment" data-fragment-index="4" style="background: none; border: none; box-shadow: none;" src="/blog/static/slides/image/rxjs/youtube.jpg">
+          <img class="fragment" data-fragment-index="4" style="display: block; margin: 0 auto;" src="/blog/static/slides/image/rxjs/youtube.jpg">
         </div>
         <aside class="notes">
           Observable은 Hot과 Cold로 나뉩니다.
@@ -136,10 +136,10 @@
       </section>
       <section>
         <h3>Data Flow</h3>
-        <div style="display: inline-block; vertical-align: top; margin: 0 20px;">
-          <img class="fragment" data-fragment-index="0" style="width: 100px; background: none; border: none; box-shadow: none;" src="/blog/static/slides/image/rxjs/arrow_left_down.png">
+        <div style="display: inline-block; vertical-align: top; width: 30%; margin: 0 20px;">
+          <img class="fragment" data-fragment-index="0" style="display: block; width: 30%; margin: 0 auto; background: none; border: none; box-shadow: none;" src="/blog/static/slides/image/rxjs/arrow_left_down.png">
           <div class="fragment" data-fragment-index="0" style="text-align: left;">Control Flow</div>
-          <img class="fragment" data-fragment-index="2" style="width: 100px; background: none; border: none; box-shadow: none;" src="/blog/static/slides/image/rxjs/arrow_down.png">
+          <img class="fragment" data-fragment-index="2" style="display: block; width: 30%; margin: 0 auto; background: none; border: none; box-shadow: none;" src="/blog/static/slides/image/rxjs/arrow_down.png">
           <ul class="fragment" data-fragment-index="2" style="display: block;">
             <li>if / else if / else</li>
             <li>for / for-each / for-in</li>
@@ -147,10 +147,10 @@
             <li>...</li>
           </ul>
         </div>
-        <div style="display: inline-block; vertical-align: top; margin: 0 20px;">
-          <img class="fragment" data-fragment-index="1" style="width: 100px; background: none; border: none; box-shadow: none;" src="/blog/static/slides/image/rxjs/arrow_right_down.png">
+        <div style="display: inline-block; vertical-align: top; width: 30%; margin: 0 20px;">
+          <img class="fragment" data-fragment-index="1" style="display: block; width: 30%; margin: 0 auto; background: none; border: none; box-shadow: none;" src="/blog/static/slides/image/rxjs/arrow_right_down.png">
           <div class="fragment" data-fragment-index="1" style="text-align: right;">Data Flow</div>
-          <img class="fragment" data-fragment-index="3" style="width: 100px; background: none; border: none; box-shadow: none;" src="/blog/static/slides/image/rxjs/arrow_down.png">
+          <img class="fragment" data-fragment-index="3" style="display: block; width: 30%; margin: 0 auto; background: none; border: none; box-shadow: none;" src="/blog/static/slides/image/rxjs/arrow_down.png">
           <ul class="fragment" data-fragment-index="3" style="display: block;">
             <li>recursion</li>
             <li>pipe(. 연산자)</li>
@@ -223,8 +223,8 @@
       </section>
       <section>
         <h3>그럼 이제 우리도 RxJs를 쓰자!!!</h3>
-        <div class="fragment">
-          <img style="max-width: 800px; background: none; border: none; box-shadow: none;" src="/blog/static/slides/image/rxjs/support.jpg">
+        <div class="fragment" style="width: 100%; margin: 0 auto;">
+          <img style="display: block; widht: 50%; margin: 0 auto; background: none; border: none; box-shadow: none;" src="/blog/static/slides/image/rxjs/support.jpg">
         </div>
         <aside class="notes">
           하지만 쉬울리 없죠 ㅠㅠ... 지원하는 버전이 Promise나 Async/Await를 사용할 수 있는 환경과

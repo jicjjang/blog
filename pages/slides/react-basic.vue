@@ -24,7 +24,7 @@
       </section>
       <section>
         <h2>Components</h2>
-        <p>
+        <p style="width: 60%; margin: 0 auto;">
           <img src="/blog/static/slides/image/react-basic/component.png" />
         </p>
         <small>
@@ -36,7 +36,7 @@
       </section>
       <section>
         <h2>Components</h2>
-        <p>
+        <p style="width: 80%; margin: 0 auto;">
           <img src="/blog/static/slides/image/react-basic/component_example.png" />
         </p>
         <aside class="notes">
@@ -61,7 +61,7 @@
         <p>
           상위 컴포넌트 (Parent) to 하위 컴포넌트 (Children)
         </p>
-        <p>
+        <p style="width: 80%; margin: 0 auto;">
           <img src="/blog/static/slides/image/react-basic/tree.png" />
         </p>
         <aside class="notes">
@@ -83,7 +83,7 @@
       </section>
       <section>
         <h2>Flux</h2>
-        <p>
+        <p style="width: 80%; margin: 0 auto;">
           <img src="/blog/static/slides/image/react-basic/mvc.png" />
         </p>
         <aside class="notes">
@@ -92,7 +92,7 @@
       </section>
       <section>
         <h2>Flux</h2>
-        <p>
+        <p style="width: 80%; margin: 0 auto;">
           <img src="/blog/static/slides/image/react-basic/flux.png" />
         </p>
         <aside class="notes">
@@ -103,7 +103,7 @@
       </section>
       <section>
         <h2>Flux</h2>
-        <p>
+        <p style="width: 80%; margin: 0 auto;">
           <img src="/blog/static/slides/image/react-basic/flux1.png" />
         </p>
         <aside class="notes">
@@ -112,7 +112,7 @@
       </section>
       <section>
         <h2>Flux</h2>
-        <p>
+        <p style="width: 80%; margin: 0 auto;">
           <img src="/blog/static/slides/image/react-basic/flux2.png" />
         </p>
         <aside class="notes">
@@ -121,7 +121,7 @@
       </section>
       <section>
         <h2>Redux</h2>
-        <p>
+        <p style="width: 80%; margin: 0 auto;">
           <img src="/blog/static/slides/image/react-basic/Redux1.png" />
         </p>
         <aside class="notes">
@@ -132,7 +132,7 @@
       </section>
       <section>
         <h2>Redux</h2>
-        <p>
+        <p style="width: 80%; margin: 0 auto;">
           <img src="/blog/static/slides/image/react-basic/redux2.png" />
         </p>
         <aside class="notes">
@@ -156,8 +156,8 @@
     </section>
     <section>
       <h2>환경 설정</h2>
-      <p class="fragment fade-out">이제 npm으로 babel와 react, 부가적인 라이브러리를 설치하고 babel로 JSX를 JS로 컴파일 하는 환경과 webpack.config.js로 개발환경 전용 서버를 돌아가게 하는 세팅을 하고...</p>
-      <h3 class="fragment fade-in">이 모든 것을 간단하게! <a href="https://github.com/facebookincubator/create-react-app">create-react-app!</a></h3>
+      <p class="fragment fade-out" style="position: absolute;">이제 npm으로 babel와 react, 부가적인 라이브러리를 설치하고 babel로 JSX를 JS로 컴파일 하는 환경과 webpack.config.js로 개발환경 전용 서버를 돌아가게 하는 세팅을 하고...</p>
+      <h3 class="fragment fade-in">이 모든 것을 간단하게!<br/><a href="https://github.com/facebookincubator/create-react-app">create-react-app!</a></h3>
 
       <aside class="notes">
         초반에는 설정이 꽤나 복잡했습니다. React의 컨트리뷰터인 Dan Abramov 이런 문제를 인지하고 있었는데, (제가 듣기론 Vue.js였던 것 같습니다.) 컨퍼런스의 Framework 내장 shell 환경을 보고
@@ -178,13 +178,13 @@
     </section>
     <section>
       <h2>개발</h2>
-      <p class="fragment"><img style="max-width: 70%;" src="/blog/static/slides/image/react-basic/develop.png"></p>
+      <p style="width: 60%; margin: 0 auto;" class="fragment"><img src="/blog/static/slides/image/react-basic/develop.png"></p>
       <aside class="notes">
         이제 실제 개발에 대해 알아보겠습니다.
       </aside>
     </section>
     <section>
-      <section data-markdown>
+      <section data-markdown style="font-size: 28px;">
         <script type="text/template">
           ## Data를 사용하기 위한 필요 요소
           ### 1. props
@@ -216,7 +216,7 @@
           props는 부모 컴포넌트에서 자식 컴포넌트로 넣어준 데이터로, 상수처럼 변하지 않는 값 입니다. 위 예제처럼 호출하면서 넣어준 데이터를 하위 컴포넌트에서 사용할 수 있습니다.
         </aside>
       </section>
-      <section data-markdown>
+      <section data-markdown style="font-size: 28px;">
         <script type="text/template">
           ## Data를 사용하기 위한 필요 요소
           ### 2. state
@@ -249,10 +249,10 @@
           자식에서는 props로 사용하게 됩니다. 하지만 부모 요소의 this.state.a가 바뀐다고 하면 Re-Rendering이 되기 때문에 자식 또한 바뀌게 됩니다.
         </aside>
       </section>
-      <section>
+      <section style="font-size: 28px;">
         <h2>Data를 사용하기 위한 필요 요소</h2>
         <h3>3. Life Cycle</h3>
-        <p>
+        <p style="width: 80%; margin: 0 auto;">
           <img src="/blog/static/slides/image/react-basic/lifecycle.png" />
         </p>
         <small>출처 - https://www.reddit.com/r/javascript/comments/45khex/reactjs_life_cycle_diagram_oc/</small>
@@ -275,7 +275,7 @@
     <section>
       <section>
         <h2>이쯤에서 다시보는 Redux</h2>
-        <p class="fragment">
+        <p style="width: 80%; margin: 0 auto;" class="fragment">
           <img src="/blog/static/slides/image/react-basic/withRedux.png" />
           <small>출처 - https://css-tricks.com/learning-react-redux/</small>
         </p>
@@ -284,7 +284,7 @@
           Redux가 없는 Flux에서는 왼쪽과 같이 각각의 데이터가 어지럽게 사용됩니다. 그러나 Redux는 Store를 공유하기때문에 어디서든 자유롭게 사용할 수 있습니다.
         </aside>
       </section>
-      <section data-markdown>
+      <section data-markdown style="font-size: 28px;">
         <script type="text/template">
           ## 이쯤에서 다시보는 Redux
           ```

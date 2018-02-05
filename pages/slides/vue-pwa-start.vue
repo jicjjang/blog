@@ -85,7 +85,7 @@
         </div>
         <br/>
         <div class="fragment">
-          <ul style="font-size: 32px; width: 40%; text-align: left;">
+          <ul style="font-size: 32px; width: 40%; vertical-align: top;">
             <li>설치</li>
             <li>푸시 알림</li>
             <li>백그라운드 동기화</li>
@@ -93,10 +93,9 @@
             <li>기타 등등...</li>
           </ul>
           <div style="display: inline-block; width: 50%;">
-            <img style="background: none; border: none; box-shadow: none;" src="/blog/static/slides/image/pwa/service-worker.gif">
+            <img style="border: none; margin: 0 auto;" src="/blog/static/slides/image/pwa/service-worker.gif">
           </div>
         </div>
-        <br/>
         <div style="font-size: 20px;" class="fragment">참고 - https://support.google.com/partners/answer/7336697?hl=ko</div>
         <aside class="notes">
           service worker는 설명대로 브라우저와 별도로 실행하기 때문에, 브라우저를 종료한 상태에서 돌아갑니다.
@@ -131,8 +130,8 @@
       </section>
       <section>
         <h3>그 다음은...</h3>
-        <div class="fragment">
-          <img style="background: none; border: none; box-shadow: none;" src="/blog/static/slides/image/pwa/develop.png">
+        <div class="fragment" style="width:80%; margin: 0 auto;">
+          <img style="display: block; margin: 0 auto;" src="/blog/static/slides/image/pwa/develop.png">
         </div>
         <aside class="notes">
           네 그 다음 세팅은 열심히 개발하는겁니다.
@@ -143,10 +142,10 @@
         <h3>코딩 끝! 다음은 세팅...?</h3>
         <div class="fragment">
           <div style="display: inline-block; width: 30%; vertical-align: top;">
-            <img style="background: none; border: none; box-shadow: none;" src="/blog/static/slides/image/pwa/folder1.png">
+            <img style="display: block; margin: 0 auto;" src="/blog/static/slides/image/pwa/folder1.png">
           </div>
           <div style="display: inline-block; width: 30%; vertical-align: top;">
-            <img style="background: none; border: none; box-shadow: none;" src="/blog/static/slides/image/pwa/folder2.png">
+            <img style="display: block; margin: 0 auto;" src="/blog/static/slides/image/pwa/folder2.png">
           </div>
         </div>
         <aside class="notes">

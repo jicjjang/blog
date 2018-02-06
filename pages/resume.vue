@@ -209,10 +209,11 @@
         <section class="section">
           <h2 class="section-title"><i class="fa fa-star"></i>DEV LIFE</h2>
           <div class="upper-row">
-            <h4 class="title">발표자료 설명</h4>
+            <h4>
+              <nuxt-link class="title" to="https://jicjjang.github.io/blog/slides/developer-life">발표자료</nuxt-link>
+            </h4>
             <div>17년 OSS 개발자 방학 캠프에서 발표한 발표자료 입니다.<br />제가 개발을 하면서 현재까지 오게 된 과정에 대해 설명해보았습니다.</div>
           </div><br/>
-          <iframe src="https://jicjjang.github.io/blog/slides/developer-life" width="100%" height="400px" style="border: none;"></iframe>
           <div>&lt;포커스를 프레젠테이션에 두고 's' 키를 누르면 발표자 화면이 나옵니다.&gt;</div>
           <div>&lt;포커스를 프레젠테이션에 두고 'f' 키를 누르면 전체 화면이 나옵니다.&gt;</div>
         </section>

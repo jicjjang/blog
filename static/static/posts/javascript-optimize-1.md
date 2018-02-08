@@ -31,7 +31,7 @@ Script의 HTTP요청이나 UI업데이트 동안의 브라우저 프로세스 �
 #### 1-3-1. 지연 스크립트
 
 <figure style="text-align: center;">
-    <img src="https://jicjjang.github.io/blog/image/javascript/optimize/1/script.jpg" alt="image" style="margin:0 auto;">
+    <img src="https://jicjjang.github.io/blog/static/image/javascript/optimize/1/script.jpg" alt="image" style="margin:0 auto;">
 </figure>
 
 &lt;script&gt; 태그의 async나 defer 속성을 사용한다면 사용됨과는 상관 없이 스크립트를 load하게 됩니다.

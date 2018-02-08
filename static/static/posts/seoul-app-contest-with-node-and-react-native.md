@@ -112,11 +112,11 @@ third party 라이브러리들이 너무 무분별하게 존재한다는 점이�
 
 <div style="margin: 0 auto; text-align: center;">
   <figure style="display:inline-block; width: 48%;">
-      <img src="https://jicjjang.github.io/blog/image/javascript/seoul-app-contest/app1.png" alt="image"
+      <img src="https://jicjjang.github.io/blog/static/image/javascript/seoul-app-contest/app1.png" alt="image"
       style="width:100%;">
   </figure>
   <figure style="display:inline-block; width: 48%;">
-      <img src="https://jicjjang.github.io/blog/image/javascript/seoul-app-contest/app2.png" alt="image"
+      <img src="https://jicjjang.github.io/blog/static/image/javascript/seoul-app-contest/app2.png" alt="image"
       style="width:100%;">
   </figure>
 </div>

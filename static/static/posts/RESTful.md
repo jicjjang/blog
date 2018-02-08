@@ -35,7 +35,7 @@ REST는 기존 HTTP를 변환없이 그대로 쓸 수 있으므로 사용에 어
 REST는 쓰기 쉽고, 이해하기도 쉬우므로 네트워크 및 웹 서비스 사용자들이 많이 사용하고 있다는 장점이 있습니다. 하지만 표준이 아니라 관리가 어렵다는 점이 단점으로 계속 남아있습니다.  
 
 <figure style="text-align: center;">
-    <img src="https://jicjjang.github.io/blog/image/etc/RESTful/crud.jpg" alt="image">
+    <img src="https://jicjjang.github.io/blog/static/image/etc/RESTful/crud.jpg" alt="image">
     <figcaption><a href="http://excitingstory.tistory.com/entry/REST-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0-1%EB%B6%80-%EC%97%B0%EB%8F%99%EC%9D%98-%EC%97%AD%EC%82%AC" title="desciprtion">&lt;출처 - 랄라룰루님&gt;</a></figcaption>
 </figure>
 

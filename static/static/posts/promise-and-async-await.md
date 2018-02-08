@@ -44,7 +44,7 @@ setTimeout에서 3000ms를 기다리는 동안 계속 다음 명령어가 실행
 찍힐 수밖에 없습니다.
 
 <figure style="text-align: center;">
-    <img src="https://jicjjang.github.io/blog/image/javascript/promise/settimeout.png" alt="image" style="width:50%; margin:0 auto;">
+    <img src="https://jicjjang.github.io/blog/static/image/javascript/promise/settimeout.png" alt="image" style="width:50%; margin:0 auto;">
 </figure>
 
 (`1. Before callback`, `3. After callback` 이후에 `2. callback function`, `Call about setTimeout callback func!!` 가 찍히는 모습.)
@@ -83,7 +83,7 @@ function testPromise(callback) {
 callback함수를 포함해 testPromise를 호출하고, callback이 함수면 2000ms 뒤에 resolve()로 callback 파라미터를 포함해 다음 함수 (then)을 실행합니다. promise로 물려있는 then 함수들이 순서대로 실행됩니다. (reject 발생 시 catch로 들어갑니다.)
 
 <figure style="text-align: center;">
-    <img src="https://jicjjang.github.io/blog/image/javascript/promise/promise.png" alt="image" style="width:50%; margin:0 auto;">
+    <img src="https://jicjjang.github.io/blog/static/image/javascript/promise/promise.png" alt="image" style="width:50%; margin:0 auto;">
 </figure>
 
 (바로 `1. callback is function.` 이 실행되고 2초뒤에 `2. callback function!` 과 `3. callback is done` 이 실행되는 모습.)
@@ -124,7 +124,7 @@ testAsync(50).then(result => console.log(result))
 위 promise 예제에서 썼던 promise 생성 부분을 확장시켜, number 값이 들어오면 그 값을 보여주고 callback으로 넘겨주도록 만들어놓고 async 함수로 사용을 해봅니다.
 
 <figure style="text-align: center;">
-    <img src="https://jicjjang.github.io/blog/image/javascript/promise/async.png" alt="image" style="margin:0 auto;">
+    <img src="https://jicjjang.github.io/blog/static/image/javascript/promise/async.png" alt="image" style="margin:0 auto;">
 </figure>
 
 위와 같은 결과가 나옵니다. a, b에는 거의 동시에 promise로 들어가기에 `1. callback number is ~~` 가 두번 찍히게 되고, return 값에 있는 await에 해당하는 a와 b가 모두 할 일(promise의 2000ms)을 기다렸다가 끝나면 return을 하게됩니다.

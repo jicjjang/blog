@@ -25,7 +25,7 @@
 ## 2. 문제 해결 중
 
 <figure style="text-align: center;">
-  <img src="https://jicjjang.github.io/blog/image/life/airbnb/refund1.png" alt="image" style="display:inline-block; width:100%; margin:0 auto;">
+  <img src="https://jicjjang.github.io/blog/static/image/life/airbnb/refund1.png" alt="image" style="display:inline-block; width:100%; margin:0 auto;">
 </figure>
 
 2시간 여 가랑을 바퀴벌레와 씨름하다가 지쳐서 인터넷을 검색하기 시작했습니다. 나와 같은 일이 있던 사람이
@@ -38,7 +38,7 @@
 다음 날 예약을 취소해주겠다는 말을 전달받았습니다.
 
 <figure style="text-align: center;">
-  <img src="https://jicjjang.github.io/blog/image/life/airbnb/refund2.png" alt="image" style="display:inline-block; width:100%; margin:0 auto;">
+  <img src="https://jicjjang.github.io/blog/static/image/life/airbnb/refund2.png" alt="image" style="display:inline-block; width:100%; margin:0 auto;">
 </figure>
 
 그 전에 바퀴벌레 이미지를 보내달라고 요청했기에 미리 찍어둔 (이런 일이 있을까봐 미리 찍어뒀습니다 ㅎㅎ) 이미지를 보냈더니
@@ -49,7 +49,7 @@
 머물 숙소를 찾았습니다.
 
 <figure style="text-align: center;">
-  <img src="https://jicjjang.github.io/blog/image/life/airbnb/joes.jpg" alt="image" style="display:inline-block; width:50%; margin:0 auto;">
+  <img src="https://jicjjang.github.io/blog/static/image/life/airbnb/joes.jpg" alt="image" style="display:inline-block; width:50%; margin:0 auto;">
   <figcaption>&lt;친구에게 추천받은 영화 ^^;&gt;</figcaption>
 </figure>
 
@@ -61,7 +61,7 @@
 받지 못했습니다. 그러다 한국으로 귀국하기 하루 이틀 정도 전에 메일이 왔습니다.
 
 <figure style="text-align: center;">
-  <img src="https://jicjjang.github.io/blog/image/life/airbnb/mail1.png" alt="image" style="display:inline-block; width:100%; margin:0 auto;">
+  <img src="https://jicjjang.github.io/blog/static/image/life/airbnb/mail1.png" alt="image" style="display:inline-block; width:100%; margin:0 auto;">
 </figure>
 
 ...? 180,815원 중에 68,706원...? 아 일부만 들어왔나 보구나... 하는 마음에 다시 메일을 보내보았습니다.
@@ -69,7 +69,7 @@
 ## 4. 결과
 
 <figure style="text-align: center;">
-  <img src="https://jicjjang.github.io/blog/image/life/airbnb/mail2.png" alt="image" style="display:inline-block; width:100%; margin:0 auto;">
+  <img src="https://jicjjang.github.io/blog/static/image/life/airbnb/mail2.png" alt="image" style="display:inline-block; width:100%; margin:0 auto;">
 </figure>
 
 영어를 잘 못하지만 받은 금액에 누락이 있다는 뜻이 아니라는건 알 수 있었습니다. 영어로 메일을 보내다보니 뭔가 놓친 느낌이 들어서

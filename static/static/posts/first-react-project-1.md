@@ -58,7 +58,7 @@ React를 한 페이지 씩 진행하였습니다. (글로 싸지르는건 쉽지
 데이터 관리인 store 때문에 나온 Flux 패턴 라이브러리 이므로 데이터가 적은 페이지에선 필요성이 높지 않다고 느꼈습니다. 그리고 Promise 패턴의 중요성이 매우 높았습니다. (이젠 async/await 위주로 변하겠네요.) 비동기로 데이터를 요청했을 때, 리스트의 순서가 보장이 되어야하는데 계속 맞지 않아 promise로 해결해야 했습니다. 그 과정에서 사용했던 비동기 라이브러리 axios에 issue도 남겼지만 무참히... ㅠㅠ
 
 <figure style="text-align: center;">
-  <img src="https://jicjjang.github.io/blog/image/javascript/react/question.png" alt="image" style="width:650px; margin: 0 auto;">
+  <img src="https://jicjjang.github.io/blog/static/image/javascript/react/question.png" alt="image" style="width:650px; margin: 0 auto;">
 </figure>
 
 ## 6. 못다한 이야기

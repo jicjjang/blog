@@ -3,7 +3,7 @@
 우선 Front의 배포는 처음이었고, Django의 배포는 두번째였지만, 익숙하지 않았습니다.
 
 <figure style="text-align: center;">
-    <img src="https://jicjjang.github.io/blog/image/etc/server-setting/http-flow.png" alt="image" style="margin:0 auto;">
+    <img src="https://jicjjang.github.io/blog/static/image/etc/server-setting/http-flow.png" alt="image" style="margin:0 auto;">
 </figure>
 
 ## 1. 서버 구매
@@ -19,8 +19,8 @@
 새벽 1~2시에 phpschool에 글을 남겨서 `"죄송한데... 방화벽좀 꺼주세요..."` 글을 남기고 겨우 접속할 수 있었습니다.
 
 <figure style="text-align: center;">
-    <img src="https://jicjjang.github.io/blog/image/etc/server-setting/ufw1.png" alt="image" style="display:inline-block; width:350px; margin:0 auto;">
-    <img src="https://jicjjang.github.io/blog/image/etc/server-setting/ufw2.png" alt="image" style="display:inline-block; width:350px; margin:0 auto;">
+    <img src="https://jicjjang.github.io/blog/static/image/etc/server-setting/ufw1.png" alt="image" style="display:inline-block; width:350px; margin:0 auto;">
+    <img src="https://jicjjang.github.io/blog/static/image/etc/server-setting/ufw2.png" alt="image" style="display:inline-block; width:350px; margin:0 auto;">
 </figure>
 
 방화벽 뿐만 아니라 서버 실행을 위한 nginx, uwsgi 서버 라이브러리들과 React, Django 같은 프레임워크 & 라이브러리들 설치하였습니다.
@@ -192,8 +192,8 @@ def frontend_master_deploy():
 사실 끝은 아닙니다... 디자이너가 전시회를 하는 동안 발생하는 오류와 트래픽 (이미지 덕분에 걱정이...) 주시를 시작했지만 어느 정도 안정됨을 확인하고 끝내게 되었죠.
 
 <figure style="text-align: center;">
-  <img src="https://jicjjang.github.io/blog/image/etc/server-setting/error_log.png" alt="image" style="display:inline-block; width:350px; margin:0 auto;">
-  <img src="https://jicjjang.github.io/blog/image/etc/server-setting/traffic_log.png" alt="image" style="display:inline-block; width:350px; margin:0 auto; vertical-align:top;">
+  <img src="https://jicjjang.github.io/blog/static/image/etc/server-setting/error_log.png" alt="image" style="display:inline-block; width:350px; margin:0 auto;">
+  <img src="https://jicjjang.github.io/blog/static/image/etc/server-setting/traffic_log.png" alt="image" style="display:inline-block; width:350px; margin:0 auto; vertical-align:top;">
 </figure>
 
 안정적인 error_log와 전시 DP일, 시작일 등에 트래픽이 몰린 모습입니다. (트래픽은 대부분 이미지...)

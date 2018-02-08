@@ -40,7 +40,7 @@ $ npm run start
 이번에도 바로 에러가 뜹니다.
 
 <figure style="text-align: center;">
-  <img src="https://jicjjang.github.io/blog/image/etc/dooray/scheduleServer/error1.png" alt="image" style="display:inline-block; width:80%; margin:0 auto;">
+  <img src="https://jicjjang.github.io/blog/static/image/etc/dooray/scheduleServer/error1.png" alt="image" style="display:inline-block; width:80%; margin:0 auto;">
 </figure>
 
 다시 `"ex.config.js"` 파일을 참고하여 `"config.js"` 파일을 만듭니다.
@@ -66,11 +66,11 @@ $ forever list
 명령어로 현재 서버에 대한 로그파일을 확인하실 수 있습니다.
 
 <figure style="text-align: center;">
-  <img src="https://jicjjang.github.io/blog/image/etc/dooray/scheduleServer/log1.png" alt="image" style="display:inline-block; width:80%; margin:0 auto;">
+  <img src="https://jicjjang.github.io/blog/static/image/etc/dooray/scheduleServer/log1.png" alt="image" style="display:inline-block; width:80%; margin:0 auto;">
 </figure>
 
 <figure style="text-align: center;">
-  <img src="https://jicjjang.github.io/blog/image/etc/dooray/scheduleServer/log2.png" alt="image" style="display:inline-block; width:80%; margin:0 auto;">
+  <img src="https://jicjjang.github.io/blog/static/image/etc/dooray/scheduleServer/log2.png" alt="image" style="display:inline-block; width:80%; margin:0 auto;">
 </figure>
 
 등록되어있는 스케쥴들이 정상적으로 봇으로 동작하는 모습을 보실 수 있습니다!

@@ -8,14 +8,14 @@ Macbook OS를 Yosemite로 올리고 난 후, 문제가 몇가지 있었습니다
 ```brew upgrade && brew upgrade``` 를 하였습니다.
 
 <figure>
-    <img src="https://jicjjang.github.io/blog/image/etc/el-capitan/llvm35.png" alt="image">
+    <img src="https://jicjjang.github.io/blog/static/image/etc/el-capitan/llvm35.png" alt="image">
 </figure>
 
 위 사진처럼 [LLVM35](https://ko.wikipedia.org/wiki/LLVM)가 brew에서 업데이트 되고있었습니다.
 문제는 아래 사진처럼 cxxabi.h와 string.h 헤더파일을 찾을 수 없는 에러 때문이었습니다.  
 
 <figure>
-    <img src="https://jicjjang.github.io/blog/image/etc/el-capitan/error.png" alt="image">
+    <img src="https://jicjjang.github.io/blog/static/image/etc/el-capitan/error.png" alt="image">
 </figure>
 
 ?!  
@@ -32,7 +32,7 @@ rootless란, 아이폰에서 탈옥이 너무 성행한것에서 아이디어를
 개발자들에게 그리 메리트가 없는 부분이고, 에러가 연관된 것 같았기에 바로 기능을 차단했습니다.
 (아래 사진과 같은 검색으로 이미 많은 방법들이 나와있었습니다.)
 <figure>
-    <img src="https://jicjjang.github.io/blog/image/etc/el-capitan/rootless-disable.png" alt="image">
+    <img src="https://jicjjang.github.io/blog/static/image/etc/el-capitan/rootless-disable.png" alt="image">
 </figure>
 
 하지만, rootless 기능을 차단하고도 계속 같은 오류가 발생했습니다.
@@ -41,7 +41,7 @@ rootless란, 아이폰에서 탈옥이 너무 성행한것에서 아이디어를
 ```xcode-select --install``` 명령어로 xcode cli를 설치한 뒤, 정상적으로 작동되기 시작했습니다.
 
 <figure>
-    <img src="https://jicjjang.github.io/blog/image/etc/el-capitan/fix.png" alt="image">
+    <img src="https://jicjjang.github.io/blog/static/image/etc/el-capitan/fix.png" alt="image">
 </figure>
 
 ---

@@ -24,7 +24,7 @@ function add(num1, num2) {
 간단한 add 함수가 있을 때, add 함수의 scope chain 입니다.
 
 <figure style="text-align: center;">
-  <img src="https://jicjjang.github.io/blog/image/javascript/optimize/2/scope1.jpg" alt="image" style="display:inline-block; width:100%; margin:0 auto;">
+  <img src="https://jicjjang.github.io/blog/static/image/javascript/optimize/2/scope1.jpg" alt="image" style="display:inline-block; width:100%; margin:0 auto;">
 </figure>
 
 이 add 함수를 실행할 때의 scope chain의 변화 입니다.
@@ -34,7 +34,7 @@ var total = add(5, 10);
 ~~~
 
 <figure style="text-align: center;">
-  <img src="https://jicjjang.github.io/blog/image/javascript/optimize/2/scope2.jpg" alt="image" style="display:inline-block; width:100%; margin:0 auto;">
+  <img src="https://jicjjang.github.io/blog/static/image/javascript/optimize/2/scope2.jpg" alt="image" style="display:inline-block; width:100%; margin:0 auto;">
 </figure>
 
 Activeation object는 생성이 될때마다 만들어졌다 파괴되었다를 반복합니다. 변수를 할당하거나 계산할 때, 등등에서 자신의 값에 맞는 변수를 찾기 위해 scope chain을 검색합니다.
@@ -76,14 +76,14 @@ function assignEvents() {
 클로저를 생각해봅시다. 함수안에 함수가 존재하네요. 이런 경우에는 scope chain을 공유하게 됩니다.
 
 <figure style="text-align: center;">
-  <img src="https://jicjjang.github.io/blog/image/javascript/optimize/2/closure1.jpg" alt="image" style="display:inline-block; width:100%; margin:0 auto;">
+  <img src="https://jicjjang.github.io/blog/static/image/javascript/optimize/2/closure1.jpg" alt="image" style="display:inline-block; width:100%; margin:0 auto;">
 </figure>
 
 실행 당시에 생성되는 Activation object를 closure도 공유를 하는데, 함수인 closure가 생성될 때에는 Activation object가
 생성이 안될까요? 물론 생성됩니다. 그렇기 때문에 scope chain이 또 한번 변경이 됩니다.
 
 <figure style="text-align: center;">
-  <img src="https://jicjjang.github.io/blog/image/javascript/optimize/2/closure2.jpg" alt="image" style="display:inline-block; width:100%; margin:0 auto;">
+  <img src="https://jicjjang.github.io/blog/static/image/javascript/optimize/2/closure2.jpg" alt="image" style="display:inline-block; width:100%; margin:0 auto;">
 </figure>
 
 여기서 발생하는 성능문제가 있죠. 우선순위가 0, 1인 scope chain에서 값을 찾지 못했을 경우인데요, 만약 closure가 여러겹으로 있다고 한다면
@@ -109,7 +109,7 @@ alert(book.toString()); // [object Object]
 prototype 또한 객체이기 때문에 prototype에 대한 키가 존재합니다.
 
 <figure style="text-align: center;">
-  <img src="https://jicjjang.github.io/blog/image/javascript/optimize/2/prototype1.jpg" alt="image" style="display:inline-block; width:100%; margin:0 auto;">
+  <img src="https://jicjjang.github.io/blog/static/image/javascript/optimize/2/prototype1.jpg" alt="image" style="display:inline-block; width:100%; margin:0 auto;">
 </figure>
 
 prototype 구조는 다음과 같으며 title, publisher를 제외하는 prototype에 기능이 포함되어 있기 때문에, 위 코드의 toString과 같은 함수는 prototype에 있는 기능을
@@ -136,7 +136,7 @@ alert(book1.toString());      // [object Object]
 ~~~
 
 <figure style="text-align: center;">
-  <img src="https://jicjjang.github.io/blog/image/javascript/optimize/2/prototype2.jpg" alt="image" style="display:inline-block; width:100%; margin:0 auto;">
+  <img src="https://jicjjang.github.io/blog/static/image/javascript/optimize/2/prototype2.jpg" alt="image" style="display:inline-block; width:100%; margin:0 auto;">
 </figure>
 
 코드와 코드에 해당하는 prototype chain 구조입니다. Book 함수의 프로토타입(prototype)은 Book.prototype 이고, Book 인스턴스의 프로토타입(`__proto__`) 또한 Book.prototype 입니다.

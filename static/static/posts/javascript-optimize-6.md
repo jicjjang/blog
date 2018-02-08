@@ -23,7 +23,7 @@ function handleClick() {
 정확히 말하자면
 
 <figure style="text-align: center;">
-    <img src="https://jicjjang.github.io/blog/image/javascript/optimize/6/ui1.jpg" alt="image" style="margin:0 auto;">
+    <img src="https://jicjjang.github.io/blog/static/image/javascript/optimize/6/ui1.jpg" alt="image" style="margin:0 auto;">
 </figure>
 
 이미지와 같이

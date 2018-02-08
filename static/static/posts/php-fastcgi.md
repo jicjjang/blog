@@ -3,13 +3,13 @@
 ` ERROR: An another FPM instance seems to already listen on /var/run/php5-fpm.sock `
 
 <figure style="text-align: center;">
-    <img src="https://jicjjang.github.io/blog/image/php/fastcgi/error-log1.png" alt="image">
+    <img src="https://jicjjang.github.io/blog/static/image/php/fastcgi/error-log1.png" alt="image">
 </figure>
 
 물론, /var/log/php5-fpm.log 파일도 마찬가지였습니다.
 
 <figure style="text-align: center;">
-    <img src="https://jicjjang.github.io/blog/image/php/fastcgi/error-log2.png" alt="image">
+    <img src="https://jicjjang.github.io/blog/static/image/php/fastcgi/error-log2.png" alt="image">
 </figure>
 
 대충 FPM 인스턴스가 이미 있다.. 라는 에러와 함께 nginx에서 php가 돌아가지 않는다는걸 뒤늦게 깨닫고 nginx, fpm 설정들을 다 찾으며 3~4일을 헤매었습니다...

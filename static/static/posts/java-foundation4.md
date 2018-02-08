@@ -36,13 +36,13 @@ btn.setBorderPainted(false);
 setOpaque(bool)는 true일 경우 경계 내의 모든 픽셀을 채우지만, false일 경우 일부 또는 전부를 채우지 않는다고 합니다. (osx에서는 안채워주는것 같네요.)
 
 <figure style="text-align: center;">
-    <img src="https://jicjjang.github.io/blog/image/java/foundation/setOpaque.png" alt="image" />
+    <img src="https://jicjjang.github.io/blog/static/image/java/foundation/setOpaque.png" alt="image" />
 </figure>
 
 setBorderPainted(bool)는 true일 경우 테투리가 칠해집니다. (이 값을 true로, setOpaque도 true로 준 경우, border만 칠해집니다. 이 역시 osx문제인 것 같습니다.)
 
 <figure style="text-align: center;">
-    <img src="https://jicjjang.github.io/blog/image/java/foundation/setBorderPainted.png" alt="image" />
+    <img src="https://jicjjang.github.io/blog/static/image/java/foundation/setBorderPainted.png" alt="image" />
 </figure>
 
 ---

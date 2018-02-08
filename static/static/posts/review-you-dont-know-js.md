@@ -83,7 +83,7 @@ ES6도 알려주고 싶고... 많은 것을 전달해주고 싶어하는 것을 
 <figure style="text-align: center; cursor: pointer;">
   <a href="http://www.hanbit.co.kr/store/books/look.php?p_code=B8227329776" target="_blank"
     style="border: none;">
-    <img src="https://jicjjang.github.io/blog/image/review/youdontknowjs/hanbit.jpg"
+    <img src="https://jicjjang.github.io/blog/static/image/review/youdontknowjs/hanbit.jpg"
       alt="image" style="display:inline-block; width:100%; margin:0 auto;">
   </a>
   <figcaption>&lt;You don't know js&gt;</figcaption>

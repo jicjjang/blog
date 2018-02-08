@@ -4,7 +4,7 @@
 
 ---
 
-지난주 월요일... 제출했던 [서울시 앱 공모전]({{ site.url }}/2017/11/11/seoul-app-contest-with-node-and-react-native)
+지난주 월요일... 제출했던 [서울시 앱 공모전](https://jicjjang.github.io/blog/post/seoul-app-contest-with-node-and-react-native)
 에 대한 결과를 메일로 받았습니다. 결과는 `예선 당선`. 본선엔 나가지 못하고 예선으로 끝났습니다.
 하지만 지속적으로 서버 로그와 디비 로그를 살펴보고 있던 저희팀에겐 궁금증이 많았죠. ^^
 
@@ -29,25 +29,25 @@
 담당자 분께 메일을 보냈습니다.
 
 <figure style="text-align: center;">
-  <img src="https://jicjjang.github.io/blog/image/life/seouldrinker/mail1.png" alt="image" style="display:inline-block; width:100%; margin:0 auto;">
+  <img src="https://jicjjang.github.io/blog/static/image/life/seouldrinker/mail1.png" alt="image" style="display:inline-block; width:100%; margin:0 auto;">
 </figure>
 
 메일을 보시지 않아 다시 한 번 메일을 보냈습니다. ^^;
 
 <figure style="text-align: center;">
-  <img src="https://jicjjang.github.io/blog/image/life/seouldrinker/mail2.png" alt="image" style="display:inline-block; width:100%; margin:0 auto;">
+  <img src="https://jicjjang.github.io/blog/static/image/life/seouldrinker/mail2.png" alt="image" style="display:inline-block; width:100%; margin:0 auto;">
 </figure>
 
 답장이 와서 읽는 도중 전화가 왔습니다. 담당자 분께서 해주시는 설명은
 
-1.점수는 공개하지 않는다. (처음에 왜 공개하지 않나 했는데 결국 물어볼까봐 그런 건가 라는 생각이...)  
-2.외부 주관사가 평가한다.  
+1.점수는 공개하지 않는다. (처음에 왜 공개하지 않나 했는데 결국 물어볼까봐 그런 건가 라는 생각이...)
+2.외부 주관사가 평가한다.
 3.`창의성` 이 부족한 앱이었다.  
 
 제가 말씀드린 내용은
 
-1.네;; 당황스럽지만 `창의성`... 네...  
-2.그럼 왜 피드를 아무것도 안올려주시느냐... 한번도 아니고...  
+1.네;; 당황스럽지만 `창의성`... 네...
+2.그럼 왜 피드를 아무것도 안올려주시느냐... 한번도 아니고...
 3.외부 주관사가 하는 것이라면 직접 하신것은 아니겠지만, 담당자라면 책임이 있지 않느냐.  
 
 (나중에 찾아보니 담당자 분이 가입한 로그도 있었습니다. 물론 피드는 없었네요...)

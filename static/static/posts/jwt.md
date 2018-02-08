@@ -12,7 +12,7 @@ JSON Web Token (JWT)는 디지털 서명을 통해 확인하고 신뢰할 수있
 JWT는 base64url로 인코딩 된 값 3개를 마침표로 구분하여 표시합니다.
 
 <figure style="text-align: center;">
-  <img src="https://jicjjang.github.io/blog/image/etc/jwt/structure.jpg" alt="image"
+  <img src="https://jicjjang.github.io/blog/static/image/etc/jwt/structure.jpg" alt="image"
     style="display:inline-block; width:100%; max-width: 800px; margin:0 auto;">
 </figure>
 
@@ -87,7 +87,7 @@ HMACSHA256(base64UrlEncode(header) + "." + base64UrlEncode(payload), secret)
 jwt가 실제로 브라우저와 서버 사이에서는 아래와 같이 동작합니다.
 
 <figure style="text-align: center;">
-  <img src="https://jicjjang.github.io/blog/image/etc/jwt/diagram.jpg" alt="image"
+  <img src="https://jicjjang.github.io/blog/static/image/etc/jwt/diagram.jpg" alt="image"
     style="display:inline-block; width:100%; max-width: 800px; margin:0 auto;">
 </figure>
 

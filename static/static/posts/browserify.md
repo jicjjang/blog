@@ -14,7 +14,7 @@ var _ = require('underscore');
 react를 처음 공부할 때 집중을 하지 않았는지, browersify를 찾고, 이해하고 난 후 자료들이 눈에 막 띄었습니다...(털썩)
 
 <figure>
-    <img src="https://jicjjang.github.io/blog/image/etc/browserify/commonjs.png" alt="image">
+    <img src="https://jicjjang.github.io/blog/static/image/etc/browserify/commonjs.png" alt="image">
     <figcaption><a href="http://reactkr.github.io/react/docs/getting-started-ko-KR.html#commonjs-" title="desciprtion">&lt;출처 - reactJS&gt;</a></figcaption>
 </figure>
 

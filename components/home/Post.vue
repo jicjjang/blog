@@ -1,11 +1,11 @@
 <template>
   <li class="preview" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting" @mouseover="setPreviewIndex(index)">
-    <nuxt-link class="preview__link" :to="`/${post.path}`" itemprop="url">
+    <a class="preview__link" :href="`${baseUrl}/${post.path}`" itemprop="url">
       <span class="preview__date" itemprop="datePublished" :datetime="new Date(post.date).getTime()">{{ postDate(post.date) }}</span>
       <h2 class="preview__header" itemprop="name">{{ post.title }}</h2>
       <p class="preview__excerpt" itemprop="description">{{ post.description }}</p>
       <span class="preview__more">Read More</span>
-    </nuxt-link>
+    </a>
   </li>
 </template>
 

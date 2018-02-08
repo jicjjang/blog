@@ -1,6 +1,6 @@
 <template>
   <footer class="section-padding--sm footer">
-    <nuxt-link class="footer__link" to="/archive" itemprop="url">Archive</nuxt-link>
+    <a class="footer__link" :href="`${baseUrl}/archive`" itemprop="url">Archive</a>
     <ul class="footer__social">
       <li><a class="fa fa-lg fa-envelope-o" href="mailto:jicjjang12@gmail.com"></a></li>
       <li><a class="fa fa-lg fa-github" href="https://github.com/jicjjang" target="_blank"></a></li>

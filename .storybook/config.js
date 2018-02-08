@@ -1,5 +1,6 @@
 // config.js
-import { configure } from '@storybook/vue';
+import { configure, addDecorator } from '@storybook/vue';
+import centered from '@storybook/addon-centered';
 
 import Vue from 'vue';
 import Vuex from 'vuex';
@@ -19,6 +20,8 @@ Vue.component('home-post', HomePost);
 Vue.component('home-sns', HomeSns);
 
 import '../static/static/css/main.css';
+
+addDecorator(centered);
 
 function loadStories() {
   // You can require as many stories as you need.

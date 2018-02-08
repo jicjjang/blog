@@ -21,6 +21,10 @@
   },
   "devDependencies": {
     "@nuxtjs/markdownit": "^1.2.0",
+    "@storybook/addon-actions": "^3.3.12",
+    "@storybook/addon-centered": "^3.3.12",
+    "@storybook/vue": "^3.3.12",
+    "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.1",
     "eslint": "^4.15.0",
     "eslint-friendly-formatter": "^3.0.0",
@@ -28,8 +32,6 @@
     "eslint-plugin-vue": "^4.0.0",
     "node-sass": "^4.7.2",
     "push-dir": "^0.4.1",
-    "sass-loader": "^6.0.6",
-    "@storybook/vue": "^3.3.12",
-    "babel-core": "^6.26.0"
+    "sass-loader": "^6.0.6"
   }
 }

@@ -2,6 +2,15 @@ module.exports = {
   post: [
     {
       layout: "post",
+      path: "post/blog-renewal",
+      title: "블로그 리뉴얼",
+      date: "2018-02-10",
+      category: "Frontend",
+      description: "코딩에 현타가 온 일상을 타파하기 위해 진행한 블로그 리뉴얼 작업!!!",
+      image: "static/image/frontend/blog-renewal/background.jpg"
+    },
+    {
+      layout: "post",
       path: "post/review-2018-it-trend-special-report",
       title: "[Review] 2018 IT 트렌트 스페셜 리포트",
       date: "2017-12-17",

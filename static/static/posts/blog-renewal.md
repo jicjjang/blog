@@ -1,7 +1,7 @@
 요 근래 [서울드링커 프로젝트 사건(?)](https://jicjjang.github.io/blog/post/life/) 
 이후로 개인프로젝트에 대해서 약간 손을 놓고있었습니다. ㅠㅠ
 
-![빵꾸난 잔디](http://jicjjang.github.io/blog/static/image/frontend/blog-renewal/commit.png)
+![빵꾸난 잔디](https://jicjjang.github.io/blog/static/image/frontend/blog-renewal/commit.png)
 
 출퇴근을 제외한 잉여한 날들을 보내다 들어가본 Github에 빵꾸난 잔디로 슬퍼하다
 무언가 프로젝트를 진행해야겠다는 생각이 들더군요.

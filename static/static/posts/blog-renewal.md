@@ -118,6 +118,9 @@ Repository에서 작업을 했기 때문에 `gh-pages` 브랜치에 `generate`�
 
 ---
 
+이렇게 `https://jicjjang.github.io` 도메인의 블로그가
+[https://jicjjang.github.io/blog](https://jicjjang.github.io/blog)로 옮겨졌습니다.
+
 뭔가 복잡한 것 같은데 끝내고 나니 간단했던 프로젝트였습니다. 오랜만에 개인프로젝트로 잔디가
 몇칸 심어진것을 보니 기분이 좋아졌네요 ㅎㅎ. 항상 프로젝트에 대한 아이디어를 생각하기가 힘든데
 더 재밌는 프로젝트가 있었으면... 하게 됩니다.

@@ -2,6 +2,15 @@ module.exports = {
   post: [
     {
       layout: "post",
+      path: "post/welcome-vue-card-layer",
+      title: "오픈소스 소개",
+      date: "2018-02-11",
+      category: "Frontend",
+      description: "Vue.js 뉴스에 소개된 오픈소스",
+      image: "static/image/frontend/welcome-vue-card-layer/background.jpg"
+    },
+    {
+      layout: "post",
       path: "post/blog-renewal",
       title: "블로그 리뉴얼",
       date: "2018-02-10",

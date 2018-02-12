@@ -2,6 +2,15 @@ module.exports = {
   post: [
     {
       layout: "post",
+      path: "post/prototypal-inheritance-model",
+      title: "자바스크립트 상속 모델",
+      date: "2018-02-12",
+      category: "Javascript",
+      description: "클래스가 아닌, 자바스크립트 프로토 타입 상속 모델에 대해",
+      image: "static/image/javascript/javascript.jpg"
+    },
+    {
+      layout: "post",
       path: "post/welcome-vue-card-layer",
       title: "오픈소스 소개",
       date: "2018-02-11",

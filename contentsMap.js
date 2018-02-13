@@ -2,6 +2,15 @@ module.exports = {
   post: [
     {
       layout: "post",
+      path: "post/review-learning-http-2",
+      title: "[Review] learning http/2",
+      date: "2018-02-14",
+      category: "Review",
+      description: "20년만에 업데이트된 HTTP 프로토콜에 대한 간결한(?) 입문서",
+      image: "static/image/review/learning-http2/background.jpg"
+    },
+    {
+      layout: "post",
       path: "post/prototypal-inheritance-model",
       title: "자바스크립트 상속 모델",
       date: "2018-02-12",

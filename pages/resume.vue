@@ -11,7 +11,7 @@
         <div class="contact-container container-block">
           <ul class="list-unstyled contact-list">
             <li class="email"><i class="fa fa-envelope"></i><a href="mailto: jicjjang12@gmail.com">jicjjang12@gmail.com</a></li>
-            <li class="website"><i class="fa fa-globe"></i><a href="https://jicjjang.github.io" target="_blank">https://jicjjang.github.io</a></li>
+            <li class="website"><i class="fa fa-globe"></i><a href="https://jicjjang.github.io/blog" target="_blank">https://jicjjang.github.io/blog</a></li>
             <li class="github"><i class="fa fa-github"></i><a href="https://github.com/jicjjang" target="_blank">github.com/jicjjang</a></li>
           </ul>
         </div><!--//contact-container-->
@@ -214,7 +214,6 @@
             </h4>
             <div>17년 OSS 개발자 방학 캠프에서 발표한 발표자료 입니다.<br />제가 개발을 하면서 현재까지 오게 된 과정에 대해 설명해보았습니다.</div>
           </div><br/>
-          <iframe src="//jicjjang.github.io/blog/slides/developer-life" width="100%" height="400px" style="border: none;"></iframe>
           <div>&lt;포커스를 프레젠테이션에 두고 's' 키를 누르면 발표자 화면이 나옵니다.&gt;</div>
           <div>&lt;포커스를 프레젠테이션에 두고 'f' 키를 누르면 전체 화면이 나옵니다.&gt;</div>
         </section>
@@ -245,5 +244,9 @@
 </script>
 
 <style scoped>
-
+  .website {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 </style>

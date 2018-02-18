@@ -42,6 +42,8 @@
         </div>
       </a>
     </section>
+
+    <div id="disqus_thread"></div>
   </main>
 </template>
 
@@ -99,6 +101,18 @@
           break;
         }
       }
+    },
+    mounted() {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://jicjjang.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
     }
   }
 </script>
+
+<style scoped>
+  #disqus_thread {
+    margin: 50px 10% 0 10%;
+  }
+</style>

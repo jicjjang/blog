@@ -6,14 +6,14 @@
 홍익대학교 시각디자인학과 졸업 전시회 출품작 개발을 맡게 되었습니다.  
 (아래 링크는 소개하는 인스타 페이지 및 개발 웹사이트 입니다.)
 
-[https://www.instagram.com/mclang_saloon/](https://www.instagram.com/mclang_saloon/){:target="_blank"}
+[https://www.instagram.com/mclang_saloon/](https://www.instagram.com/mclang_saloon/)
 
-[http://115.71.238.136/](http://115.71.238.136/){:target="_blank"}
+[http://115.71.238.136/](http://115.71.238.136/)
 (참고 - 1920x1080 사이즈 전용으로 제작했습니다. 도메인은 아직 따로 없습니다.)
 (참고 - 접속 시 이미즈 크기 문제로 속도가 느릴 수 있습니다. 디자이너의 졸업 전시 작품이기에 이미지는 용량이 조금 크더라도 접어두고 작업을 진행하였습니다.)
 
 <figure style="text-align: center;">
-  <img src="https://jicjjang.github.io/blog/image/javascript/react/volume_size.png" alt="image" style="width:500px; margin: 0 auto;">
+  <img src="https://jicjjang.github.io/blog/static/image/javascript/react/volume_size.png" alt="image" style="width:500px; margin: 0 auto;">
 </figure>
 
 

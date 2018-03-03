@@ -17,12 +17,11 @@
 <br/><br/>
 
 ### Q. 점진적 향상법(progressive enhancement)과 우아한 성능저하법(graceful degradation)의 차이를 설명하실 수 있습니까?
- => A. 점진적 향상법 - 테스트를 통해 기능 향상 / 우아한 성능저하 - 기능을 모든 사용자에게 맞추기 위해 별도 버전을 두는 것 - ex) IE8
- 차이점…? 서로 나타내는 부분이 조금 다른 것 같다.
+ =? A. 점진적 향상법이란 말 그대로 하나하나 순서대로 발전시켜 나가는 방법이다. 웹 페이지라면 html, css, js 순서대로. 우아한 성능저하법이란 가장 최신의 기술 스펙을 맞춰놓고 아래 버전을 하나하나 대응해 나가는 것이다.
 <br/><br/>
 
 ### Q. "시멘틱 HTML(Semantic HTML)"이 무엇을 뜻하는지 설명해주세요.
- => A. div와 기능은 같지만 사용성에 따라 다르게 나타내는 태그 ex) header, footer, section, article, aside, nav 등등…?
+ => A. 간결한 html, 직관적인 javascript, 단순화된 debugging.
 <br/><br/>
 
 ### Q. "최소화(minification)"가 무엇을 하는 것입니까?

@@ -1,6 +1,15 @@
 module.exports = {
   post: [
     {
+      layout: "slides",
+      path: "slides/graphql-start",
+      title: "[Presentation] Graphql 시작하기",
+      date: "2018-03-04",
+      category: "Presentation",
+      description: "NHN벅스 팀 세미나 발표 자료",
+      image: "static/slides/image/graphql-start/background.jpg"
+    },
+    {
       layout: "post",
       path: "post/review-learning-http-2",
       title: "[Review] learning http/2",

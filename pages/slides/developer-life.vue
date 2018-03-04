@@ -4,7 +4,7 @@
       <h2>현실적인 개발로 먹고살기</h2>
       <h3>NHN Bugs</h3>
       <p>
-        <small>Created by <a href="https://jicjjang.github.io" target="_blank">Junseok, Choi</a></small>
+        <small>Created by <a href="https://jicjjang.github.io/blog" target="_blank">Junseok, Choi</a></small>
       </p>
       <aside class="notes">
         안녕하세요. NHN벅스 웹서비스팀 최준석입니다.<br/>

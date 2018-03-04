@@ -4,7 +4,7 @@
       <h2>How to use RxJs</h2>
       <h3>NHN Bugs</h3>
       <p>
-        <small>Created by <a href="https://jicjjang.github.io"
+        <small>Created by <a href="https://jicjjang.github.io/blog"
                              target="_blank">Junseok, Choi</a></small>
       </p>
       <aside class="notes">

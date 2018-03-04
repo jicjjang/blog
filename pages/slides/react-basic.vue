@@ -4,7 +4,7 @@
       <h1>React.js</h1>
       <h3>Javascript View Framework</h3>
       <p>
-        <small>Created by <a href="https://jicjjang.github.io">Junseok, Choi</a></small>
+        <small>Created by <a href="https://jicjjang.github.io/blog">Junseok, Choi</a></small>
       </p>
     </section>
 

@@ -240,7 +240,7 @@
 
 <script>
   export default {
-    name: "how-to-use-rxjs",
+    name: "graphql-start-server",
     layout: 'slides',
   }
 </script>

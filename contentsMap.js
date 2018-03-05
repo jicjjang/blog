@@ -2,8 +2,17 @@ module.exports = {
   post: [
     {
       layout: "slides",
-      path: "slides/graphql-start",
-      title: "[Presentation] Graphql 시작하기",
+      path: "slides/graphql-start-client",
+      title: "[Presentation] Graphql 시작하기 (client)",
+      date: "2018-03-06",
+      category: "Presentation",
+      description: "NHN벅스 팀 세미나 발표 자료",
+      image: "static/slides/image/graphql-start/background.jpg"
+    },
+    {
+      layout: "slides",
+      path: "slides/graphql-start-server",
+      title: "[Presentation] Graphql 시작하기 (server)",
       date: "2018-03-05",
       category: "Presentation",
       description: "NHN벅스 팀 세미나 발표 자료",

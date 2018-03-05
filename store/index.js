@@ -3,8 +3,8 @@ import ContentsMap from '../contentsMap.js'
 
 const store = () => new Vuex.Store({
   state: {
-    baseUrl: 'http://localhost:3000/blog',
-    // baseUrl: 'https://jicjjang.github.io/blog',
+    // baseUrl: 'http://localhost:3000/blog',
+    baseUrl: 'https://jicjjang.github.io/blog',
     postList: ContentsMap.post,
     categoryList: ContentsMap.category
   },

@@ -14,6 +14,7 @@
           {hid: 'og:site_name', name: 'og:site_name', content: 'June'},
           {hid: 'og:description', name: 'og:description', content: 'June\'s resume'},
           {hid: 'og:image', name: 'og:image', content: 'https://jicjjang.github.io/blog/static/image/mine.jpg'},
+          {hid: 'twitter:domain', name: 'twitter:domain', content: 'https://jicjjang.github.io/blog'},
           {hid: 'twitter:description', name: 'twitter:description', content: 'June\'s resume'},
           {hid: 'twitter:title', name: 'twitter:title', content: 'June\'s resume'},
           {hid: 'twitter:url', name: 'twitter:url', content: `https://jicjjang.github.io/blog/resume`},

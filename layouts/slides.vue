@@ -23,6 +23,7 @@
           {hid: 'og:image', name: 'og:image', content: this.slide.image ?
               `https://jicjjang.github.io/blog/${this.slide.image}` :
               'https://jicjjang.github.io/blog/image/mine.jpg'},
+          {hid: 'twitter:domain', name: 'twitter:domain', content: `https://jicjjang.github.io/blog/${this.slide.path}`},
           {hid: 'twitter:description', name: 'twitter:description', content: this.slide.description || 'June\'s blog'},
           {hid: 'twitter:title', name: 'twitter:title', content: this.slide.title || 'June'},
           {hid: 'twitter:url', name: 'twitter:url', content: `https://jicjjang.github.io/blog/${this.slide.path}`},

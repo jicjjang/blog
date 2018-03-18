@@ -19,7 +19,7 @@ module.exports = {
       { hid: 'twitter:card', name: 'twitter:card', content: 'summary' },
       { hid: 'twitter:creator', name: 'twitter:creator', content: '@jicjjang' },
       { hid: 'twitter:site', name: 'twitter:site', content: 'June' },
-      { hid: 'twitter:domain', name: 'twitter:domain', content: 'https://jicjjang.github.io' },
+      { hid: 'twitter:domain', name: 'twitter:domain', content: 'https://jicjjang.github.io/blog' },
     ],
     script: [
       { type: 'text/javascript', src: '/blog/static/script/google-analytics.js' },

@@ -1,9 +1,13 @@
 const contentsMap = require('./contentsMap.js');
 var pages = [];
 
-for (var i=1; i<100; i++) {
+for (var i=1; i<=(Math.ceil(contentsMap.post.length / 5)); i++) {
   pages.push('page/' + i);
 }
+
+const allRoutes = (contentsMap.post.map(v => v.path)) // posts / slides
+  .concat(contentsMap.category.map(v => 'category/'+v.title.toLowerCase())) // category
+  .concat(pages)  // pages
 
 module.exports = {
   /*
@@ -56,14 +60,25 @@ module.exports = {
       }
     }
   },
+  sitemap: {
+    path: '/sitemap.xml',
+    hostname: 'https://jicjjang.github.io/blog',
+    cacheTime: 1000 * 60 * 15,
+    generate: true, // Enable me when using nuxt generate
+    exclude: [
+      '/resume'
+    ],
+    routes: allRoutes
+  },
   generate: {
-    routes: (contentsMap.post.map(v => v.path)).concat(contentsMap.category.map(v => 'category/'+v.title.toLowerCase())).concat(pages)
+    routes: allRoutes
   },
   router: {
     mode: 'history',
     base: '/blog/'
   },
   modules: [
-    '@nuxtjs/markdownit'
+    '@nuxtjs/markdownit',
+    '@nuxtjs/sitemap'
   ]
 };

@@ -15,12 +15,13 @@
     "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "dependencies": {
+    "@nuxtjs/markdownit": "^1.2.0",
+    "@nuxtjs/sitemap": "0.0.3",
     "axios": "^0.17.1",
     "marked": "^0.3.12",
     "nuxt": "^1.0.0"
   },
   "devDependencies": {
-    "@nuxtjs/markdownit": "^1.2.0",
     "@storybook/addon-actions": "^3.3.12",
     "@storybook/addon-centered": "^3.3.12",
     "@storybook/vue": "^3.3.12",

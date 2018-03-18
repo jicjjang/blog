@@ -30,6 +30,8 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/blog/static/favicon.png' },
+      { rel: 'alternate', hreflang: 'x-default', href: 'https://jicjjang.github.io/blog' },
+      { rel: 'alternate', hreflang: 'ko-kr', href: 'https://jicjjang.github.io/blog' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Inconsolata|Lora|Space+Mono:700' },
       { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css' },
       { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css' },

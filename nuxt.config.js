@@ -61,7 +61,7 @@ module.exports = {
     }
   },
   sitemap: {
-    path: '/sitemap.xml',
+    path: '/static/sitemap.xml',
     hostname: 'https://jicjjang.github.io/blog',
     cacheTime: 1000 * 60 * 15,
     generate: true, // Enable me when using nuxt generate
@@ -69,6 +69,12 @@ module.exports = {
       '/resume'
     ],
     routes: allRoutes
+    // {
+    //   url: '/page/2',
+    //   changefreq: 'daily',
+    //   priority: 1,
+    //   lastmodISO: '2017-06-30T13:30:00.000Z'
+    // }
   },
   generate: {
     routes: allRoutes

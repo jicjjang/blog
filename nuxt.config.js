@@ -23,6 +23,7 @@ module.exports = {
       { hid: 'twitter:card', name: 'twitter:card', content: 'summary' },
       { hid: 'twitter:creator', name: 'twitter:creator', content: '@jicjjang' },
       { hid: 'twitter:site', name: 'twitter:site', content: 'June' },
+      { hid: 'google-site-verification', name: 'google-site-verification', content: 'DL3OehOD_wV9A1S0SRWoeXbMtlE5SeUZPlwGrFvPHQ8' },
     ],
     script: [
       { type: 'text/javascript', src: '/blog/static/script/google-analytics.js' },
@@ -60,7 +61,7 @@ module.exports = {
     }
   },
   sitemap: {
-    path: '/static/sitemap.xml',
+    path: '/sitemap.xml',
     hostname: 'https://jicjjang.github.io/blog',
     cacheTime: 1000 * 60 * 15,
     generate: true, // Enable me when using nuxt generate

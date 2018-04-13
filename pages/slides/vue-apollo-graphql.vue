@@ -14,9 +14,10 @@
       <div>
         <h2>순서</h2>
         <ul style="list-style: none; margin: 0;">
-          <li class="fragment">1. REST API를 GraphQL로</li>
-          <li class="fragment">2. Client</li>
-          <li class="fragment">3. 왜 이걸 써야하는거죠</li>
+          <li class="fragment">1. 왜 쓰는지 납득을 해야 쓰지</li>
+          <li class="fragment">2. REST API를 GraphQL로</li>
+          <li class="fragment">3. Client</li>
+          <li class="fragment">4. 왜 이걸 써야하는거죠</li>
           <li class="fragment">Q &amp; A</li>
         </ul>
       </div>
@@ -24,19 +25,71 @@
 
     <section>
       <h2>들어가기전에</h2>
-      <br/>
-      <div><a href="https://www.slideshare.net/deview/112rest-graph-ql-relay">기본적인 내용은 이 링크를!</a></div>
+      <div class="fragment" style="margin-top: 20px;"><a href="https://jicjjang.github.io/blog/slides/graphql-start-server">기본적인 백엔드 내용은 이 링크를!</a></div>
+      <div class="fragment" style="margin-top: 20px;"><a href="https://jicjjang.github.io/blog/slides/graphql-start-client">기본적인 프론트 내용은 이 링크를!</a></div>
+      <div class="fragment" style="margin-top: 20px;">더 자세한 내용은 구글링...! (내용은 백엔드 쪽에 거의 다 있어요 헤헤)</div>
       <aside class="notes">
-        미리 작성을 해놨습니다만, 이 발표는 기본보단 실사용에 대한 내용 위주입니다. ㅠㅠ
+        미리 작성을 해놨습니다만, 이 발표는 기본보단 실사용에 대한 내용 위주입니다. ㅠㅠ 자료가 부족하다는 생각은 하지만
+        만들지 못할 정도라면 발표도 하지 못했을거에요 ㅎㅎ 이 자료들과 겹치는 내용도 있겠지만, 이해를 돕기위해 추가했습니다.
       </aside>
     </section>
 
     <section>
       <section>
-        <h2>1. REST API와 GraphQL</h2>
-        <div>솔직히 한번쯤은 들어봤을 주제. but, 노관심</div>
+        <h2>1. 왜 쓰는지 납득을 해야 쓰지</h2>
+        <div class="fragment">그동안 잘쓰고 있던 API. 한계는??</div>
+        <ul class="fragment" style="margin-top: 20px;">
+          <li>- 플랫폼마다 조금씩 다른 쿼리, 그때 그때 원하는 데이터만 보고싶은데...</li>
+          <li>- 생각보다 편하다고 쓰고있었는데, 정형화된 규칙이 있을까? (JSON이 규칙을 가지고 있진 않음)</li>
+          <li>- 필터는? 정렬은?</li>
+          <li>- 페이지네이ㅅ....</li>
+          <li>- 읍읍</li>
+        </ul>
+        <aside class="notes">
+          나름 편하다고 쓰고 있는 API는 생각보다 어렵죠. 뭔가 규칙도 없고,
+          정렬, 필터, pagination 등등의 적용은 프론트에서, 백엔드에서, 어디서든 할 수 있습니다.
+          최종 선택은 본인과 팀의 결정이지만, 규칙이 없다는 건 리미터가 없다는 것이니 생각보다 위험합니다.
+          이런 문제들에 대해 해결할 수 있다면 쓰지 않을 이유가 없겠죠.
+        </aside>
+      </section>
+      <section>
+        <h3>그렇다면 DB... DB를 보자!!</h3>
+        <div style="font-size: 30px;">
+          <div class="fragment" style="display: inline-block; width: 22%; margin-left: 1%; vertical-align: top; border-left: 1px solid #fff; border-right: 1px solid #fff;">GraphQL에서 `RDB`가 나을까 `NoSQL`이 나을까?</div>
+          <div class="fragment" style="display: inline-block; width: 22%; margin-left: 1%; vertical-align: top; border-left: 1px solid #fff; border-right: 1px solid #fff;">DB에서 제일 성능에 영향을 주고 많이 쓰이는게  JOIN이다. 하지만 JOIN이 힘든 NoSQL이라고 아예 안쓸순 없고,</div>
+          <div class="fragment" style="display: inline-block; width: 22%; margin-left: 1%; vertical-align: top; border-left: 1px solid #fff; border-right: 1px solid #fff;">그렇다고 RDB가 나쁠 이유는 없는데?</div>
+          <div class="fragment" style="display: inline-block; width: 22%; margin-left: 1%; vertical-align: top; border-left: 1px solid #fff; border-right: 1px solid #fff;">심지어 DB 테이블과 같은 데이터가 type에 그대로 매핑될 수 있음 (Model + Dao처럼)</div>
+        </div>
+        <aside class="notes">
+          그렇다면 디비는 어떨까요? 예제 코드로 만들고 회사에서 세미나 한건 MongoDB로, NoSQL 환경이었습니다.
+          과도한 DB를 버텨야 하는 회사 업무에서는 어울리지 않아 보인다는 의견이 있었으나 테스트를 해보지 못했네요.
+        </aside>
+      </section>
+      <section>
+        <h2>GraphQL의 목표</h2>
+        <div style="width: 90%; margin: 0 auto;">
+          <span style="display: inline-block; width: 58%; margin: 5px; vertical-align: top;">
+            <img class="fragment" data-fragment-index="1" src="/blog/static/slides/image/graphql-start/about1.jpg" />
+            <div class="fragment" style="font-size: 20px;" data-fragment-index="3">필요한 것만 정확히 물어볼 수있는 기능을 제공하며 시간이 지남에 따라 API를 쉽게 개발할 수 있도록...</div>
+          </span>
+          <span style="display: inline-block; width: 38%; margin: 5px;">
+            <img class="fragment" data-fragment-index="2" src="/blog/static/slides/image/graphql-start/about2.jpg" />
+            <div class="fragment" style="font-size: 20px;" data-fragment-index="4">GraphQL은 단독 버전 관리를 통해 기존 코드 수정없이 보다 깨끗하고 유지보수가 쉽게 사용이 가능...</div>
+          </span>
+        </div>
+        <aside class="notes">
+          단편적인 내용들이지만, 규칙을 정하고 유지보수를 용의하게 하기 위해,
+          즉, GraphQL의 지향점이 바로 이러한 내용들을 발전시키는 것에 대한 것입니다.
+        </aside>
+      </section>
+    </section>
+
+    <section>
+      <section>
+        <h2>2. REST API를 GraphQL로</h2>
+        <div>솔직히 한번쯤은 들어봤을 GraphQL. but, 노관심</div>
         <br/>
-        <div style="font-size: 32px;">
+        <div style="font-size: 32px;" class="fragment">
           <div style="display: inline-block; width: 50%; text-align: center;">
             <div>REST API</div>
             <p><span style="color: red;">URI</span> 중심으로 데이터의 CRUD 진행</p>
@@ -53,19 +106,23 @@
           </div>
         </div>
         <aside class="notes">
-
+          이제 실제로 구현해봐야겠죠? backend의 endpoint에 대한 개발을 하지 않으시는 분들도 있으시겠지만,
+          서버 얘기를 하지 않으면 이해가 가지 않으실 것이라 하고 넘어가겠습니다.
+          ---
+          기존에 사용하던 API는 URI중심으로 데이터를 쿼리합니다. 그에 반해 GraphQL은 Query와 Mutation을 중심으로 데이터를 쿼리합니다.
+          uri에 보이시는 대로 GraphQL은 /graphql 하나로 사용하는데, 이는 GraphQL의 권장사항 입니다.
         </aside>
       </section>
       <section>
         <h3>서버는 살짝만</h3>
         <div class="fragment" data-fragment-index="1" style="font-size: 32px;">하기에는... 생각보단 쉬워요! (클라이언트보단)</div>
-        <br/>
-        <div class="fragment" data-fragment-index="2"><a href="https://github.com/seouldrinker/seoulDrinkerApi">기존 API 코드</a>와
+        <div class="fragment" data-fragment-index="2" style="margin-top: 20px;">
+          <a href="https://github.com/seouldrinker/seoulDrinkerApi">기존 API 코드</a>와
           <a href="https://github.com/seouldrinker/seoulDrinkerGraphql">GraphQL 코드</a>
         </div>
         <div class="fragment" data-fragment-index="2">어떤 부분이 달라졌는지 확인해봅시다.</div>
         <aside class="notes">
-
+          서버 코드는 Node고 매우 짧습니다. ppt 2장으로 끝나니 GraphQL에 대해 간단히 훑어보겠습니다.
         </aside>
       </section>
       <section>
@@ -83,7 +140,8 @@
             app.use('/graphql', cors(), bodyParser.json(), graphqlExpress({ schema }))
             app.use('/graphiql', cors(), graphiqlExpress({ endpointURL: '/graphql' }))
             ...
-
+          </code></pre>
+          <pre style="margin-top: 20px;"><code data-trim data-noescape style="font-size: 15px;">
             // graphql/index.js
             import { makeExecutableSchema } from 'graphql-tools'
             import typeDefs from './typeDefs'     // 타입 정의
@@ -99,7 +157,10 @@
           </div>
         </div>
         <aside class="notes">
-
+          라우팅 경로를 추가해줍니다. 위에서 /graphql 하나만 넣는게 권장사항이라 했으나, 2개가 들어가있는 이유는
+          디버깅 용도로 사용하는 graphiql 입니다. 이 또한 endpoint는 /graphql을 가리키고 있습니다.
+          ---
+          graphql 라우터는 schema를 받는데, schema는 typeDefs와 resolvers를 실행 가능하게 만든 모듈입니다.
         </aside>
       </section>
       <section>
@@ -131,7 +192,7 @@
         <div class="fragment" style="display: inline-block; width: 50%; vertical-align: top;">
           <pre><code data-trim data-noescape style="font-size: 15px;">
             // graphql/resolver.js
-            import { getNewsList } from '../modules/news' // API에서 쓰던 모듈과 같음
+            import { getNewsList } from '../modules/news'
 
             module.exports = {
               Query: {
@@ -139,305 +200,194 @@
               }
             }
           </code></pre>
+          <pre style="margin-top: 20px;"><code data-trim data-noescape style="font-size: 15px;">
+            // modules/news.js
+            // API에서 쓰던 모듈과 같음
+            // MongoDB 조회. 끝.
+            export function getNewsList () {
+              return News.find({is_ok: 1}).sort({crt_dt: -1})
+            }
+          </code></pre>
         </div>
         <aside class="notes">
-
+          이 두 파일만 살펴보면 끝입니다. 매우 간단하죠?
+          ---
+          우선 스트링 형태로 타입을 정의합니다. News라는 데이터를 위주로 보기 위해 정의해 놨습니다.
+          바로 아래 Query는 해당 타입의 리스트를 가져오겠다는 뜻입니다.
+          기술 해놓지는 않았지만 type Mutation 을 지정해서 데이터의 저장, 수정, 삭제를 할 수 있습니다.
+          graphql에서는 조회만 Query, 나머진 Mutation 이거든요 ㅎㅎ
+          ---
+          resolvers에서는 정의된 내용을 구현합니다. News 타입에 대해 데이터 리스트를 가져올 내용은
+          getNewsList라는 함수인데요, 이 함수는 MongoDB 에서 데이터를 조회합니다. API에서 사용하던
+          모듈과 동일하고, 이 예제가 포함된 Repository에서 대부분이 API에서 사용하던 함수들을 재사용하며
+          포팅했습니다.
+          ---
+          자 이렇게 서버에 대한 코드 설명이 끝났습니다. 처음 보시는데도 그다지 어렵지 않으셨을겁니다.
         </aside>
       </section>
     </section>
 
     <section>
       <section>
-        <h2>2. 설치 및 개발</h2>
-        <div>
-      <pre><code data-trim data-noescape>
-        $ vue init pwa my-project
-        $ cd my-project
-        $ npm i
-      </code></pre>
+        <h2>3. Client</h2>
+        <div class="fragment" data-fragment-index="1" style="font-size: 32px;">클라이언트도 서버처럼</div>
+        <div class="fragment" data-fragment-index="2" style="margin-top: 20px;">
+          지난 3월 발표에서 보여드린 <a href="https://github.com/seouldrinker/seoulDrinkerPwa">PWA 코드</a>의 api 호출을
+          <a href="https://github.com/seouldrinker/seoulDrinkerGraphql">GraphQL</a>로
         </div>
-        <div style="font-size: 20px;">
-          <a href="https://developers.google.com/web/fundamentals/codelabs/?hl=ko" target="_blank">구글 pwa 기본 튜토리얼</a>
-        </div>
-        <div style="font-size: 20px;">
-          <a href="https://github.com/seouldrinker/seoulDrinkerPwa" target="_blank">https://github.com/seouldrinker/seoulDrinkerPwa</a>
-        </div>
+        <div class="fragment" data-fragment-index="2">어떻게 바꾸는지 알아봅시다.</div>
         <aside class="notes">
-          기본적인 template을 지원해주기 때문에 pwa template으로 간단하게 설치할 수 있습니다.
-          아래 url은 구글의 pwa 튜토리얼과 제가 ppt를 준비하면서 개발했던 자료입니다.
+          이번엔 클라이언트 코드를 바꿔보겠습니다.
         </aside>
       </section>
       <section>
-        <h3>그 다음은...</h3>
-        <div class="fragment" style="width:80%; margin: 0 auto;">
-          <img style="display: block; margin: 0 auto;" src="/blog/static/slides/image/pwa/develop.png">
-        </div>
-        <aside class="notes">
-          네 그 다음 세팅은 열심히 개발하는겁니다.
-          기본적으로 template의 vue 코딩하는 부분은 동일하기 때문에 프로젝트를 진행해주시면 됩니다.
-        </aside>
-      </section>
-      <section>
-        <h3>코딩 끝! 다음은 세팅...?</h3>
-        <div class="fragment">
-          <div style="display: inline-block; width: 30%; vertical-align: top;">
-            <img style="display: block; margin: 0 auto;" src="/blog/static/slides/image/pwa/folder1.png">
-          </div>
-          <div style="display: inline-block; width: 30%; vertical-align: top;">
-            <img style="display: block; margin: 0 auto;" src="/blog/static/slides/image/pwa/folder2.png">
-          </div>
-        </div>
-        <aside class="notes">
-          src 디렉토리에 이전에 vue 프로젝트와 동일하게 프로젝트를 진행하셨다면 위 경로들을 보셔야 합니다.
-          빌드 설정과 앱 설치 시의 설정인 manifest 설정입니다.
-          앞서 링크를 걸어놨던 구글 pwa 튜토리얼와 vue-pwa-template를 하면서
-          해결하기에 시간이 조금 소요되었던 내용입니다.
-
-          오늘 발표의 내용은 이것에 대한 내용이 대부분입니다.
-        </aside>
-      </section>
-    </section>
-
-    <section>
-      <section>
-        <h2>3. 사용하면서 어려웠던 부분</h2>
-        <div>
-          앱 개발 후 <a href="https://developers.google.com/web/fundamentals/codelabs/?hl=ko" target="_blank">구글 pwa 튜토리얼</a>
-          을 참고하여 세팅을 시작
-        </div>
-        <aside class="notes">
-          앱 개발을 마치고 튜토리얼을 보면서 세팅을 시작했습니다. 참고하여 세팅을 시작했습니다.
-          제가 준비한 예제에선 production 모드에만 세팅을 했습니다 ^^; 그 이유는 뒤에서 설명드릴게요.
-        </aside>
-      </section>
-      <section>
-        <h3>3-1. Service Worker 등록하기</h3>
-        <div>기본 방법</div>
-        <div>
-          <div style="display: inline-block; width: 48%; vertical-align: top;">
-            <pre><code data-trim data-noescape style="font-size: 15px;">
-              // 기본적인 Service Worker 등록 방법 (자신의 코드)
-              navigator.serviceWorker
-                .register('./service-worker.js')
-                .then(function() {
-                console.log('Service Worker Registered');
-              });
-            </code></pre>
-          </div>
-          <div style="display: inline-block; width: 48%;">
-            <pre><code data-trim data-noescape style="font-size: 15px;">
-              // 기본적인 Service Worker 파일
-              // self는 ServiceWorkerGlobal Scope를 지칭
-              self.addEventListener('install', () => {
-                self.skipWaiting()
-              });
-
-              self.addEventListener('activate', () => {
-                self.clients.matchAll({ type: 'window' })
-                  .then(windowClients => {
-                  for (let windowClient of windowClients) {
-                    // ...do someting!
-                    windowClient.navigate(windowClient.url);
-                  }
-                });
-              });
-            </code></pre>
-          </div>
-        </div>
-        <aside class="notes">
-          service worker는 처음에 말씀드린대로 브라우저와 별개로 돌기 때문에,
-          현재 브라우저에 등록을 시켜줘야 합니다. service worker 에서는 여러가지 이벤트를 걸 수 있고
-          코드에서는 install 했을 때와, caching이 끝나고 activate가 될 때의 이벤트 리스너 입니다.
-        </aside>
-      </section>
-      <section>
-        <h3>3-1. Service Worker 등록하기</h3>
-        <div>webpack.dev.conf.js 방법</div>
-        <div style="display: inline-block; width: 48%; vertical-align: top;">
+        <h3>Vue 객체에 apollo provider 주입</h3>
+        <div class="fragment" style="display: inline-block; width: 50%;">
           <pre><code data-trim data-noescape style="font-size: 15px;">
-            // in webpack.dev.conf.js
-            ...
-            plugins: [
-              new HtmlWebpackPlugin({
-                filename: 'index.html',
-                template: 'index.html',
-                inject: true,
-                serviceWorkerLoader: `&lt;script&gt;
-                  ${fs.readFileSync(
-                    path.join(__dirname,
-                    './service-worker-dev.js'),
-                    'utf-8'
-                  )}
-                &lt;/script&gt;`
+            // apollo-provider.js
+            import Vue from 'vue'
+            import VueApollo from 'vue-apollo'
+            import {HttpLink} from "apollo-link-http/lib/index"
+            import {ROOT_URL} from "./config"
+            import {InMemoryCache} from "apollo-cache-inmemory/lib/index"
+
+            Vue.use(VueApollo)
+
+            // This can hold multiple apollo clients
+            const apolloProvider = new VueApollo({
+              defaultClient: new ApolloClient({
+                link: new HttpLink({uri: `${ROOT_URL}/graphql`}),
+                cache: new InMemoryCache(),
+                connectToDevTools: true
               }),
-              ...
-            ]
-          </code></pre>
-        </div>
-        <div style="display: inline-block; width: 48%;">
-          <pre><code data-trim data-noescape style="font-size: 15px;">
-            // in service-worker-dev.js
-            self.addEventListener('install', () => {
-              self.skipWaiting()
-            });
-
-            self.addEventListener('activate', () => {
-              self.clients.matchAll({ type: 'window' })
-              .then(windowClients => {
-                for (let windowClient of windowClients) {
-                  // ...do someting!
-                  windowClient.navigate(windowClient.url);
-                }
-              });
-            });
-          </code></pre>
-        </div>
-        <aside class="notes">
-          vue-pwa-template dev 모드에서는 webpack에 의해 service-worker-dev.js가
-          불러져 옵니다. 그런데, register 부분이 없이 service worker의
-          event listener만 있습니다. 사실 그래서 dev 모드에서는 바로 사용을 할 수 없습니다.
-          localhost에서 사용은 할 수 있지만, 이 부분에 대한 설정을 따로 해줘야 합니다.
-        </aside>
-      </section>
-      <section>
-        <h3>3-1. Service Worker 등록하기</h3>
-        <div>webpack.prod.conf.js 방법</div>
-        <div style="display: inline-block; width: 48%; vertical-align: top;">
-          <pre><code data-trim data-noescape style="font-size: 15px;">
-            // service worker caching in webpack.prod.conf.js
-            plugins: [
-              ...
-              new SWPrecacheWebpackPlugin({
-                cacheId: 'CACHE_ID',
-                filename: 'service-worker.js',
-                staticFileGlobs: ['dist/**/*.{js,html,css}'],
-                minify: true,
-                stripPrefix: 'dist/'
-              })
-              ...
-            ]
-          </code></pre>
-        </div>
-        <div style="display: inline-block; width: 48%;">
-          <pre><code data-trim data-noescape style="font-size: 15px;">
-            // in service-worker-prod.js
-            ...
-            window.addEventListener('load', function() {
-              if ('serviceWorker' in navigator &&
-                  (window.location.protocol === 'https:'
-                  || isLocalhost)) {
-                navigator.serviceWorker
-                .register('service-worker.js')
-                .then(function(registration) {
-                  // ...someting to do!
-                }).catch(function(e) {
-                  console.error('err sw registration');
-                });
+              defaultOptions: {
+                $loadingKey: 'loading'
               }
-            });
+            })
+
+            export default apolloProvider
+          </code></pre>
+        </div>
+        <div class="fragment" style="display: inline-block; width: 50%; vertical-align: top;">
+          <pre><code data-trim data-noescape style="font-size: 15px;">
+            // main.js
             ...
+            import apolloProvider from './apollo-provider'
+
+            /* eslint-disable no-new */
+            new Vue({
+              el: '#app',
+              router,
+              provide: apolloProvider.provide(),  // Provider 주입
+              store,
+              template: '<App/>',
+              components: { App }
+            })
           </code></pre>
         </div>
         <aside class="notes">
-          production 모드에서는 dev와 마찬가지로 webpack.prod.conf.js에
-          HtmlWebpackPlugin 라이브러리가 있지만, 추가적으로
-          SWPrecacheWebpackPlugin 라이브러리가 있습니다.
-          그리고 service worker 파일에 register가 있죠.
+          vuex로 치면 store에 대한 설정이 끝난거죠. ~~~
         </aside>
       </section>
       <section>
-        <h3>3-2. Webpack 설정하기</h3>
-        <div>SWPrecacheWebpackPlugin 라이브러리는 뭐하는 앤데...</div>
-        <br/>
-        <div class="fragment">
-          =&gt;기본적인 설정 내용에 따라 추가 Service Worker를 자동으로 생성해주는 놈!
-        </div>
-        <aside class="notes">
-          여기서 혹시 이상한 점을 생각하신 분 있으신가요?
-          네, production 모드에서는 service worker event listener가 빠져있네요.
-          기본적인 설정 내용으로 Service Worker를 생성해줬으니, 제가 원하는
-          event Listener는 아직 안붙어있습니다. 그래서 SWPrecacheWebpackPlugin 라이브러리를
-          뒤져보니 runtimeCaching, importScripts 라는 놈들이 있더군요.
-        </aside>
-      </section>
-      <section>
-        <h3>3-2. Webpack 설정하기</h3>
-        <div>
-          <div style="display: inline-block; width: 48%; vertical-align: top;">
-            <pre><code data-trim data-noescape style="font-size: 15px;">
-              // API_CACHE_PATTERN은 캐시할 url
-              new SWPrecacheWebpackPlugin({
-                cacheId: 'seouldrinkerpwa',
-                filename: 'service-worker.js',
-                staticFileGlobs: ['dist/**/*.{js,html,css}'],
-                minify: true,
-                stripPrefix: 'dist/',
-                <span style="color: red;">runtimeCaching: [{
-                  urlPattern: API_CACHE_PATTERN,
-                  handler: 'networkFirst',
-                }],
-                importScripts: [
-                  'sw.js'
-                ]</span>
-              }),
-            </code></pre>
-          </div>
-          <div style="display: inline-block; width: 48%;">
-            <pre><code data-trim data-noescape style="font-size: 15px;">
-              // 이어서
-              new CopyWebpackPlugin([
-                {
-                  from: path.resolve(__dirname, '../static'),
-                  to: config.build.assetsSubDirectory,
-                  ignore: ['.*']
-                },
-                {
-                  from: path.resolve(__dirname, './sw.js'),
-                  to: '',
-                  ignore: ['.*']
+        <h3>호출부에 대한 설정 완료! 이제는 SPC!</h3>
+        <div class="fragment" style="display: inline-block; width: 50%;">
+          <pre><code data-trim data-noescape style="font-size: 15px;">
+            // container/News.vue
+            ...
+            &lt;template&gt;
+            ...
+              &lt;li v-for="(news, index) in newsList" :key="index"&gt;
+                ...
+              &lt;/li&gt;
+            ...
+            &lt;/template&gt;
+            &lt;script&gt;
+            import apollo from '../graphql/news'
+            ...
+            export default {
+              apollo,   // apollo news 모듈
+              data () {
+                return {
+                  newsList: [],
+                  ...
                 }
-              ])
-            </code></pre>
-          </div>
+              },
+              ...
+            }
+            &lt;/script&gt;
+            ...
+          </code></pre>
+        </div>
+        <div class="fragment" style="display: inline-block; width: 50%; vertical-align: top;">
+          <pre><code data-trim data-noescape style="font-size: 15px;">
+            // graphql/news.js
+            import gql from 'graphql-tag'
+
+            export default {
+              newsList: {
+                // 가져올 column만 명시.
+                query: gql`query NewsList {
+                  newsList {
+                    _id
+                    context
+                    image
+                  }
+                }`,
+                result ({ data, loader, networkStatus }) {
+                  console.log('We got some result!')
+                },
+                // Error handling
+                error (error) {
+                  console.error('We\'ve got an error!', error)
+                },
+                loadingKey: 'loading'
+              }
+            }
+          </code></pre>
         </div>
         <aside class="notes">
-          runtimeCaching은 시작하면서 바로 캐시를 먹일 url에 대해 패턴으로 입력할 수 있는 설정이고
-          importScripts는 파일로 service-worker의 추가분을 넣을 수 있게 해주는 설정입니다.
-          저는 sw.js파일을 만들었구요, 이렇게 sw.js를 추가해주려면 build 시 sw.js 파일도
-          dist 디렉토리로 넘어가야 하기 때문에 static 파일을 넘기는 CopyWebpackPlugin으로
-          sw.js 파일을 함께 넘겨줍니다. sw.js 파일은 이전 service worker 파일들과 유사합니다.
-
-          이제 딱 service worker가 설정된 pwa 앱을 돌릴 수 있게 되었네요!
+          this.$apollo.~~~ 하는 방식으로 사용할 수 있지만, 위 코드와 같은 방식으로 해야
+          smart query가 동작하여 data에 있는 newsList로 조회된 데이터가 자동 매핑됩니다.
         </aside>
       </section>
       <section>
-        <h3>3-3. Service Worker 마무으리!</h3>
-        <div class="fragment">
-          어후... 너무 복잡하다... 결론이 뭔데??
+        <h3>매우 짧게 설명했지만</h3>
+        <div class="fragment" style="display: inline-block; width: 50%;">
+          <pre><code data-trim data-noescape style="font-size: 20px;">
+            export default {
+              module: {
+                rules: [
+                  // ...
+                  {
+                    test: /\.(graphql|gql)$/,
+                    exclude: /node_modules/,
+                    loader: 'graphql-tag/loader'
+                  }
+                ]
+              }
+            }
+          </code></pre>
         </div>
-        <br />
-        <div>
-          <ol style="font-size: 32px;">
-            <li class="fragment">기본적으로 자신의 앱 코드 안에 서비스 워커를 등록 시켜주는 register 부분이 있어야 하고,
-              등록 될 Service Worker 파일이 있어야 한다.</li>
-            <li class="fragment">그러나 vue-pwa-template 의 dev 버전에서는 register 부분이 따로 없다.</li>
-            <li class="fragment">Production 모드에서는 register 부분이 있으나,
-              서비스 워커를 자동으로 생성해주는 부분만 있다. (커스텀 시, 설정이 필요)</li>
-            <li class="fragment">Production 모드에서 사용하려면 webpack설정을 조금 바꿔줘야 하는데
-              문서가 쪼오금... 친절하진 않음.</li>
-          </ol>
+        <div class="fragment" style="display: inline-block; width: 50%; vertical-align: top;">
+          코드를 분리하려면 꼭 필요한 webpack loader 설정.
         </div>
-
         <aside class="notes">
-          service worker에서의 결론은 바로 사용할 수 없다는 점입니다. dev모드, production 모드
-          상관없이 기본적인 설정이 필요하다는 점이죠.</aside>
+
+        </aside>
       </section>
     </section>
 
     <section>
-      <h2>4. Push Notification</h2>
-      <div class="fragment" style="text-align: left;">사실 Vue에서의 세팅을 마치고 튜토리얼대로 하면 끝!</div>
-      <div class="fragment" style="text-align: left;">튜토리얼에서 알려주는대로 Service Worker에 Event를 등록해주세요.</div>
+      <section>
+        <h2>3. 단점에 대해</h2>
+        <div>
+          사실 여기서부터가 나눠보고 싶은 얘기
+        </div>
+        <aside class="notes">
+
+        </aside>
+      </section>
     </section>
 
     <section>
@@ -454,7 +404,7 @@
 
 <script>
   export default {
-    name: 'vue-pwa-start',
+    name: 'vue-apollo-graphql',
     layout: 'slides',
   }
 </script>

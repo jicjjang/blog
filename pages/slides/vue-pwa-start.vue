@@ -1,6 +1,6 @@
 <template>
   <div class="slides">
-    <section data-background="/blog/static/image/javascript/vue/vuetifulkorea_background.png">
+    <section data-background="/blog/static/image/javascript/vue/vuetifulkorea3_background.png">
       <aside class="notes">
         안녕하세요. NHN벅스 최준석입니다. PWA에 대한 정의와 원리, 사용법 등에 대해
         간단한 경험기를 발표해보려고 합니다. 잘부탁드립니다.

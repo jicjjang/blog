@@ -24,8 +24,8 @@
 
     <section>
       <h2>들어가기전에</h2>
-      <div class="fragment" style="margin-top: 20px;"><a href="https://jicjjang.github.io/blog/slides/graphql-start-server">기본적인 백엔드 내용은 이 링크를!</a></div>
-      <div class="fragment" style="margin-top: 20px;"><a href="https://jicjjang.github.io/blog/slides/graphql-start-client">기본적인 프론트 내용은 이 링크를!</a></div>
+      <div class="fragment" style="margin-top: 20px;"><a href="https://jicjjang.github.io/blog/slides/graphql-start-server" target="_blank">기본적인 백엔드 내용은 이 링크를!</a></div>
+      <div class="fragment" style="margin-top: 20px;"><a href="https://jicjjang.github.io/blog/slides/graphql-start-client" target="_blank">기본적인 프론트 내용은 이 링크를!</a></div>
       <div class="fragment" style="margin-top: 20px;">더 자세한 내용은 구글링...! (내용은 백엔드 쪽에 거의 다 있어요 헤헤)</div>
       <aside class="notes">
         이미 한차례 사내 세미나를 했었고, 그때 자료도 있으니 발표 후에 한번 둘러봐주세요 :)
@@ -105,7 +105,10 @@
           이런 Recursive한 관계...<br/>서비스를 하다보면 없을 순 없다 ㅠㅠ...
         </div>
         <aside class="notes">
-          코드에 대해선 뒤에서 설명드리겠으니 여기선 Depth 조절만 알아봅시다.
+          코드에 대해선 뒤에서 설명드리겠으니 여기선 Depth 조절만 알아봅시다.<br/>
+          이런 방식으로 GraphQL의 type들을 선언하는데, PK, FK 등<br/>
+          다른 타입에 대한 의존성이 있을 수 있는데 이런 관계에 대해<br/>
+          어느 정도까지 연결 되게 할 것인지 정할 수 있다는 것입니다.
         </aside>
       </section>
       <section>
@@ -153,19 +156,19 @@
         </div>
         <aside class="notes">
           이제 실제로 구현해봐야겠죠? backend의 endpoint에 대한 개발을 하지 않으시는 분들도 있으시겠지만,
-          서버 얘기를 하지 않을 수 없습니다 ㅠㅠ. 함께 적용을 하고 함께 변경해야 하니까요. 하지만 REST와
+          서버 얘기를 하지 않을 수 없습니다 ㅠㅠ. 함께 적용을 하고 함께 변경해야 하니까요. REST와
           GraphQL을 동시에 사용할 수도 있습니다.
           <br/>---<br/>
           기존에 사용하던 API는 URI중심으로 데이터를 쿼리합니다. 그에 반해 GraphQL은 Query와 Mutation을 중심으로 데이터를 쿼리합니다.
-          uri에 보이시는 대로 GraphQL은 /graphql 하나로 사용하는데, 이는 GraphQL의 권장사항 입니다.
+          uri에 보이시는 대로 GraphQL은 `/graphql` 하나로 사용하는데, 이는 GraphQL의 권장사항 입니다.
         </aside>
       </section>
       <section>
         <h3>서버는 살짝만</h3>
         <div class="fragment" data-fragment-index="1" style="font-size: 32px;">하기에는... 생각보단 쉬워요! (클라이언트보단)</div>
         <div class="fragment" data-fragment-index="2" style="margin-top: 20px;">
-          <a href="https://github.com/seouldrinker/seoulDrinkerApi">기존 API 코드</a>와
-          <a href="https://github.com/seouldrinker/seoulDrinkerGraphql">GraphQL 코드</a>
+          <a href="https://github.com/seouldrinker/seoulDrinkerApi" target="_blank">기존 API 코드</a>와
+          <a href="https://github.com/seouldrinker/seoulDrinkerGraphql" target="_blank">GraphQL 코드</a>
         </div>
         <div class="fragment" data-fragment-index="2">어떤 부분이 달라졌는지 확인해봅시다.</div>
         <aside class="notes">
@@ -204,8 +207,8 @@
           </div>
         </div>
         <aside class="notes">
-          라우팅 경로를 추가해줍니다. 위에서 /graphql 하나만 넣는게 권장사항이라 했으나, 2개가 들어가있는 이유는
-          디버깅 용도로 사용하는 graphiql 입니다. 이 또한 endpoint는 /graphql을 가리키고 있습니다.
+          라우팅 경로를 추가해줍니다. 위에서 `/graphql` 하나만 넣는게 권장사항이라 했으나, 2개가 들어가있는 이유는
+          디버깅 용도로 사용하는 graphiql 입니다. 이 또한 endpoint는 `/graphql`을 가리키고 있습니다.
           <br/>---<br/>
           graphql 라우터는 schema를 받는데, schema는 typeDefs와 resolvers를 실행 가능하게 만든 모듈입니다.
         </aside>
@@ -257,7 +260,7 @@
           </code></pre>
         </div>
         <aside class="notes">
-          이 두 파일만 살펴보면 끝입니다. 매우 간단하죠?
+          이 두 파일만 더 살펴보면 끝입니다. 매우 간단하죠?
           <br/>---<br/>
           우선 스트링 형태로 타입을 정의합니다. News라는 데이터를 위주로 보기 위해 정의해 놨습니다.
           바로 아래 Query는 해당 타입의 리스트를 가져오겠다는 뜻입니다.
@@ -279,8 +282,8 @@
         <h2>3. Client</h2>
         <div class="fragment" data-fragment-index="1" style="font-size: 32px;">클라이언트도 서버처럼</div>
         <div class="fragment" data-fragment-index="2" style="margin-top: 20px;">
-          지난 3월 발표에서 보여드린 <a href="https://github.com/seouldrinker/seoulDrinkerPwa">PWA 코드</a>의 api 호출을
-          <a href="https://github.com/seouldrinker/seoulDrinkerGraphql">GraphQL</a>로
+          지난 3월 발표에서 보여드린 <a href="https://github.com/seouldrinker/seoulDrinkerPwa" target="_blank">PWA 코드</a>의 api 호출을
+          <a href="https://github.com/seouldrinker/seoulDrinkerGraphql" target="_blank">GraphQL</a>로
         </div>
         <div class="fragment" data-fragment-index="2">어떻게 바꾸는지 알아봅시다.</div>
         <aside class="notes">
@@ -429,10 +432,10 @@
             1. 코드를 분리하려면 꼭 필요한 webpack loader 설정
           </div>
           <div class="fragment" style="margin-top: 30px;">
-            2. pub/sub 모델을 넣고 소켓으로 DB 변화를 `구독` 하려면 추가해야하는 <a href="https://github.com/apollographql/graphql-subscriptions">graphql-subscriptions</a>
+            2. pub/sub 모델을 넣고 소켓으로 DB 변화를 `구독` 하려면 추가해야하는 <a href="https://github.com/apollographql/graphql-subscriptions" target="_blank">graphql-subscriptions</a>
           </div>
           <div class="fragment" style="margin-top: 30px;">
-            3. vuex에서 데이터 변화를 조금 더 쉽게 관찰할 수 있게 해줄 <a href="https://github.com/Akryum/vue-supply">vue-supply</a>
+            3. vuex에서 데이터 변화를 조금 더 쉽게 관찰할 수 있게 해줄 <a href="https://github.com/Akryum/vue-supply" target="_blank">vue-supply</a>
           </div>
           <div class="fragment" style="margin-top: 30px;">
             4. 기타 등등 ....
@@ -453,7 +456,7 @@
           사실 여기서부터가 나눠보고 싶은 얘기.
         </div>
         <div class="fragment" data-fragment-index="2">
-          페이스북에서 <a href="https://code.facebook.com/posts/1691455094417024/graphql-a-data-query-language/">"write once, run anywhere"</a>
+          페이스북에서 <a href="https://code.facebook.com/posts/1691455094417024/graphql-a-data-query-language/" target="_blank">"write once, run anywhere"</a>
         </div>
         <div class="fragment" data-fragment-index="2">
           이라는 이상에 맞추기 위해 만든게 GraphQL.

@@ -2,10 +2,9 @@
   <div class="slides">
     <section data-background="/blog/static/image/javascript/vue/vuetifulkorea4_background.png">
       <aside class="notes">
-        안녕하세요. NHN벅스 최준석입니다. GraphQL, Apollo가 생소할 수 있는 주제기도 하지만
+        안녕하세요. NHN벅스 최준석입니다. GraphQL, Apollo가 생소한 주제일 수 하지만
         개발하면서 Slack 채널에 질문을 해도 이미 충분히 많은 분들이 사용해보셨고, 실무에 사용하시는 분도 있으셨습니다.
-        GraphQL과 Apollo의 본질에 대한 설명이나 서버 파트에 대해서는 간단한 설명을, 클라이언트 파트에 대해서는
-        조금 자세한 설명을 드리겠습니다.
+        GraphQL과 Apollo의 본질에 대한 설명이나 서버 파트에 대해서 설명을 드리겠습니다.
         잘부탁드립니다.
       </aside>
     </section>
@@ -48,20 +47,65 @@
         <aside class="notes">
           나름 편하다고 쓰고 있는 API는 깊게들어갈수록 생각보다 어렵습니다. 뭔가 규칙도 없고, 정렬, 필터, pagination 등등...
           최종 선택은 본인과 팀의 결정이지만, 규칙이 없다는 건 리미터가 없다는 것이니 생각보다 위험합니다.
-          이런 문제들에 대해 해결할 수 있다면 쓰지 않을 이유가 없겠죠.
+          이런 문제들에 대해 일부라도 해결할 수 있다면 한번쯤 사용해 볼만 하겠죠.
         </aside>
       </section>
       <section>
         <h3>그렇다면 DB... DB를 보자!!</h3>
         <div style="font-size: 30px;">
           <div class="fragment" style="display: inline-block; width: 20%; padding-left: 1%; padding-right: 1%; margin-left: 1%; vertical-align: top; border-left: 1px solid #fff; border-right: 1px solid #fff;">GraphQL에서 `RDB`가 나을까 `NoSQL`이 나을까?</div>
-          <div class="fragment" style="display: inline-block; width: 20%; padding-left: 1%; padding-right: 1%; margin-left: 1%; vertical-align: top; border-left: 1px solid #fff; border-right: 1px solid #fff;">DB에서 제일 성능에 영향을 주고 많이 쓰이는게  JOIN이다. 하지만 JOIN이 힘든 NoSQL이라고 아예 안쓸순 없고,</div>
-          <div class="fragment" style="display: inline-block; width: 20%; padding-left: 1%; padding-right: 1%; margin-left: 1%; vertical-align: top; border-left: 1px solid #fff; border-right: 1px solid #fff;">그렇다고 RDB가 나쁠 이유는 없는데?</div>
-          <div class="fragment" style="display: inline-block; width: 20%; padding-left: 1%; padding-right: 1%; margin-left: 1%; vertical-align: top; border-left: 1px solid #fff; border-right: 1px solid #fff;">심지어 DB 테이블과 같은 데이터가 type에 그대로 매핑될 수 있네 (Model은 없지만 Dao처럼)</div>
+          <div class="fragment" style="display: inline-block; width: 20%; padding-left: 1%; padding-right: 1%; margin-left: 1%; vertical-align: top; border-left: 1px solid #fff; border-right: 1px solid #fff;">보통 DB에서 성능에 영향을 많이 주더라도 사용하게 되는 JOIN... 하지만 JOIN이 힘든 NoSql에서 쿼리가 급격히 늘어날수도...</div>
+          <div class="fragment" style="display: inline-block; width: 20%; padding-left: 1%; padding-right: 1%; margin-left: 1%; vertical-align: top; border-left: 1px solid #fff; border-right: 1px solid #fff;">RDB가 나쁠 이유는 없는데?</div>
+          <div class="fragment" style="display: inline-block; width: 20%; padding-left: 1%; padding-right: 1%; margin-left: 1%; vertical-align: top; border-left: 1px solid #fff; border-right: 1px solid #fff;">심지어 각각의 클라이언트에서 Depth에 대한 난이도 조절 가능...!</div>
         </div>
         <aside class="notes">
-          그렇다면 디비는 어떨까요? 예제 코드로 만들고 회사에서 세미나 한건 MongoDB로, NoSQL 환경이었습니다.
-          과도한 DB를 버텨야 하는 회사 업무에서는 어울리지 않아 보인다는 의견이 있었으나 테스트를 해보지 못했네요.
+          그렇다면 디비는 어떨까요? 회사 세미나의 예제 코드는 MongoDB로, NoSQL 환경이었습니다.<br/>
+          과도한 DB를 버텨야 하는 회사 업무에서는 어울리지 않아 보인다는 의견이 있었으나<br/>
+          RDB로 적용한 사용자들의 리뷰에서는 충분히 잘 사용하고 있다는 의견 또한 많았습니다.
+        </aside>
+      </section>
+      <section>
+        <h3>Depth 조절이 가능하다니 무슨 소리죠?</h3>
+        <div class="fragment" style="display: inline-block; width: 30%;">
+          <pre><code data-trim data-noescape style="font-size: 15px;">
+            module.exports = `
+              type A {
+                _id: String!
+                Aprop1: String
+                Aprop2: String
+                Aprop3: [B]
+              }
+              type b {
+                _id: String!
+                Bprop1: String
+                Bprop2: [C]
+              }
+              ...
+            `
+          </code></pre>
+        </div>
+        <div class="fragment" style="display: inline-block; width: 30%; vertical-align: top;">
+          <pre><code data-trim data-noescape style="font-size: 15px;">
+            module.exports = `
+              type C {
+                _id: String!
+                Cprop1: String
+                Cprop2: [D]
+              }
+              type D {
+                _id: String!
+                Dprop1: String
+                Dprop2: [A]       // 두둥...!
+              }
+              ...
+            `
+          </code></pre>
+        </div>
+        <div class="fragment" style="display: inline-block; width: 40%; margin-top: 60px; vertical-align: top;">
+          이런 Recursive한 관계...<br/>서비스를 하다보면 없을 순 없다 ㅠㅠ...
+        </div>
+        <aside class="notes">
+          코드에 대해선 뒤에서 설명드리겠으니 여기선 Depth 조절만 알아봅시다.
         </aside>
       </section>
       <section>
@@ -78,7 +122,10 @@
         </div>
         <aside class="notes">
           단편적인 내용들이지만, 규칙을 정하고 유지보수를 용의하게 하기 위해,
-          즉, GraphQL의 지향점이 바로 이러한 내용들을 발전시키는 것에 대한 것입니다.
+          즉, GraphQL은<br/>
+          필요한 것만 물어보는 것으로<br/>
+          여러 플랫폼에 대해 단독 버전 관리를<br/>
+          하는 것이 목표입니다.
         </aside>
       </section>
     </section>
@@ -106,7 +153,8 @@
         </div>
         <aside class="notes">
           이제 실제로 구현해봐야겠죠? backend의 endpoint에 대한 개발을 하지 않으시는 분들도 있으시겠지만,
-          서버 얘기를 하지 않으면 이해가 가지 않으실 것이라 하고 넘어가겠습니다.
+          서버 얘기를 하지 않을 수 없습니다 ㅠㅠ. 함께 적용을 하고 함께 변경해야 하니까요. 하지만 REST와
+          GraphQL을 동시에 사용할 수도 있습니다.
           <br/>---<br/>
           기존에 사용하던 API는 URI중심으로 데이터를 쿼리합니다. 그에 반해 GraphQL은 Query와 Mutation을 중심으로 데이터를 쿼리합니다.
           uri에 보이시는 대로 GraphQL은 /graphql 하나로 사용하는데, 이는 GraphQL의 권장사항 입니다.
@@ -419,23 +467,13 @@
       </section>
       <section>
         <h2>주관적인(겪어봤던) 리뷰</h2>
-        <ul style="margin-top: 40px;">
-          <li class="fragment">
-            실제로 구현하는건 훨씬 복잡한 케이스가 다수
-          </li>
-          <li class="fragment">
-            에러 관리 (에러가 200으로 떨어지는 케이스)
-          </li>
-          <li class="fragment">
-            실패한 요청에 대한 재시도 (pub/sub으로 해결은 가능함)
-          </li>
-          <li class="fragment">
-            하지만! 어느정도 잡혀있는 규칙에 대해선 매우 긍정적
-          </li>
-          <li class="fragment">
-            러닝커브는 모르겠지만, 한번 익숙해지면 rest보다 낫다고 생각할 수 밖에 없음
-          </li>
-        </ul>
+          <div style="margin-top: 40px;">
+            <div class="fragment" style="display: inline-block; width: 18%; margin: 1%; font-size: 30px; vertical-align: top;">실제로 구현하는건 훨씬 복잡한 케이스가 다수</div>
+            <div class="fragment" style="display: inline-block; width: 18%; margin: 1%; font-size: 30px; vertical-align: top;">에러 관리 (에러가 200으로 떨어지는 케이스)</div>
+            <div class="fragment" style="display: inline-block; width: 18%; margin: 1%; font-size: 30px; vertical-align: top;">실패한 요청에 대한 재시도 (pub/sub으로 해결 가능함)</div>
+            <div class="fragment" style="display: inline-block; width: 18%; margin: 1%; font-size: 30px; vertical-align: top;">하지만! 어느정도 잡혀있는 규칙에 대해선 매우 긍정적</div>
+            <div class="fragment" style="display: inline-block; width: 18%; margin: 1%; font-size: 30px; vertical-align: top;">러닝커브는 모르겠지만, 한번 익숙해지면 rest보다 낫다고 생각할 수 밖에 없음</div>
+          </div>
         <aside class="notes">
           실제 구현시 난이도 상승, 에러가 가끔 200으로 나오는 케이스, 실패에 대한 재시도를 따로 제어하기 힘들다는 점 들이 있습니다.
         </aside>
@@ -443,8 +481,8 @@
       <section>
         <h2>느낀 점 & 드리고자 하는 말</h2>
         <div class="fragment">
-          대형 서비스를 기존 REST에서 GraphQL로 모두 바꾸기엔<br/>조금은 이른게 아닐까...<br/>
-          <b style="font-size: 50px; color: #efdcbc;" class="fragment">하지만 신규서비스라면...!?</b>
+          대형 서비스를 기존 REST에서 GraphQL로 모두 바꾸기엔<br/>조금은 이른게 아닐까 + 시작해볼만 하다<br/>
+          <b style="font-size: 50px; color: #efdcbc;" class="fragment">신규서비스라면 무조건...!!</b>
         </div>
         <aside class="notes">
           facebook에서 graphql + react에 사용하는 relay를 거의 케어하지 않아서

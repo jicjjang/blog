@@ -11,6 +11,15 @@ module.exports = {
     // },
     {
       layout: "slides",
+      path: "slides/vue-apollo-graphql",
+      title: "[Presentation] Apollo로 알아보는 Vue in the GraphQL",
+      date: "2018-04-16",
+      category: "Presentation",
+      description: "Vuetiful korea 4th 발표자료",
+      image: "static/image/javascript/vue/background.jpg"
+    },
+    {
+      layout: "slides",
       path: "slides/graphql-start-client",
       title: "[Presentation] Graphql 시작하기 (client)",
       date: "2018-03-06",

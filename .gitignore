@@ -181,3 +181,4 @@ dist
 # Custom
 .idea
 .DS_Store
+static/sitemap.xml

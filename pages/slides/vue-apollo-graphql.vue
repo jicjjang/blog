@@ -26,6 +26,7 @@
       <h2>들어가기전에</h2>
       <div class="fragment" style="margin-top: 20px;"><a href="https://jicjjang.github.io/blog/slides/graphql-start-server" target="_blank">기본적인 백엔드 내용은 이 링크를!</a></div>
       <div class="fragment" style="margin-top: 20px;"><a href="https://jicjjang.github.io/blog/slides/graphql-start-client" target="_blank">기본적인 프론트 내용은 이 링크를!</a></div>
+      <div class="fragment" style="margin-top: 20px;"><a href="https://github.com/seouldrinker/seoulDrinkerGraphql" target="_blank">오늘의 코드는 이곳에<br/>(https://github.com/seouldrinker/seoulDrinkerGraphql)!</a></div>
       <div class="fragment" style="margin-top: 20px;">더 자세한 내용은 구글링...! (내용은 백엔드 쪽에 거의 다 있어요 헤헤)</div>
       <aside class="notes">
         이미 한차례 사내 세미나를 했었고, 그때 자료도 있으니 발표 후에 한번 둘러봐주세요 :)

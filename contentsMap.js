@@ -1,14 +1,14 @@
 module.exports = {
   post: [
-    // {
-    //   layout: "post",
-    //   path: "post/review-functional-programming",
-    //   title: "[Review] 함수형 자바스크립트",
-    //   date: "2018-04-16",
-    //   category: "Review",
-    //   description: "[Review] 함수형 자바스크립트 한빛미디어 도서 리뷰",
-    //   image: "static/image/review/functional-programming/background.png"
-    // },
+    {
+      layout: "post",
+      path: "post/review-functional-programming",
+      title: "[Review] 함수형 자바스크립트",
+      date: "2018-04-17",
+      category: "Review",
+      description: "[Review] 함수형 자바스크립트 한빛미디어 도서 리뷰",
+      image: "static/image/review/functional-programming/background.png"
+    },
     {
       layout: "slides",
       path: "slides/vue-apollo-graphql",

@@ -486,7 +486,7 @@
         <h2>느낀 점 & 드리고자 하는 말</h2>
         <div class="fragment">
           대형 서비스를 기존 REST에서 GraphQL로 모두 바꾸기엔<br/>조금은 이른게 아닐까 + 시작해볼만 하다<br/>
-          <b style="font-size: 50px; color: #efdcbc;" class="fragment">신규서비스라면 무조건...!!</b>
+          <b style="display: block; margin-top: 40px; font-size: 50px; color: #efdcbc;" class="fragment">신규서비스라면 써보라 추천!!</b>
         </div>
         <aside class="notes">
           facebook에서 graphql + react에 사용하는 relay를 거의 케어하지 않아서

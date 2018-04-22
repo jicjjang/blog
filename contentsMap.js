@@ -2,6 +2,15 @@ module.exports = {
   post: [
     {
       layout: "post",
+      path: "post/new-jobs",
+      title: "이직기",
+      date: "2018-04-22",
+      category: "Life",
+      description: "벅스에서의 도전을 마무리하며",
+      image: "static/slides/image/oss/background.jpg"
+    },
+    {
+      layout: "post",
       path: "post/review-functional-programming",
       title: "[Review] 함수형 자바스크립트",
       date: "2018-04-17",

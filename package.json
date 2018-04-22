@@ -5,7 +5,7 @@
   "author": "jicjjang <jicjjang12@gmail.com>",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "cross-env NODE_ENV=development nuxt",
     "build": "nuxt build",
     "prestart": "npm run build",
     "start": "nuxt start",
@@ -29,6 +29,7 @@
     "@storybook/vue": "^3.3.12",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.1",
+    "cross-env": "^5.1.4",
     "eslint": "^4.15.0",
     "eslint-friendly-formatter": "^3.0.0",
     "eslint-loader": "^1.7.1",

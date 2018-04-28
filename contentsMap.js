@@ -4,7 +4,7 @@ module.exports = {
       layout: "post",
       path: "post/new-jobs",
       title: "이직기",
-      date: "2018-04-22",
+      date: "2018-04-28",
       category: "Life",
       description: "벅스에서의 도전을 마무리하며",
       image: "static/slides/image/oss/background.jpg"

@@ -142,10 +142,32 @@
             <p>제가 지금까지 경험했던 프로젝트 목록입니다.</p>
           </div><!--//intro-->
 
-          <div style="color: #649673; font-size: 20px; margin-top: 14px; margin-bottom: 14px; font-weight: bold;">NHN Bugs</div>
+          <div style="color: #649673; font-size: 20px; margin-top: 14px; margin-bottom: 14px; font-weight: bold;">KakaoPay</div>
 
+          -
+
+          <div style="color: #649673; font-size: 20px; margin-top: 14px; margin-bottom: 14px; font-weight: bold;">NHN Bugs</div>
           <div class="item">
-            <span class="project-title"><a href="http://music.bugs.co.kr/nabi" target="_blank">Nabi project</a></span> -
+            <span class="project-title"><a href="https://m.bugs.co.kr" target="_blank">모바일 웹 개편</a></span> -
+            <span class="project-tagline">Bugs에서 교육 기간을 거치고 처음으로 진행한 작업입니다.
+              곡, 앨범, 뮤직PD 등등의 상세 페이지들을 미리 만들어진 Track, Album의 공통 리스트를 이용해 만드는 작업과
+              이벤트 및 프로모션 페이지들을 이관 작업 위주로 진행하였습니다.(복면가왕, 슈퍼사운드...)
+              기존에 Spring과 SVN을 이용해 프로젝트를 해본 경험이 없었기 때문에 적응할 수 있게 도와준 프로젝트 였습니다.
+              공통 리스트를 미리 담당자 분께서 작성해 주시고, 사용하는게 데이터를 이용하는 주된 일이었기 때문에
+              기본적인 mvc 구조에 대해 익힐 수 있었습니다.</span>
+          </div><!--//item-->
+          <div class="item">
+            <span class="project-title"><a href="https://music.bugs.co.kr/samsung/smarttv" target="_blank">Bugs in Samsung SmartTV</a></span> -
+            <span class="project-tagline">Bugs에서의 애증의 대상인 듯 합니다. 모바일 웹 개편 이후부터
+              시작했던 프로젝트인데, 퇴사할 때 까지 저를 괴롭혔습니다. 개발에 대한 내용은 사실 복잡한게 없(?)었으나
+              Tizen을 이용해 웹앱을 배포하는 부분에서 문제들이 많았습니다. (GPU를 이용해야 하기 때문에
+              시스템 단에 라이브러리를 설치 / Android SDK 설치 / Tizen Studio 업데이트 후,
+              인증서로 Tizen TV 에뮬레이터 사용 불가 등등...) 담당했던 부분은 리모콘의 마우스 부분을 사용하지
+              않았기 때문에 리모콘의 키맵과 이벤트를 매핑하는 부분과 앱을 켜기 전에 TV에서 앱의 Preview를 보고,
+              빅스비의 음성인식과 연동하는 DeepLink 였습니다.</span>
+          </div><!--//item-->
+          <div class="item">
+            <span class="project-title"><a href="https://music.bugs.co.kr/nabi" target="_blank">Nabi project</a></span> -
             <span class="project-tagline">2017년 4월동안 진행한 프로젝트입니다. 자주 작업하던 프로모션과는 다르게
               느낀 부분이 많은 프로젝트입니다. 가장 중요했던 부분은 SNS 공유 작업이었습니다. 기존에 쓰던 공유 프로세스가 존재했지만,
               기획상에서 SNS 공유 후 성공과 실패에 대한 구분이 필요했습니다. 기본적으로 facebook, twitter, naverblog, kakaostory
@@ -157,6 +179,31 @@
               session을 통한 데이터를 서버에서 계속 찾지 못하는 이슈였는데, 실서버에서는 서버 대수가 한대가 아니기 때문에
               사용자가 새로고침을 할 때마다 각기 다른 서버 프로세스로 들어가는 것이 원인이었습니다. 그렇기 때문에 session을 모두 걷어내고
               전 서버에 공유가 되는 memcache로 대체를 하였고, 사용자마다 정확한 값을 가질 수 있게 되었습니다.</span>
+          </div><!--//item-->
+          <div class="item">
+            <span class="project-title"><a href="https://mlounge.bugs.co.kr" target="_blank">Music Lounge</a></span> -
+            <span class="project-tagline">서브 담당을 맡고 있었던 프로젝트로, 보통 수정사항들이 들어오면
+              주로 담당을 맡아 개발하는 일을 하였습니다. 이벤트 템플릿을 추가하는 일이 제일 큰 프로젝트였는데,
+              정책 사항이 몇번 씩 바뀌었고, 촉박한 기한 때문에 기획자와의 커뮤니케이션 중요성을 많이 깨닫게 된
+              프로젝트 였습니다. 복잡한 기획 사항 덕분에 인수인계 당시에도 메인 담당자 분께서
+              많이 복잡하다는 말씀을 하셨었습니다.</span>
+          </div><!--//item-->
+          <div class="item">
+            <span class="project-title"><a href="https://music.bugs.co.kr/panel" target="_blank">Panel</a></span> -
+            <span class="project-tagline">Bugscorp와 함께 가장 최근까지 진행하던 프로젝트입니다.
+              일반인 패널들이 Bugs의 가사를 관리하는 시스템 (벅스 담당자들이 관리하는 부분은 따로 존재)
+              입니다. 오래된 프로젝트이므로 오류를 수정하는 일이 주가 되었습니다. dblink 이슈로
+              프로시져를 사용하는 부분이 많았고, 여러 DB를 동시에 작업할 때의 인코딩 문제들이
+              기억에 남았던 이슈입니다.</span>
+          </div><!--//item-->
+          <div class="item">
+            <span class="project-title"><a href="http://bugscorp.co.kr" target="_blank">Bugscorp</a></span> -
+            <span class="project-tagline">담당자가 바뀌게 되면서 제가 맡게 된 프로젝트입니다.
+              회사 홈페이지 (PR, IR, Recruit) 관리였으며, 크게 작업을 하였던 부분은 IDC 센터 이전으로 변경된
+              서버를 교체한 것과 Git을 통한 버저닝 적용, Bugs 서비스를 MVVM 모델로 변경하기 위한 테스트베드로 Bugscorp를
+              SSR이 적용된 Node + React로 변경한 것입니다. 제가 담당한 백엔드인 Node의 개발과 서버(Apach Nginx) 세팅 및 개발된
+              내용까지의 배포 테스트는 모두 완료하였습니다. (퇴사 전 서버와 백엔드작업은 완료하였으나, 프론트 코드에 대한 부분은
+              완료되지 않아서 배포되지 않음)</span>
           </div><!--//item-->
 
           <div style="color: #649673; font-size: 20px; margin-top: 14px; margin-bottom: 14px; font-weight: bold;">Seminar</div>

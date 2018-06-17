@@ -408,6 +408,10 @@ module.exports = {
   ],
   category: [
     {
+      title: 'Revlog',
+      image: 'static/image/revlog/revlog.jpg'
+    },
+    {
       title: 'Etc',
       image: 'static/image/etc/etc.jpg'
     },

@@ -22,7 +22,7 @@
             <figure class="absolute-bg" :style="`background-image: url('${baseUrl}/static/image/mine.jpg');`"></figure>
           </div>
           <div class="profile__container">
-            <p>프론트 개발을 좋아하고 꾸준히 공부하는 서버 개발자. 새로운 기술에 관심이 많음. React + Vue 개발 진행중. 현재 Bugs Music 재직중.</p>
+            <p>프론트 개발을 좋아하고 꾸준히 공부하는 백엔드 개발자. 새로운 기술에 관심이 많음. React + Vue 개발 진행중. 현재 Kakaopay 재직중.</p>
             <ul class="profile__social">
               <li><a class="fa fa-lg fa-envelope-o" href="mailto:jicjjang12@gmail.com"></a></li>
               <li><a class="fa fa-lg fa-github" href="https://github.com/jicjjang" target="_blank"></a></li>

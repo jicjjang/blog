@@ -67,7 +67,7 @@
       }
     },
     mounted () {
-      // setTimeout(() => {
+      setTimeout(() => {
         Reveal.initialize({
           dependencies: [
             { src: '/blog/static/slides/plugin/markdown/marked.js' },
@@ -76,7 +76,7 @@
             { src: '/blog/static/slides/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
           ]
         });
-      // }, 500);
+      }, 100);
     }
   }
 </script>

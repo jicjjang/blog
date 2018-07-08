@@ -9,6 +9,12 @@
   export default {
     name: 'post__postName',
     layout: 'post',
+    data() {
+      return {
+        post: '',
+        postName: ''
+      }
+    },
     validate ({ params }) {
       return params.post === 'post' ||
         params.post === 'revlog'

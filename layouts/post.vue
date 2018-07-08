@@ -6,11 +6,11 @@
           <i class="fa fa-lg fa-arrow-left"></i>
           <span>Back to Posts</span>
         </a>
-        <figure class="absolute-bg mast__img" :style="`background-image: url(${baseUrl}/${post.image});`"></figure>
+        <figure class="absolute-bg mast__img" :style="`background-image: url(${baseUrl}/${postData.image});`"></figure>
         <div class="mast__container">
-          <span><time :datetime="new Date(post.date).getTime()" itemprop="datePublished">{{ postDate(post.date) }}</time></span>
-          <h1 itemprop="name headline">{{ post.title }}</h1>
-          <span>Posted in {{ post.category }}</span>
+          <span><time :datetime="new Date(postData.date).getTime()" itemprop="datePublished">{{ postDate(postData.date) }}</time></span>
+          <h1 itemprop="name headline">{{ postData.title }}</h1>
+          <span>Posted in {{ postData.category }}</span>
         </div>
       </header>
 
@@ -56,26 +56,28 @@
       return {
         title: 'June',
         meta: [
-          {hid: 'og:title', name: 'og:title', content: this.post.title || 'June'},
-          {hid: 'og:url', name: 'og:url', content: `https://jicjjang.github.io/blog/${this.post.path}`},
+          {hid: 'og:title', name: 'og:title', content: this.postData.title || 'June'},
+          {hid: 'og:url', name: 'og:url', content: `https://jicjjang.github.io/blog/${this.postData.path}`},
           {hid: 'og:site_name', name: 'og:site_name', content: 'June'},
-          {hid: 'og:description', name: 'og:description', content: this.post.description || 'June\'s blog'},
-          {hid: 'og:image', name: 'og:image', content: this.post.image ?
-              `https://jicjjang.github.io/blog/${this.post.image}` :
+          {hid: 'og:description', name: 'og:description', content: this.postData.description || 'June\'s blog'},
+          {hid: 'og:image', name: 'og:image', content: this.postData.image ?
+              `https://jicjjang.github.io/blog/${this.postData.image}` :
               'https://jicjjang.github.io/blog/static/image/mine.jpg'},
-          {hid: 'twitter:domain', name: 'twitter:domain', content: `https://jicjjang.github.io/blog/${this.post.path}`},
-          {hid: 'twitter:description', name: 'twitter:description', content: this.post.description || 'June\'s blog'},
-          {hid: 'twitter:title', name: 'twitter:title', content: this.post.title || 'June'},
-          {hid: 'twitter:url', name: 'twitter:url', content: `https://jicjjang.github.io/blog/${this.post.path}`},
-          {hid: 'twitter:image', name: 'twitter:image', content: this.post.image ?
-              `https://jicjjang.github.io/blog/${this.post.image}` :
+          {hid: 'twitter:domain', name: 'twitter:domain', content: `https://jicjjang.github.io/blog/${this.postData.path}`},
+          {hid: 'twitter:description', name: 'twitter:description', content: this.postData.description || 'June\'s blog'},
+          {hid: 'twitter:title', name: 'twitter:title', content: this.postData.title || 'June'},
+          {hid: 'twitter:url', name: 'twitter:url', content: `https://jicjjang.github.io/blog/${this.postData.path}`},
+          {hid: 'twitter:image', name: 'twitter:image', content: this.postData.image ?
+              `https://jicjjang.github.io/blog/${this.postData.image}` :
               'https://jicjjang.github.io/blog/static/image/mine.jpg'},
         ]
       }
     },
     data() {
       return {
-        post: {},
+        post: '',
+        postData: {},
+        postName: '',
         index: 0,
         image: ''
       }
@@ -93,11 +95,12 @@
       }
     },
     created() {
+      this.post = this.$route.params.post || 1;
       this.postName = this.$route.params.postName || 1;
 
       for (let i in this.postList) {
-        if (this.postList[i].path.split('post/')[1] === this.postName) {
-          this.post = this.postList[i];
+        if (this.postList[i].path.split(`${this.post}/`)[1] === this.postName) {
+          this.postData = this.postList[i];
           this.index = parseInt(i);
           break;
         }

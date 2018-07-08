@@ -1,5 +1,23 @@
 module.exports = {
   post: [
+    // {
+    //   layout: "revlog",
+    //   path: "revlog/revlog-1",
+    //   title: "블로그 리뷰 연재(?) 시리즈 1",
+    //   date: "2018-06-24",
+    //   category: "Revlog",
+    //   description: "180624 블로그 리뷰",
+    //   image: "static/image/revlog/revlog.jpg"
+    // },
+    {
+      layout: "post",
+      path: "post/liff-app",
+      title: "심심풀이 LIFF 앱개발",
+      date: "2018-07-08",
+      category: "Post",
+      description: "블로그 업뎃이 너무 없어 심심풀이로 만드는 LIFF 앱",
+      image: "static/image/revlog/revlog.jpg"
+    },
     {
       layout: "post",
       path: "post/new-jobs",

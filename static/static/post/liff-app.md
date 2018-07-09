@@ -131,12 +131,11 @@ liff에서 데이터를 가진 object를 내려줬기 때문이죠)
 
 ### 참고 2. sendMessage
 
-[line-liff-starter issue](https://github.com/line/line-liff-starter/issues/1)
-
 <figure style="text-align: center;">
   <img src="https://jicjjang.github.io/blog/static/image/etc/liff/liff6.jpeg" alt="image" style="width:50%; margin:0 auto;">
 </figure>
 
+[line-liff-starter issue](https://github.com/line/line-liff-starter/issues/1)
 에서 보실 수 있듯이 특정 디바이스에서의 `sendMessage 버튼`을 누르면 위와 같은 이슈가 나타납니다.
 이점 유의해서 테스트 해주세요.
 

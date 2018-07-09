@@ -107,7 +107,9 @@ curl -X POST https://api.line.me/liff/v1/apps \
 
 `line://app/{ liffId }` 링크로 이동하면 됩니다. (Line App을 설치한 모바일에서만 가능)
 
-![liff4](https://jicjjang.github.io/blog/static/image/etc/liff/liff4.jpeg)
+<figure style="text-align: center;">
+  <img src="https://jicjjang.github.io/blog/static/image/etc/liff/liff4.jpeg" alt="image" style="width:50%; margin:0 auto;">
+</figure>
 
 결과는 위 이미지처럼 나오게 됩니다. (기존 url로 들어갔을 때와는 다르게 정보들이 채워집니다.
 liff에서 데이터를 가진 object를 내려줬기 때문이죠)
@@ -120,13 +122,21 @@ liff에서 데이터를 가진 object를 내려줬기 때문이죠)
 ### 참고 1. Login API
 
 제일 처음에 `Channel`을 만들 때, `Login API`를 선택한다면
-![liff6](https://jicjjang.github.io/blog/static/image/etc/liff/liff6.jpeg)
+
+<figure style="text-align: center;">
+  <img src="https://jicjjang.github.io/blog/static/image/etc/liff/liff5.jpeg" alt="image" style="width:50%; margin:0 auto;">
+</figure>
+
 라는 화면 이 먼저 뜨게 됩니다.
 
 ### 참고 2. sendMessage
 
 [line-liff-starter issue](https://github.com/line/line-liff-starter/issues/1)
-![liff5](https://jicjjang.github.io/blog/static/image/etc/liff/liff5.jpeg)
+
+<figure style="text-align: center;">
+  <img src="https://jicjjang.github.io/blog/static/image/etc/liff/liff6.jpeg" alt="image" style="width:50%; margin:0 auto;">
+</figure>
+
 에서 보실 수 있듯이 특정 디바이스에서의 `sendMessage 버튼`을 누르면 위와 같은 이슈가 나타납니다.
 이점 유의해서 테스트 해주세요.
 

@@ -13,10 +13,10 @@ module.exports = {
       layout: "post",
       path: "post/liff-app",
       title: "심심풀이 LIFF 앱개발",
-      date: "2018-07-08",
+      date: "2018-07-09",
       category: "Post",
       description: "블로그 업뎃이 너무 없어 심심풀이로 만드는 LIFF 앱",
-      image: "static/image/revlog/revlog.jpg"
+      image: "static/image/etc/liff/background.jpg"
     },
     {
       layout: "post",

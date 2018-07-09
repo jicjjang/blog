@@ -5,7 +5,7 @@ for (var i=1; i<=(Math.ceil(contentsMap.post.length / 5)); i++) {
   pages.push('page/' + i);
 }
 
-const allRoutes = (contentsMap.post.map(v => v.path)) // posts / slides
+const allRoutes = (contentsMap.post.map(v => v.path)) // posts / revlog / slides
   .concat(contentsMap.category.map(v => 'category/'+v.title.toLowerCase())) // category
   .concat(pages)  // pages
 

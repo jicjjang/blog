@@ -11,6 +11,15 @@ module.exports = {
     // },
     {
       layout: "post",
+      path: "post/review-think-data-structures",
+      title: "[Review] Think Data Structures",
+      date: "2018-07-24",
+      category: "Review",
+      description: "[Review] 자바로 배우는 핵심 자료구조와 알고리즘",
+      image: "static/image/review/think-data-structures/background.jpg"
+    },
+    {
+      layout: "post",
       path: "post/liff-app",
       title: "심심풀이 LIFF 앱개발",
       date: "2018-07-09",

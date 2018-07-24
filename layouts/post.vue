@@ -91,7 +91,7 @@
     methods: {
       postDate(date) {
         const postDate = new Date(date);
-        return `${postDate.getMonth() + 1} ${postDate.getDate()}, ${postDate.getFullYear()}`
+        return `${postDate.getMonth() + 1} / ${postDate.getDate()}, ${postDate.getFullYear()}`
       }
     },
     created() {

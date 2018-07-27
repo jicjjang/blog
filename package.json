@@ -17,24 +17,24 @@
     "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "dependencies": {
-    "@nuxtjs/markdownit": "^1.2.0",
+    "@nuxtjs/markdownit": "^1.2.1",
     "@nuxtjs/sitemap": "0.0.3",
     "axios": "^0.17.1",
-    "marked": "^0.3.12",
-    "nuxt": "^1.0.0"
+    "marked": "^0.3.19",
+    "nuxt": "^1.4.1"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^3.3.12",
-    "@storybook/addon-centered": "^3.3.12",
-    "@storybook/vue": "^3.3.12",
-    "babel-core": "^6.26.0",
-    "babel-eslint": "^8.2.1",
-    "cross-env": "^5.1.4",
-    "eslint": "^4.15.0",
+    "@storybook/addon-actions": "^3.4.8",
+    "@storybook/addon-centered": "^3.4.8",
+    "@storybook/vue": "^3.4.8",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.6",
+    "cross-env": "^5.2.0",
+    "eslint": "^4.19.1",
     "eslint-friendly-formatter": "^3.0.0",
     "eslint-loader": "^1.7.1",
-    "eslint-plugin-vue": "^4.0.0",
-    "node-sass": "^4.7.2",
+    "eslint-plugin-vue": "^4.7.1",
+    "node-sass": "^4.9.2",
     "push-dir": "^0.4.1",
     "sass-loader": "^6.0.6"
   }

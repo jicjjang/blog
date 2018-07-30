@@ -11,6 +11,15 @@ module.exports = {
     // },
     {
       layout: "post",
+      path: "post/liff-app-dev",
+      title: "LIFF 활용기",
+      date: "2018-07-31",
+      category: "Post",
+      description: "LIFF를 활용한 실사용 앱개발",
+      image: "static/image/etc/liff/background.jpg"
+    },
+    {
+      layout: "post",
       path: "post/review-think-data-structures",
       title: "[Review] Think Data Structures",
       date: "2018-07-24",

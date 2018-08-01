@@ -13,9 +13,9 @@ module.exports = {
       layout: "post",
       path: "post/liff-app-dev",
       title: "LIFF 활용기",
-      date: "2018-07-31",
+      date: "2018-08-02",
       category: "Post",
-      description: "LIFF를 활용한 실사용 앱개발",
+      description: "Liff를 활용한 실사용 앱개발",
       image: "static/image/etc/liff/background.jpg"
     },
     {
@@ -33,7 +33,7 @@ module.exports = {
       title: "심심풀이 LIFF 앱개발",
       date: "2018-07-09",
       category: "Post",
-      description: "블로그 업뎃이 너무 없어 심심풀이로 만드는 LIFF 앱",
+      description: "블로그 업뎃이 너무 없어 심심풀이로 만드는 Liff 앱",
       image: "static/image/etc/liff/background.jpg"
     },
     {

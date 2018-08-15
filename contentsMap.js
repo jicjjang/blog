@@ -10,6 +10,15 @@ module.exports = {
     //   image: "static/image/revlog/revlog.jpg"
     // },
     {
+      layout: "slides",
+      path: "slides/vuetiful-korea-5",
+      title: "[Presentation] Vuetiful korea 5회 세미나",
+      date: "2018-08-15",
+      category: "Presentation",
+      description: "Vuetiful korea 5회 세미나 내용 정리",
+      image: "static/slides/image/vuetiful-korea/background.jpg"
+    },
+    {
       layout: "post",
       path: "post/liff-app-dev",
       title: "LIFF 활용기",

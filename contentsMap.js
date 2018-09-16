@@ -11,12 +11,12 @@ module.exports = {
     // },
     {
       layout: "post",
-      path: "post/review-morden-startup",
+      path: "post/review-modern-startup",
       title: "[Review] 모던 스타트업",
       date: "2018-09-17",
       category: "Review",
       description: "[Review] 모던 스타트업 - 팀 생산성을 높여주는 21가지 도구와 서비스",
-      image: "static/image/review/mordern-startup/background.jpg"
+      image: "static/image/review/modern-startup/background.jpg"
     },
     {
       layout: "slides",

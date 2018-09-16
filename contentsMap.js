@@ -10,6 +10,15 @@ module.exports = {
     //   image: "static/image/revlog/revlog.jpg"
     // },
     {
+      layout: "post",
+      path: "post/review-morden-startup",
+      title: "[Review] 모던 스타트업",
+      date: "2018-09-17",
+      category: "Review",
+      description: "[Review] 모던 스타트업 - 팀 생산성을 높여주는 21가지 도구와 서비스",
+      image: "static/image/review/mordern-startup/background.jpg"
+    },
+    {
       layout: "slides",
       path: "slides/vuetiful-korea-5",
       title: "[Presentation] Vuetiful korea 5회 세미나",

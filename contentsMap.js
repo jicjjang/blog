@@ -13,7 +13,7 @@ module.exports = {
       layout: "post",
       path: "post/review-rxjs",
       title: "[Review] RxJS 프로그래밍",
-      date: "2018-09-17",
+      date: "2018-10-09",
       category: "Review",
       description: "[Review] 75가지 핵심 문법과 예제로 익히는 RxJS 기초",
       image: "static/image/review/rxjs/background.jpg"

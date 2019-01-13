@@ -10,15 +10,27 @@ module.exports = {
       //   image: "static/image/revlog/revlog.jpg"
       // },
       {
-      layout: "post",
-      path: "post/review-rxjs",
-      title: "[Review] RxJS 프로그래밍",
-      date: "2018-10-09",
-      category: "Review",
-      description: "[Review] 75가지 핵심 문법과 예제로 익히는 RxJS 기초",
-      image: "static/image/review/rxjs/background.jpg"
+        id: 52,
+        layout: "post",
+        path: "post/scale-up-for-security",
+        title: "보안 강화를 위한 기술 정리",
+        date: "2019-01-12",
+        category: "Etc",
+        description: "FIDO, HMAC",
+        image: "static/image/etc/scale-up-for-security/background.jpg"
       },
       {
+        id: 51,
+        layout: "post",
+        path: "post/review-rxjs",
+        title: "[Review] RxJS 프로그래밍",
+        date: "2018-10-09",
+        category: "Review",
+        description: "[Review] 75가지 핵심 문법과 예제로 익히는 RxJS 기초",
+        image: "static/image/review/rxjs/background.jpg"
+      },
+      {
+        id: 50,
         layout: "post",
         path: "post/review-modern-startup",
         title: "[Review] 모던 스타트업",
@@ -28,6 +40,7 @@ module.exports = {
         image: "static/image/review/modern-startup/background.jpg"
       },
       {
+        id: 49,
         layout: "slides",
         path: "slides/vuetiful-korea-5",
         title: "[Presentation] Vuetiful korea 5회 세미나",
@@ -37,15 +50,17 @@ module.exports = {
         image: "static/slides/image/vuetiful-korea/background.jpg"
       },
       {
+        id: 48,
         layout: "post",
         path: "post/liff-app-dev",
         title: "LIFF 활용기",
         date: "2018-08-02",
-        category: "Post",
+        category: "Frontend",
         description: "Liff를 활용한 실사용 앱개발",
         image: "static/image/etc/liff/background.jpg"
       },
       {
+        id: 47,
         layout: "post",
         path: "post/review-think-data-structures",
         title: "[Review] Think Data Structures",
@@ -55,15 +70,17 @@ module.exports = {
         image: "static/image/review/think-data-structures/background.jpg"
       },
       {
+        id: 46,
         layout: "post",
         path: "post/liff-app",
         title: "심심풀이 LIFF 앱개발",
         date: "2018-07-09",
-        category: "Post",
+        category: "Frontend",
         description: "블로그 업뎃이 너무 없어 심심풀이로 만드는 Liff 앱",
         image: "static/image/etc/liff/background.jpg"
       },
       {
+        id: 45,
         layout: "post",
         path: "post/new-jobs",
         title: "이직기",
@@ -73,6 +90,7 @@ module.exports = {
         image: "static/slides/image/oss/background.jpg"
       },
       {
+        id: 44,
         layout: "post",
         path: "post/review-functional-programming",
         title: "[Review] 함수형 자바스크립트",
@@ -82,6 +100,7 @@ module.exports = {
         image: "static/image/review/functional-programming/background.png"
       },
       {
+        id: 43,
         layout: "slides",
         path: "slides/vue-apollo-graphql",
         title: "[Presentation] Apollo로 알아보는 Vue in the GraphQL",
@@ -91,6 +110,7 @@ module.exports = {
         image: "static/image/javascript/vue/background.jpg"
       },
       {
+        id: 42,
         layout: "slides",
         path: "slides/graphql-start-client",
         title: "[Presentation] Graphql 시작하기 (client)",
@@ -100,6 +120,7 @@ module.exports = {
         image: "static/slides/image/graphql-start/background.jpg"
       },
       {
+        id: 41,
         layout: "slides",
         path: "slides/graphql-start-server",
         title: "[Presentation] Graphql 시작하기 (server)",
@@ -109,6 +130,7 @@ module.exports = {
         image: "static/slides/image/graphql-start/background.jpg"
       },
       {
+        id: 40,
         layout: "post",
         path: "post/review-learning-http-2",
         title: "[Review] learning http/2",
@@ -118,6 +140,7 @@ module.exports = {
         image: "static/image/review/learning-http2/background.jpg"
       },
       {
+        id: 39,
         layout: "post",
         path: "post/prototypal-inheritance-model",
         title: "자바스크립트 상속 모델",
@@ -127,6 +150,7 @@ module.exports = {
         image: "static/image/javascript/javascript.jpg"
       },
       {
+        id: 38,
         layout: "post",
         path: "post/welcome-vue-card-layer",
         title: "오픈소스 소개",
@@ -136,6 +160,7 @@ module.exports = {
         image: "static/image/frontend/welcome-vue-card-layer/background.jpg"
       },
       {
+        id: 37,
         layout: "post",
         path: "post/blog-renewal",
         title: "블로그 리뉴얼",
@@ -145,6 +170,7 @@ module.exports = {
         image: "static/image/frontend/blog-renewal/background.jpg"
       },
       {
+        id: 36,
         layout: "post",
         path: "post/review-2018-it-trend-special-report",
         title: "[Review] 2018 IT 트렌트 스페셜 리포트",
@@ -154,6 +180,7 @@ module.exports = {
         image: "static/image/review/ittrend/background.jpg"
       },
       {
+        id: 35,
         layout: "post",
         path: "post/life",
         title: "서울시 공공앱 공모전",
@@ -163,6 +190,7 @@ module.exports = {
         image: "static/image/beat.png"
       },
       {
+        id: 34,
         layout: "slides",
         path: "slides/vue-pwa-start",
         title: "[Presentation] Vue pwa 시작하기",
@@ -172,6 +200,7 @@ module.exports = {
         image: "static/image/javascript/vue/background.jpg"
       },
       {
+        id: 33,
         layout: "post",
         path: "post/seoul-app-contest-with-node-and-react-native",
         title: "seoul app contest with node and react native",
@@ -181,6 +210,7 @@ module.exports = {
         image: "static/image/javascript/seoul-app-contest/background.jpg"
       },
       {
+        id: 32,
         layout: "slides",
         path: "slides/how-to-use-rxjs",
         title: "[Presentation] How to use RxJs",
@@ -190,6 +220,7 @@ module.exports = {
         image: "static/slides/image/rxjs/background.jpg"
       },
       {
+        id: 31,
         layout: "post",
         path: "post/review-you-dont-know-js",
         title: "[Review] 중급자를 위한 You don't know JS",
@@ -199,6 +230,7 @@ module.exports = {
         image: "static/image/review/youdontknowjs/you-dont-know-js.jpg"
       },
       {
+        id: 30,
         layout: "post",
         path: "post/jwt",
         title: "Would you mind using a JWT?",
@@ -208,6 +240,7 @@ module.exports = {
         image: "static/image/etc/jwt/background.jpg"
       },
       {
+        id: 29,
         layout: "slides",
         path: "slides/developer-life",
         title: "[Presentation] 현실적인 개발로 먹고살기",
@@ -217,6 +250,7 @@ module.exports = {
         image: "static/slides/image/oss/background.jpg"
       },
       {
+        id: 28,
         layout: "post",
         path: "post/dooray-bot-server",
         title: "Dooray bot scheduler (Server)",
@@ -226,6 +260,7 @@ module.exports = {
         image: "static/image/etc/dooray/background.png"
       },
       {
+        id: 27,
         layout: "post",
         path: "post/dooray-bot-front",
         title: "Dooray bot scheduler (Front)",
@@ -235,6 +270,7 @@ module.exports = {
         image: "static/image/etc/dooray/background.png"
       },
       {
+        id: 26,
         layout: "post",
         path: "post/airbnb-review",
         title: "Airbnb 이용 후기",
@@ -244,6 +280,7 @@ module.exports = {
         image: "static/image/life/airbnb/background.jpg"
       },
       {
+        id: 25,
         layout: "post",
         path: "post/javascript-optimize-8",
         title: "자바스크립트 성능 최적화 8",
@@ -253,6 +290,7 @@ module.exports = {
         image: "static/image/javascript/optimize/background.jpg"
       },
       {
+        id: 24,
         layout: "post",
         path: "post/javascript-optimize-7",
         title: "자바스크립트 성능 최적화 7",
@@ -262,6 +300,7 @@ module.exports = {
         image: "static/image/javascript/optimize/background.jpg"
       },
       {
+        id: 23,
         layout: "post",
         path: "post/javascript-optimize-6",
         title: "자바스크립트 성능 최적화 6",
@@ -271,6 +310,7 @@ module.exports = {
         image: "static/image/javascript/optimize/background.jpg"
       },
       {
+        id: 22,
         layout: "post",
         path: "post/javascript-optimize-4",
         title: "자바스크립트 성능 최적화 4",
@@ -280,6 +320,7 @@ module.exports = {
         image: "static/image/javascript/optimize/background.jpg"
       },
       {
+        id: 21,
         layout: "post",
         path: "post/javascript-optimize-3",
         title: "자바스크립트 성능 최적화 3",
@@ -289,6 +330,7 @@ module.exports = {
         image: "static/image/javascript/optimize/background.jpg"
       },
       {
+        id: 20,
         layout: "post",
         path: "post/javascript-optimize-2",
         title: "자바스크립트 성능 최적화 2",
@@ -298,6 +340,7 @@ module.exports = {
         image: "static/image/javascript/optimize/background.jpg"
       },
       {
+        id: 19,
         layout: "post",
         path: "post/javascript-optimize-1",
         title: "자바스크립트 성능 최적화 1",
@@ -307,6 +350,7 @@ module.exports = {
         image: "static/image/javascript/optimize/background.jpg"
       },
       {
+        id: 18,
         layout: "post",
         path: "post/front-end-question",
         title: "웹 front-end 개발 질문",
@@ -316,6 +360,7 @@ module.exports = {
         image: "static/image/frontend/background.jpg"
       },
       {
+        id: 17,
         layout: "slides",
         path: "slides/vue-basic-presentation",
         title: "[Presentation] Vue.js basic",
@@ -325,6 +370,7 @@ module.exports = {
         image: "static/image/javascript/vue/background.jpg"
       },
       {
+        id: 16,
         layout: "post",
         path: "post/promise-and-async-await",
         title: "자바스크립트 promise와 async/await",
@@ -334,6 +380,7 @@ module.exports = {
         image: "static/image/javascript/javascript.jpg"
       },
       {
+        id: 15,
         layout: "post",
         path: "post/first-react-project-2",
         title: "첫 React 프로젝트 - 서버 세팅",
@@ -343,6 +390,7 @@ module.exports = {
         image: "static/image/etc/server-setting/background.jpg"
       },
       {
+        id: 14,
         layout: "post",
         path: "post/first-react-project-1",
         title: "첫 React 프로젝트 - 개발",
@@ -352,6 +400,7 @@ module.exports = {
         image: "static/image/javascript/react/background.jpg"
       },
       {
+        id: 13,
         layout: "slides",
         path: "slides/react-basic",
         title: "[Presentation] React basic",
@@ -361,6 +410,7 @@ module.exports = {
         image: "static/image/javascript/react/background.jpg"
       },
       {
+        id: 12,
         layout: "post",
         path: "post/to-deployment-pip",
         title: "PIP로 라이브러리 배포 및 사용하기",
@@ -370,6 +420,7 @@ module.exports = {
         image: "static/image/python/pip/background.jpg"
       },
       {
+        id: 11,
         layout: "post",
         path: "post/problem-in-el-capitan",
         title: "Problem in El Capitan",
@@ -379,6 +430,7 @@ module.exports = {
         image: "static/image/etc/el-capitan/background.jpg"
       },
       {
+        id: 10,
         layout: "post",
         path: "post/seoul-app-contest-with-django",
         title: "seoul app contest with django",
@@ -388,6 +440,7 @@ module.exports = {
         image: "static/image/python/seoul-app-contest/background.png"
       },
       {
+        id: 9,
         layout: "post",
         path: "post/java-foundation4",
         title: "<자바기초> component에 색상 넣기",
@@ -397,6 +450,7 @@ module.exports = {
         image: "static/image/java/java.jpg"
       },
       {
+        id: 8,
         layout: "post",
         path: "post/java-foundation3",
         title: "<자바기초> generic에서 타입 제한하기",
@@ -406,6 +460,7 @@ module.exports = {
         image: "static/image/java/java.jpg"
       },
       {
+        id: 7,
         layout: "post",
         path: "post/java-foundation2",
         title: "<자바기초> map에서 iterator 사용하기",
@@ -415,6 +470,7 @@ module.exports = {
         image: "static/image/java/java.jpg"
       },
       {
+        id: 6,
         layout: "post",
         path: "post/java-foundation1",
         title: "<자바기초> next(), nextLine() 차이점",
@@ -424,6 +480,7 @@ module.exports = {
         image: "static/image/java/java.jpg"
       },
       {
+        id: 5,
         layout: "post",
         path: "post/browserify",
         title: "Browserify와 Watchify",
@@ -433,6 +490,7 @@ module.exports = {
         image: "static/image/etc/browserify/browserify.jpg"
       },
       {
+        id: 4,
         layout: "post",
         path: "post/malware",
         title: "여행중인 나를 당황하게 한 멀웨어 공격",
@@ -442,6 +500,7 @@ module.exports = {
         image: "static/image/etc/malware/security.jpg"
       },
       {
+        id: 3,
         layout: "post",
         path: "post/php-fastcgi",
         title: "Fast CGI",
@@ -451,6 +510,7 @@ module.exports = {
         image: "static/image/php/fastcgi/fastcgi.jpg"
       },
       {
+        id: 2,
         layout: "post",
         path: "post/RESTful",
         title: "RESTful",
@@ -460,6 +520,7 @@ module.exports = {
         image: "static/image/etc/RESTful/restful-web-services.jpg"
       },
       {
+        id: 1,
         layout: "post",
         path: "post/web-presentation",
         title: "Web Presentation",
@@ -471,8 +532,16 @@ module.exports = {
     ],
     category: [
       {
-        title: 'Revlog',
-        image: 'static/image/revlog/revlog.jpg'
+        title: 'Javascript',
+        image: 'static/image/javascript/javascript.jpg'
+      },
+      {
+        title: 'Frontend',
+        image: 'static/image/frontend/frontend.jpg'
+      },
+      {
+        title: 'Presentation',
+        image: 'static/image/presentation/presentation.jpg'
       },
       {
         title: 'Etc',
@@ -491,24 +560,16 @@ module.exports = {
         image: 'static/image/python/python.jpg'
       },
       {
-        title: 'Presentation',
-        image: 'static/image/presentation/presentation.jpg'
-      },
-      {
-        title: 'Javascript',
-        image: 'static/image/javascript/javascript.jpg'
-      },
-      {
-        title: 'Frontend',
-        image: 'static/image/frontend/frontend.jpg'
-      },
-      {
         title: 'Life',
         image: 'static/image/life/life.jpg'
       },
       {
         title: 'Review',
         image: 'static/image/review/review.jpg'
+      },
+      {
+        title: 'Revlog',
+        image: 'static/image/revlog/revlog.jpg'
       }
     ]
   }

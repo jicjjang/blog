@@ -27,6 +27,7 @@ module.exports = {
     ],
     script: [
       { type: 'text/javascript', src: '/blog/static/script/google-analytics.js' },
+      { type: 'text/javascript', src: '/blog/static/script/redirect-new-blog.js' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/blog/static/favicon.png' },

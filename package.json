@@ -19,7 +19,7 @@
   "dependencies": {
     "@nuxtjs/markdownit": "^1.2.3",
     "@nuxtjs/sitemap": "0.0.3",
-    "axios": "^0.17.1",
+    "axios": "^0.18.1",
     "marked": "^0.3.19",
     "nuxt": "^1.4.5"
   },

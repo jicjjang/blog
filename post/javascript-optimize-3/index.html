@@ -1,0 +1,225 @@
+<!doctype html>
+<html data-n-head="" data-n-head-ssr>
+  <head>
+    <meta data-n-head="true" charset="utf-8"><meta data-n-head="true" content="width=device-width,initial-scale=1" name="viewport"><meta data-n-head="true" content="This blog has been used since 2018 using Nuxtjs with Vuejs" name="description" data-hid="description"><meta data-n-head="true" content="Junseok, Choi <jicjjang12@gmail.com>" name="author" data-hid="author"><meta data-n-head="true" content="blog" name="og:type" data-hid="og:type"><meta data-n-head="true" content="summary" name="twitter:card" data-hid="twitter:card"><meta data-n-head="true" content="@jicjjang" name="twitter:creator" data-hid="twitter:creator"><meta data-n-head="true" content="June" name="twitter:site" data-hid="twitter:site"><meta data-n-head="true" content="DL3OehOD_wV9A1S0SRWoeXbMtlE5SeUZPlwGrFvPHQ8" name="google-site-verification" data-hid="google-site-verification"><meta data-n-head="true" content="자바스크립트 성능 최적화 3" name="og:title" data-hid="og:title"><meta data-n-head="true" content="https://jicjjang.github.io/blog/post/javascript-optimize-3" name="og:url" data-hid="og:url"><meta data-n-head="true" content="June" name="og:site_name" data-hid="og:site_name"><meta data-n-head="true" content="자바스크립트 성능 최적화 3" name="og:description" data-hid="og:description"><meta data-n-head="true" content="https://jicjjang.github.io/blog/static/image/javascript/optimize/background.jpg" name="og:image" data-hid="og:image"><meta data-n-head="true" content="https://jicjjang.github.io/blog/post/javascript-optimize-3" name="twitter:domain" data-hid="twitter:domain"><meta data-n-head="true" content="자바스크립트 성능 최적화 3" name="twitter:description" data-hid="twitter:description"><meta data-n-head="true" content="자바스크립트 성능 최적화 3" name="twitter:title" data-hid="twitter:title"><meta data-n-head="true" content="https://jicjjang.github.io/blog/post/javascript-optimize-3" name="twitter:url" data-hid="twitter:url"><meta data-n-head="true" content="https://jicjjang.github.io/blog/static/image/javascript/optimize/background.jpg" name="twitter:image" data-hid="twitter:image"><title data-n-head="true">June</title><link href="/blog/static/favicon.png" rel="icon" data-n-head="true" type="image/x-icon"><link href="https://jicjjang.github.io/blog" rel="alternate" data-n-head="true" hreflang="x-default"><link href="https://jicjjang.github.io/blog" rel="alternate" data-n-head="true" hreflang="ko-kr"><link href="https://fonts.googleapis.com/css?family=Inconsolata|Lora|Space+Mono:700" rel="stylesheet" data-n-head="true"><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" data-n-head="true"><link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" rel="stylesheet" data-n-head="true"><link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css" rel="stylesheet" data-n-head="true"><link href="/blog/static/css/main.css" rel="stylesheet" data-n-head="true"><link href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css" rel="stylesheet" data-n-head="true"><script src="/blog/static/script/google-analytics.js" data-n-head="true" type="text/javascript"></script><script src="/blog/static/script/redirect-new-blog.js" data-n-head="true" type="text/javascript"></script><base href="/blog/"><link href="/blog/_nuxt/manifest.a29c69e4928e1561f820.js" rel="preload" as="script"><link href="/blog/_nuxt/vendor.aa15ae3874886e7051dd.js" rel="preload" as="script"><link href="/blog/_nuxt/app.62f0bf766469e2fb872d.js" rel="preload" as="script"><link href="/blog/_nuxt/layouts/post.6899ca782bd2e58245e1.js" rel="preload" as="script"><link href="/blog/_nuxt/pages/_post/_postName.5055412b9bb6195807cd.js" rel="preload" as="script"><link href="/blog/_nuxt/pages/slides/how-to-use-rxjs.0337b995dd4c2569ddd8.js" rel="prefetch"><link href="/blog/_nuxt/pages/page/_id.010433fbc0f2804611c5.js" rel="prefetch"><link href="/blog/_nuxt/pages/index.c76f6b3006d1687db412.js" rel="prefetch"><link href="/blog/_nuxt/pages/archive.c9f6097666a59bfd8774.js" rel="prefetch"><link href="/blog/_nuxt/pages/resume.4e79aa929e3307560c42.js" rel="prefetch"><link href="/blog/_nuxt/layouts/resume.d3dfa2d63de09727c8e0.js" rel="prefetch"><link href="/blog/_nuxt/pages/slides/vuetiful-korea-5.256bc5548fa8d3837c7c.js" rel="prefetch"><link href="/blog/_nuxt/pages/slides/vue-pwa-start.e50b9870efd696190964.js" rel="prefetch"><link href="/blog/_nuxt/pages/slides/vue-basic-presentation.52320d01ee002855258c.js" rel="prefetch"><link href="/blog/_nuxt/pages/slides/vue-apollo-graphql.8c866bcd93f120e94f35.js" rel="prefetch"><link href="/blog/_nuxt/pages/slides/react-basic.c7996b1cc20f0d0fbbab.js" rel="prefetch"><link href="/blog/_nuxt/pages/category/_categoryName.d0b32c5890a516d389a9.js" rel="prefetch"><link href="/blog/_nuxt/pages/slides/graphql-start-server.276c2c70ca2456b29eca.js" rel="prefetch"><link href="/blog/_nuxt/pages/slides/graphql-start-client.2a25f0f16a8e53f9858b.js" rel="prefetch"><link href="/blog/_nuxt/pages/slides/developer-life.ed86c51ec99f2d9f6307.js" rel="prefetch"><link href="/blog/_nuxt/layouts/slides.5b1e0dc11c18aa1b34fe.js" rel="prefetch"><link href="/blog/_nuxt/layouts/default.bc7cb36f71b5f45aefe7.js" rel="prefetch"><link href="/blog/_nuxt/layouts/category.2af23b5a3ee929b272fd.js" rel="prefetch"><style data-vue-ssr-id="7e4b685c:0">.nuxt-progress{position:fixed;top:0;left:0;right:0;height:2px;width:0;-webkit-transition:width .2s,opacity .4s;transition:width .2s,opacity .4s;opacity:1;background-color:#efc14e;z-index:999999}</style><style data-vue-ssr-id="682f6ae7:0">#disqus_thread[data-v-21aac818]{margin:50px 10% 0}</style>
+  </head>
+  <body data-n-head="">
+    <div id="__nuxt" data-server-rendered="true"><div class="nuxt-progress" style="width:0%;height:2px;background-color:#3b8070;opacity:0"></div><div id="__layout"><main data-v-21aac818><article data-v-21aac818 itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting"><header class="section-padding--lg mast" data-v-21aac818><a class="nav nav--white" data-v-21aac818 href="https://jicjjang.github.io/blog" itemprop="url"><i class="fa fa-lg fa-arrow-left" data-v-21aac818></i><span data-v-21aac818>Back to Posts</span></a><figure class="absolute-bg mast__img" data-v-21aac818 style="background-image:url(https://jicjjang.github.io/blog/static/image/javascript/optimize/background.jpg)"></figure><div class="mast__container" data-v-21aac818><span data-v-21aac818><time data-v-21aac818 datetime="1495065600000" itemprop="datePublished">5 / 18, 2017</time></span><h1 data-v-21aac818 itemprop="name headline">자바스크립트 성능 최적화 3</h1><span data-v-21aac818>Posted in Javascript</span></div></header><section class="section-padding post markdown-body" data-v-21aac818 itemprop="articleBody"><section><p>읽을수록 모르던 부분이 계속 등장하는데요, 3장도 바로 진행해보겠습니다.</p>
+<h2>3. DOM 스크립팅</h2>
+<p>DOM 병목이 쉽게 일어나고, 스크립팅 시간이 오래걸리는데</p>
+<ol>
+<li>DOM에 대한 접근과 수정</li>
+<li>DOM 요소의 스타일 변경, 화면 재구성을 초래하는 것</li>
+<li>DOM 이벤트를 통한 사용자 상호작용 처리</li>
+</ol>
+<p>3가지를 주제로 진행하겠습니다.</p>
+<h3>3-1. 브라우저 세계의 DOM</h3>
+<p>브라우저마다 DOM과 DOM 스크립팅에 각각 다른 엔진을 사용합니다.
+서로 다른 엔진간의 통신을 하기 때문에 느릴수 밖에 없는데요,
+그렇다면 어떻게 성능을 끌어올릴지 알아봅시다.</p>
+<h3>3-2. DOM 접근과 수정</h3>
+<p>DOM에 접근하기만 해도 리소스를 소모합니다. 그런 상황에서 DOM을 수정한다면?
+더욱 많은 리소스를 잡아먹게 되겠죠? 최대한 DOM에 대한 접근을 최소화해야 하기 때문에
+수정 및 접근 작업에서 반복문은 최악입니다.</p>
+<pre><code class="language-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">innerHTMLLoop</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> count = <span class="hljs-number">0</span>; count &lt; <span class="hljs-number">15000</span>; count++) {
+    <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'here'</span>).innerHTML += <span class="hljs-string">'a'</span>;
+  }
+}
+</code></pre>
+<p>앞에서 봤던 이슈와 동일합니다. DOM에 대한 접근이 많아진다면 DOM을 변수에 할당하고 사용해야 합니다.
+위 코드는 DOM에 접근할 때 한번, DOM의 값을 바꿀 때 한번, 반복문을 돌 때마다 2번씩 요소에 접근하게 됩니다.</p>
+<pre><code class="language-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">innerHTMLLoop</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">var</span> content = <span class="hljs-string">''</span>;
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> count = <span class="hljs-number">0</span>; count &lt; <span class="hljs-number">15000</span>; count++) {
+    content += <span class="hljs-string">'a'</span>;
+  }
+  <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'here'</span>).innerHTML += content;
+}
+</code></pre>
+<p>모든 브라우저에서 이처럼 변수에 DOM을 저장하고 사용하는 것이 효과적으로 나타납니다.</p>
+<hr>
+<p>HTML 컬렉션을 반환하는 메서드에 대해서 알아보겠습니다.</p>
+<ol>
+<li>document.getElementsByName()</li>
+<li>document.getElementsByClassName()</li>
+<li>document.getElementsByTagName()</li>
+<li>document.images</li>
+<li>document.links</li>
+<li>document.forms</li>
+<li>document.forms[0].elements</li>
+</ol>
+<p>이러한 HTML Collection은 동적이기 때문에</p>
+<pre><code class="language-javascript"><span class="hljs-keyword">var</span> alldivs = <span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">'div'</span>);
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; alldivs.length; i++) {
+  <span class="hljs-built_in">document</span>.body.appendChild(<span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'div'</span>));
+}
+</code></pre>
+<p>위 코드가 무한루프로 동작하게 됩니다. body에 div 태그가 추가될 때마다
+alldivs는 동적으로 증가하기 때문에 i가 1씩 증가할 때 alldivs도 1씩 증가하기 때문입니다.
+(그렇기 때문에 <code>느.립.니.다.</code>)</p>
+<p>또한 HTML Collection은 일반 array가 아니기 때문에 반복문보다 느립니다. 그래서 사용할 때에는
+반복문에 복사한 뒤 사용해야 합니다.</p>
+<pre><code class="language-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">toArray</span>(<span class="hljs-params">coll</span>) </span>{
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>, a = [], len = coll.length; i &lt; len; i++) {
+    a[i] = coll[i];
+  }
+  <span class="hljs-keyword">return</span> a;
+}
+</code></pre>
+<p>반복하거나 length에 접근하는 것만으로도 Collection을 갱신해야 하기 때문입니다.</p>
+<hr>
+<p>DOM의 특정 부분에 접근하는 방법에 대해 알아보겠습니다. childNodes나 nextSibling으로 형제 요소를
+선택하여 작업할 수 있는데</p>
+<pre><code class="language-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">testNextSibling</span>(<span class="hljs-params"></span>) </span>{
+  val el = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'ddd'</span>),
+      ch = el.firstChild,
+      name = <span class="hljs-string">''</span>;
+
+  <span class="hljs-keyword">do</span> {
+    name = ch.nodeName;
+  } <span class="hljs-keyword">while</span>(ch = ch.nextSibling);
+  <span class="hljs-keyword">return</span> name;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">testChildNodes</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">var</span> el = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'ddd'</span>),
+      ch = el.childNodes,
+      len = ch.length,
+      name = <span class="hljs-string">''</span>;
+
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> count = <span class="hljs-number">0</span>; count &lt; len; count++) {
+    name = ch[count].nodeName;
+  }
+  <span class="hljs-keyword">return</span> name;
+}
+</code></pre>
+<p>둘 중 어떠한 방법을 사용해도 상관이 없습니다. 다만, childNodes 같은 경우엔
+length를 캐시한 뒤 사용해야 합니다.</p>
+<p>자식요소를 조금 더 세밀하게 정해야 할 때가 있습니다.</p>
+<ol>
+<li>document.getElementById</li>
+<li>document.getElementsByName</li>
+<li>document.getElementsByClassName</li>
+<li>document.getElementsByTagName</li>
+</ol>
+<p>위 4가지 방식 뿐만 아니라</p>
+<ol>
+<li>document.querySelectorAll('#menu a')</li>
+<li>document.querySelector('#menu a')</li>
+</ol>
+<p>이런 방식 또한 가능합니다. 여러번 질의하는 것 보다는 querySelector가 훨씬 효율적입니다.</p>
+<h3>3-3. 리페인트와 리플로우</h3>
+<p>브라우저가 데이터를 내려받으면 페이지 구조를 나타내는 DOM 트리와
+DOM 트리를 어떻게 표시할 지에 대한 정보를 가진 랜더 트리, 두가지를 만듭니다.</p>
+<p>두 트리를 다 만들면 브라우저는 페이지 요소를 표시합니다. (페인트)</p>
+<p>resize 이벤트가 발생하거나 비슷한 이벤트가 발생한다면 요소들의 정보를 다시 계산 (리플로우)해야하고
+계산 한 뒤 다시 그려줘야 합니다.(리페인트) 리소스를 많이 잡아먹는것이 리플로우인데 배경색만 바꾼다고
+가정한다면 리플로우 없이 리페인트만 일어납니다.</p>
+<p>이러한 경우 리소스가 많이 소모되지 않기 때문에 성능 저하가 일어나지 않습니다.
+그렇기 때문에 리플로우를 최소화 하는 작업이 필수입니다.</p>
+<p>리플로우가 일어나는 조건은</p>
+<ul>
+<li>
+<ol>
+<li>보이는 (display, visibility)DOM 요소를 추가 혹은 제거</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>요소의 위치가 바뀜</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>요소의 크기가 바뀜</li>
+</ol>
+</li>
+<li>
+<ol start="4">
+<li>텍스트의 내용 변경, 이미지가 다른 크기 이미지로 대체되는 등의 내용 변경</li>
+</ol>
+</li>
+<li>
+<ol start="5">
+<li>페이지를 처음 표시</li>
+</ol>
+</li>
+<li>
+<ol start="6">
+<li>브라우저 창의 크기 변경</li>
+</ol>
+</li>
+</ul>
+<p>어떤 것을 바꾸느냐에 따라 전체를, 일부를 다시 계산합니다.
+리플로우를 계속 발생하는 것도 낭비기 때문에 랜더 트리를 큐에 모았다 실행할 수 있습니다.</p>
+<ol>
+<li>offsetTop, offsetLeft, offsetWidht, offsetHeight</li>
+<li>scrollTop, scrollLeft, scrollWidht, scrollHeight</li>
+<li>clientTop, clientLeft, clientWidht, clientHeight</li>
+</ol>
+<p>이런 속성은 레이아웃을 바로바로 반영해야 하므로 브라우저가 랜더링 큐에 대기중인 랜더 트리와 함께
+강제로 리플로우를 진행합니다. 그렇기 때문에 스타일을 바꿀 때 <code>위 속성을 쓰지 않는게 중요합니다.</code></p>
+<pre><code class="language-javascript"><span class="hljs-keyword">var</span> computed = <span class="hljs-built_in">document</span>.body.style;
+<span class="hljs-keyword">var</span> tmp = <span class="hljs-string">''</span>;
+
+bodyStyle.color = <span class="hljs-string">'red'</span>;
+tmp = bodyStyle.backgroundColor;
+bodyStyle.color = <span class="hljs-string">'white'</span>;
+tmp = bodyStyle.backgroundImage;
+bodyStyle.color = <span class="hljs-string">'green'</span>;
+tmp = bodyStyle.backgroundAttachment;
+</code></pre>
+<p>위 코드처럼 레이아웃을 속성을 변경하고, 값을 가져오는 일을 번갈아가며 하는 것을 매우 비효율적 이므로</p>
+<pre><code class="language-javascript"><span class="hljs-keyword">var</span> computed = <span class="hljs-built_in">document</span>.body.style;
+<span class="hljs-keyword">var</span> tmp = <span class="hljs-string">''</span>;
+
+bodyStyle.color = <span class="hljs-string">'red'</span>;
+bodyStyle.color = <span class="hljs-string">'white'</span>;
+bodyStyle.color = <span class="hljs-string">'green'</span>;
+tmp = bodyStyle.backgroundColor;
+tmp = bodyStyle.backgroundImage;
+tmp = bodyStyle.backgroundAttachment;
+</code></pre>
+<p>이렇게 같은 일을 한꺼번에 몰아주는 것이 효율적이고 더 빠릅니다.</p>
+<p>그리고</p>
+<pre><code class="language-javascript"><span class="hljs-keyword">var</span> el = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'divv'</span>);
+el.style.borderLeft = <span class="hljs-string">'1px'</span>;
+el.style.borderRight = <span class="hljs-string">'2px'</span>;
+el.style.padding = <span class="hljs-string">'5px'</span>;
+</code></pre>
+<p>최악의 경우 리플로우가 3번 일어나는 코드입니다. 이런 코드는</p>
+<pre><code class="language-javascript"><span class="hljs-keyword">var</span> el = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'divv'</span>);
+el.style.cssText = <span class="hljs-string">'border-left: 1px; border-right: 2px; padding: 5px;'</span>
+</code></pre>
+<p>이렇게 바꿔줄 수 있습니다. 다른 방법으론 class를 토글하는 방법도 있습니다.</p>
+<hr>
+<p>하지만 어쩔 수 없이 여러번 계산을 해야 할 때에는 DOM의 변경을 문서의 흐름에서 분리하고
+다 변경된 후 적용시키는 방법이 있습니다.</p>
+<p>데이터를 넣은 &lt;li> 태그를 삽입한다고 가정할 때,
+createElement를 통해 li 여러개를 생성한 후, &lt;ul> 태그 안에 넣고
+가장 마지막에 DOM에 추가하는 것입니다. 이렇게 하면 리플로우를 최소화할 수 있습니다.</p>
+<hr>
+<p>애니메이션을 할 때에는 절대 위치를 지정한 후 동작해야합니다.
+절대 위치에서는 리플로우가 동작하지 않기 때문에 포지션 변경, 애니메이션, 포지션 복귀
+순서로 진행을 해야합니다.</p>
+<h3>3-4. 이벤트 위임</h3>
+<p>자바스크립트에서 이벤트는 발생 후 부모 요소로 버블링되어 올라가므로 부모 요소에서 자식 요소의
+이벤트를 처리할 수 있습니다.</p>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"one"</span>></span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"two"</span>></span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">"..."</span>></span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>></span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>></span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>></span>
+</code></pre>
+<p>위와 같은 코드에서 &lt;a> 태그를 클릭하면 #two 요소, 그 다음으로 #one 요소, 마지막으로 window까지
+이벤트가 전파됩니다. 이렇게 이벤트가 퍼져 이벤트 대상이 아닌 다른 요소에서 이벤트를 동작시키는 것을
+위임이라고 합니다.</p>
+<p>물론 stopPropagation 메서드와 preventDefault 메서드로 위임을 제어할 수 있습니다.</p>
+<hr>
+<p>3장의 내용은 여기까지 입니다. 프론트엔드에서 가장 중요하다고 생각한 Reflow와 Repaint에 대한 내용이
+실려있는 장이었습니다. 앞으로도 많은 내용이 기대되네요!</p>
+</section>
+</section><section class="profile" data-v-21aac818><div class="profile__card" data-v-21aac818><div class="profile__img" data-v-21aac818><figure class="absolute-bg" data-v-21aac818 style="background-image:url(https://jicjjang.github.io/blog/static/image/mine.jpg)"></figure></div><div class="profile__container" data-v-21aac818><p data-v-21aac818>프론트 개발을 좋아하고 꾸준히 공부하는 백엔드 개발자. 새로운 기술에 관심이 많음. React + Vue 개발 진행중. 현재 Kakaopay 재직중.<ul class="profile__social" data-v-21aac818><li data-v-21aac818><a class="fa fa-lg fa-envelope-o" data-v-21aac818 href="mailto:jicjjang12@gmail.com"></a><li data-v-21aac818><a class="fa fa-lg fa-github" data-v-21aac818 href="https://github.com/jicjjang" target="_blank"></a><li data-v-21aac818><a class="fa fa-lg fa-linkedin" data-v-21aac818 href="https://www.linkedin.com/in/jicjjang" target="_blank"></a><li data-v-21aac818><a class="fa fa-lg fa-instagram" data-v-21aac818 href="https://instagram.com/jicjjang12" target="_blank"></a></ul></div></div></section></article><section class="next" data-v-21aac818><a class="next__link" data-v-21aac818 href="https://jicjjang.github.io/blog/post/javascript-optimize-2" itemprop="url" style="background-image:url(https://jicjjang.github.io/blog/static/image/javascript/optimize/background.jpg)"><div class="next__container" data-v-21aac818><span data-v-21aac818>Read Next</span><h2 data-v-21aac818>자바스크립트 성능 최적화 2</h2></div></a></section><div data-v-21aac818 id="disqus_thread"></div></main></div></div><script type="text/javascript">window.__NUXT__={layout:"post",data:[{}],error:null,state:{baseUrl:"https://jicjjang.github.io/blog",postList:[{id:52,layout:"post",path:"post/scale-up-for-security",title:"보안 강화를 위한 기술 정리",date:"2019-01-12",category:"Etc",description:"FIDO, HMAC",image:"static/image/etc/scale-up-for-security/background.jpg"},{id:51,layout:"post",path:"post/review-rxjs",title:"[Review] RxJS 프로그래밍",date:"2018-10-09",category:"Review",description:"[Review] 75가지 핵심 문법과 예제로 익히는 RxJS 기초",image:"static/image/review/rxjs/background.jpg"},{id:50,layout:"post",path:"post/review-modern-startup",title:"[Review] 모던 스타트업",date:"2018-09-17",category:"Review",description:"[Review] 모던 스타트업 - 팀 생산성을 높여주는 21가지 도구와 서비스",image:"static/image/review/modern-startup/background.jpg"},{id:49,layout:"slides",path:"slides/vuetiful-korea-5",title:"[Presentation] Vuetiful korea 5회 세미나",date:"2018-08-15",category:"Presentation",description:"Vuetiful korea 5회 세미나 내용 정리",image:"static/slides/image/vuetiful-korea/background.jpg"},{id:48,layout:"post",path:"post/liff-app-dev",title:"LIFF 활용기",date:"2018-08-02",category:"Frontend",description:"Liff를 활용한 실사용 앱개발",image:"static/image/etc/liff/background.jpg"},{id:47,layout:"post",path:"post/review-think-data-structures",title:"[Review] Think Data Structures",date:"2018-07-24",category:"Review",description:"[Review] 자바로 배우는 핵심 자료구조와 알고리즘",image:"static/image/review/think-data-structures/background.jpg"},{id:46,layout:"post",path:"post/liff-app",title:"심심풀이 LIFF 앱개발",date:"2018-07-09",category:"Frontend",description:"블로그 업뎃이 너무 없어 심심풀이로 만드는 Liff 앱",image:"static/image/etc/liff/background.jpg"},{id:45,layout:"post",path:"post/new-jobs",title:"이직기",date:"2018-04-28",category:"Life",description:"벅스에서의 도전을 마무리하며",image:"static/slides/image/oss/background.jpg"},{id:44,layout:"post",path:"post/review-functional-programming",title:"[Review] 함수형 자바스크립트",date:"2018-04-17",category:"Review",description:"[Review] 함수형 자바스크립트 한빛미디어 도서 리뷰",image:"static/image/review/functional-programming/background.png"},{id:43,layout:"slides",path:"slides/vue-apollo-graphql",title:"[Presentation] Apollo로 알아보는 Vue in the GraphQL",date:"2018-04-16",category:"Presentation",description:"Vuetiful korea 4th 발표자료",image:"static/image/javascript/vue/background.jpg"},{id:42,layout:"slides",path:"slides/graphql-start-client",title:"[Presentation] Graphql 시작하기 (client)",date:"2018-03-06",category:"Presentation",description:"NHN벅스 팀 세미나 발표 자료",image:"static/slides/image/graphql-start/background.jpg"},{id:41,layout:"slides",path:"slides/graphql-start-server",title:"[Presentation] Graphql 시작하기 (server)",date:"2018-03-05",category:"Presentation",description:"NHN벅스 팀 세미나 발표 자료",image:"static/slides/image/graphql-start/background.jpg"},{id:40,layout:"post",path:"post/review-learning-http-2",title:"[Review] learning http/2",date:"2018-02-14",category:"Review",description:"20년만에 업데이트된 HTTP 프로토콜에 대한 간결한(?) 입문서",image:"static/image/review/learning-http2/background.jpg"},{id:39,layout:"post",path:"post/prototypal-inheritance-model",title:"자바스크립트 상속 모델",date:"2018-02-12",category:"Javascript",description:"클래스가 아닌, 자바스크립트 프로토 타입 상속 모델에 대해",image:"static/image/javascript/javascript.jpg"},{id:38,layout:"post",path:"post/welcome-vue-card-layer",title:"오픈소스 소개",date:"2018-02-11",category:"Frontend",description:"Vue.js 뉴스에 소개된 오픈소스",image:"static/image/frontend/welcome-vue-card-layer/background.jpg"},{id:37,layout:"post",path:"post/blog-renewal",title:"블로그 리뉴얼",date:"2018-02-10",category:"Frontend",description:"코딩에 현타가 온 일상을 타파하기 위해 진행한 블로그 리뉴얼 작업!!!",image:"static/image/frontend/blog-renewal/background.jpg"},{id:36,layout:"post",path:"post/review-2018-it-trend-special-report",title:"[Review] 2018 IT 트렌트 스페셜 리포트",date:"2017-12-17",category:"Review",description:"[Review] 2018 IT 트렌트 스페셜 리포트",image:"static/image/review/ittrend/background.jpg"},{id:35,layout:"post",path:"post/life",title:"서울시 공공앱 공모전",date:"2017-12-13",category:"Life",description:"일상",image:"static/image/beat.png"},{id:34,layout:"slides",path:"slides/vue-pwa-start",title:"[Presentation] Vue pwa 시작하기",date:"2017-11-30",category:"Presentation",description:"Vuetiful korea 3rd 발표자료",image:"static/image/javascript/vue/background.jpg"},{id:33,layout:"post",path:"post/seoul-app-contest-with-node-and-react-native",title:"seoul app contest with node and react native",date:"2017-11-11",category:"Javascript",description:"2017 서울 앱 공모전",image:"static/image/javascript/seoul-app-contest/background.jpg"},{id:32,layout:"slides",path:"slides/how-to-use-rxjs",title:"[Presentation] How to use RxJs",date:"2017-11-30",category:"Presentation",description:"NHN벅스 웹서비스팀 세미나 자료",image:"static/slides/image/rxjs/background.jpg"},{id:31,layout:"post",path:"post/review-you-dont-know-js",title:"[Review] 중급자를 위한 You don't know JS",date:"2017-08-20",category:"Review",description:"[Review] 중급자를 위한 You don't know JS",image:"static/image/review/youdontknowjs/you-dont-know-js.jpg"},{id:30,layout:"post",path:"post/jwt",title:"Would you mind using a JWT?",date:"2017-08-09",category:"Etc",description:"JWT에 대해",image:"static/image/etc/jwt/background.jpg"},{id:29,layout:"slides",path:"slides/developer-life",title:"[Presentation] 현실적인 개발로 먹고살기",date:"2017-07-15",category:"Presentation",description:"OSS 개발자 포럼 발표 자료",image:"static/slides/image/oss/background.jpg"},{id:28,layout:"post",path:"post/dooray-bot-server",title:"Dooray bot scheduler (Server)",date:"2017-06-27",category:"Etc",description:"사내 메신저 봇 스케쥴러 만들기",image:"static/image/etc/dooray/background.png"},{id:27,layout:"post",path:"post/dooray-bot-front",title:"Dooray bot scheduler (Front)",date:"2017-06-27",category:"Etc",description:"사내 메신저 봇 스케쥴러 만들기",image:"static/image/etc/dooray/background.png"},{id:26,layout:"post",path:"post/airbnb-review",title:"Airbnb 이용 후기",date:"2017-06-13",category:"Life",description:"시카고에서 터진 일에 대한 Airbnb의 대처",image:"static/image/life/airbnb/background.jpg"},{id:25,layout:"post",path:"post/javascript-optimize-8",title:"자바스크립트 성능 최적화 8",date:"2017-05-20",category:"Javascript",description:"자바스크립트 성능 최적화 8",image:"static/image/javascript/optimize/background.jpg"},{id:24,layout:"post",path:"post/javascript-optimize-7",title:"자바스크립트 성능 최적화 7",date:"2017-05-19",category:"Javascript",description:"자바스크립트 성능 최적화 7",image:"static/image/javascript/optimize/background.jpg"},{id:23,layout:"post",path:"post/javascript-optimize-6",title:"자바스크립트 성능 최적화 6",date:"2017-05-19",category:"Javascript",description:"자바스크립트 성능 최적화 6",image:"static/image/javascript/optimize/background.jpg"},{id:22,layout:"post",path:"post/javascript-optimize-4",title:"자바스크립트 성능 최적화 4",date:"2017-05-19",category:"Javascript",description:"자바스크립트 성능 최적화 4",image:"static/image/javascript/optimize/background.jpg"},{id:21,layout:"post",path:"post/javascript-optimize-3",title:"자바스크립트 성능 최적화 3",date:"2017-05-18",category:"Javascript",description:"자바스크립트 성능 최적화 3",image:"static/image/javascript/optimize/background.jpg"},{id:20,layout:"post",path:"post/javascript-optimize-2",title:"자바스크립트 성능 최적화 2",date:"2017-05-18",category:"Javascript",description:"자바스크립트 성능 최적화 2",image:"static/image/javascript/optimize/background.jpg"},{id:19,layout:"post",path:"post/javascript-optimize-1",title:"자바스크립트 성능 최적화 1",date:"2017-05-18",category:"Javascript",description:"자바스크립트 성능 최적화 1",image:"static/image/javascript/optimize/background.jpg"},{id:18,layout:"post",path:"post/front-end-question",title:"웹 front-end 개발 질문",date:"2017-04-25",category:"Frontend",description:"매우 기본적인 front end 개발 질문에 대한 응답",image:"static/image/frontend/background.jpg"},{id:17,layout:"slides",path:"slides/vue-basic-presentation",title:"[Presentation] Vue.js basic",date:"2017-04-08",category:"Presentation",description:"NHN벅스 팀 세미나 발표 자료",image:"static/image/javascript/vue/background.jpg"},{id:16,layout:"post",path:"post/promise-and-async-await",title:"자바스크립트 promise와 async/await",date:"2017-02-05",category:"Javascript",description:"자바스크립트의 동기",image:"static/image/javascript/javascript.jpg"},{id:15,layout:"post",path:"post/first-react-project-2",title:"첫 React 프로젝트 - 서버 세팅",date:"2016-12-30",category:"Etc",description:"React 프로젝트 시작하기",image:"static/image/etc/server-setting/background.jpg"},{id:14,layout:"post",path:"post/first-react-project-1",title:"첫 React 프로젝트 - 개발",date:"2016-12-28",category:"Javascript",description:"React 프로젝트 시작하기",image:"static/image/javascript/react/background.jpg"},{id:13,layout:"slides",path:"slides/react-basic",title:"[Presentation] React basic",date:"2016-11-23",category:"Presentation",description:"NHN벅스 팀 세미나 발표 자료",image:"static/image/javascript/react/background.jpg"},{id:12,layout:"post",path:"post/to-deployment-pip",title:"PIP로 라이브러리 배포 및 사용하기",date:"2016-06-26",category:"Python",description:"PIP로 라이브러리 배포 및 사용하기",image:"static/image/python/pip/background.jpg"},{id:11,layout:"post",path:"post/problem-in-el-capitan",title:"Problem in El Capitan",date:"2015-11-20",category:"Etc",description:"Yosemite 에서 El Capitan 업그레이드 후 발생한 문제 리뷰",image:"static/image/etc/el-capitan/background.jpg"},{id:10,layout:"post",path:"post/seoul-app-contest-with-django",title:"seoul app contest with django",date:"2015-11-08",category:"Python",description:"2015 서울 앱 공모전",image:"static/image/python/seoul-app-contest/background.png"},{id:9,layout:"post",path:"post/java-foundation4",title:"<자바기초> component에 색상 넣기",date:"2015-09-02",category:"Java",description:"component에 색상 넣기",image:"static/image/java/java.jpg"},{id:8,layout:"post",path:"post/java-foundation3",title:"<자바기초> generic에서 타입 제한하기",date:"2015-08-30",category:"Java",description:"generic에서 타입 제한하기",image:"static/image/java/java.jpg"},{id:7,layout:"post",path:"post/java-foundation2",title:"<자바기초> map에서 iterator 사용하기",date:"2015-08-29",category:"Java",description:"map에서 iterator 사용하기",image:"static/image/java/java.jpg"},{id:6,layout:"post",path:"post/java-foundation1",title:"<자바기초> next(), nextLine() 차이점",date:"2015-08-28",category:"Java",description:"next(), nextLine() 차이점",image:"static/image/java/java.jpg"},{id:5,layout:"post",path:"post/browserify",title:"Browserify와 Watchify",date:"2015-08-11",category:"Etc",description:"Browserify와 Watchify의 관계",image:"static/image/etc/browserify/browserify.jpg"},{id:4,layout:"post",path:"post/malware",title:"여행중인 나를 당황하게 한 멀웨어 공격",date:"2015-07-20",category:"Etc",description:"Ringing at your dorbell",image:"static/image/etc/malware/security.jpg"},{id:3,layout:"post",path:"post/php-fastcgi",title:"Fast CGI",date:"2015-07-11",category:"Php",description:"ERROR: An another FPM instance seems to already listen on /var/run/php5-fpm.sock 오류 해결하기",image:"static/image/php/fastcgi/fastcgi.jpg"},{id:2,layout:"post",path:"post/RESTful",title:"RESTful",date:"2015-06-24",category:"Etc",description:"RESTful한 코드작성과 REST, CRUD에 대해",image:"static/image/etc/RESTful/restful-web-services.jpg"},{id:1,layout:"post",path:"post/web-presentation",title:"Web Presentation",date:"2015-02-11",category:"Etc",description:"prezi와 같은 web presentation을 직접 코드로 동작해보기",image:"static/image/etc/web-presentation/web-presentation.png"}],categoryList:[{title:"Javascript",image:"static/image/javascript/javascript.jpg"},{title:"Frontend",image:"static/image/frontend/frontend.jpg"},{title:"Presentation",image:"static/image/presentation/presentation.jpg"},{title:"Etc",image:"static/image/etc/etc.jpg"},{title:"Php",image:"static/image/php/php.jpg"},{title:"Java",image:"static/image/java/java.jpg"},{title:"Python",image:"static/image/python/python.jpg"},{title:"Life",image:"static/image/life/life.jpg"},{title:"Review",image:"static/image/review/review.jpg"},{title:"Revlog",image:"static/image/revlog/revlog.jpg"}]},serverRendered:!0}</script><script src="/blog/_nuxt/manifest.a29c69e4928e1561f820.js" defer></script><script src="/blog/_nuxt/layouts/post.6899ca782bd2e58245e1.js" defer></script><script src="/blog/_nuxt/pages/_post/_postName.5055412b9bb6195807cd.js" defer></script><script src="/blog/_nuxt/vendor.aa15ae3874886e7051dd.js" defer></script><script src="/blog/_nuxt/app.62f0bf766469e2fb872d.js" defer></script>
+  
+

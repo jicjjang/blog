@@ -1,0 +1,160 @@
+<!doctype html>
+<html data-n-head="" data-n-head-ssr>
+  <head>
+    <meta data-n-head="true" charset="utf-8"><meta data-n-head="true" content="width=device-width,initial-scale=1" name="viewport"><meta data-n-head="true" content="This blog has been used since 2018 using Nuxtjs with Vuejs" name="description" data-hid="description"><meta data-n-head="true" content="Junseok, Choi <jicjjang12@gmail.com>" name="author" data-hid="author"><meta data-n-head="true" content="blog" name="og:type" data-hid="og:type"><meta data-n-head="true" content="summary" name="twitter:card" data-hid="twitter:card"><meta data-n-head="true" content="@jicjjang" name="twitter:creator" data-hid="twitter:creator"><meta data-n-head="true" content="June" name="twitter:site" data-hid="twitter:site"><meta data-n-head="true" content="DL3OehOD_wV9A1S0SRWoeXbMtlE5SeUZPlwGrFvPHQ8" name="google-site-verification" data-hid="google-site-verification"><meta data-n-head="true" content="[Presentation] React basic" name="apple-mobile-web-app-capable" data-hid="apple-mobile-web-app-capable"><meta data-n-head="true" content="black-translucent" name="apple-mobile-web-app-status-bar-style" data-hid="apple-mobile-web-app-status-bar-style"><meta data-n-head="true" content="[Presentation] React basic" name="og:title" data-hid="og:title"><meta data-n-head="true" content="https://jicjjang.github.io/blog/slides/react-basic" name="og:url" data-hid="og:url"><meta data-n-head="true" content="June" name="og:site_name" data-hid="og:site_name"><meta data-n-head="true" content="NHN벅스 팀 세미나 발표 자료" name="og:description" data-hid="og:description"><meta data-n-head="true" content="https://jicjjang.github.io/blog/static/image/javascript/react/background.jpg" name="og:image" data-hid="og:image"><meta data-n-head="true" content="https://jicjjang.github.io/blog/slides/react-basic" name="twitter:domain" data-hid="twitter:domain"><meta data-n-head="true" content="NHN벅스 팀 세미나 발표 자료" name="twitter:description" data-hid="twitter:description"><meta data-n-head="true" content="[Presentation] React basic" name="twitter:title" data-hid="twitter:title"><meta data-n-head="true" content="https://jicjjang.github.io/blog/slides/react-basic" name="twitter:url" data-hid="twitter:url"><meta data-n-head="true" content="https://jicjjang.github.io/blog/static/image/javascript/react/background.jpg" name="twitter:image" data-hid="twitter:image"><title data-n-head="true">June</title><link href="/blog/static/favicon.png" rel="icon" data-n-head="true" type="image/x-icon"><link href="https://jicjjang.github.io/blog" rel="alternate" data-n-head="true" hreflang="x-default"><link href="https://jicjjang.github.io/blog" rel="alternate" data-n-head="true" hreflang="ko-kr"><link href="https://fonts.googleapis.com/css?family=Inconsolata|Lora|Space+Mono:700" rel="stylesheet" data-n-head="true"><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" data-n-head="true"><link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" rel="stylesheet" data-n-head="true"><link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css" rel="stylesheet" data-n-head="true"><link href="/blog/static/css/main.css" rel="stylesheet" data-n-head="true"><link href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css" rel="stylesheet" data-n-head="true"><link href="/blog/static/slides/css/reveal.css" rel="stylesheet" data-n-head="true"><link href="/blog/static/slides/css/theme/black.css" rel="stylesheet" data-n-head="true"><link href="/blog/static/slides/lib/css/zenburn.css" rel="stylesheet" data-n-head="true"><script src="/blog/static/script/google-analytics.js" data-n-head="true" type="text/javascript"></script><script src="/blog/static/script/redirect-new-blog.js" data-n-head="true" type="text/javascript"></script><script src="/blog/static/slides/js/reveal.js" data-n-head="true" type="text/javascript" async></script><script src="/blog/static/slides/lib/js/head.min.js" data-n-head="true" type="text/javascript"></script><base href="/blog/"><link href="/blog/_nuxt/manifest.a29c69e4928e1561f820.js" rel="preload" as="script"><link href="/blog/_nuxt/vendor.aa15ae3874886e7051dd.js" rel="preload" as="script"><link href="/blog/_nuxt/app.62f0bf766469e2fb872d.js" rel="preload" as="script"><link href="/blog/_nuxt/layouts/slides.5b1e0dc11c18aa1b34fe.js" rel="preload" as="script"><link href="/blog/_nuxt/pages/slides/react-basic.c7996b1cc20f0d0fbbab.js" rel="preload" as="script"><link href="/blog/_nuxt/pages/slides/how-to-use-rxjs.0337b995dd4c2569ddd8.js" rel="prefetch"><link href="/blog/_nuxt/pages/_post/_postName.5055412b9bb6195807cd.js" rel="prefetch"><link href="/blog/_nuxt/pages/page/_id.010433fbc0f2804611c5.js" rel="prefetch"><link href="/blog/_nuxt/pages/index.c76f6b3006d1687db412.js" rel="prefetch"><link href="/blog/_nuxt/pages/archive.c9f6097666a59bfd8774.js" rel="prefetch"><link href="/blog/_nuxt/pages/resume.4e79aa929e3307560c42.js" rel="prefetch"><link href="/blog/_nuxt/layouts/resume.d3dfa2d63de09727c8e0.js" rel="prefetch"><link href="/blog/_nuxt/layouts/post.6899ca782bd2e58245e1.js" rel="prefetch"><link href="/blog/_nuxt/pages/slides/vuetiful-korea-5.256bc5548fa8d3837c7c.js" rel="prefetch"><link href="/blog/_nuxt/pages/slides/vue-pwa-start.e50b9870efd696190964.js" rel="prefetch"><link href="/blog/_nuxt/pages/slides/vue-basic-presentation.52320d01ee002855258c.js" rel="prefetch"><link href="/blog/_nuxt/pages/slides/vue-apollo-graphql.8c866bcd93f120e94f35.js" rel="prefetch"><link href="/blog/_nuxt/pages/category/_categoryName.d0b32c5890a516d389a9.js" rel="prefetch"><link href="/blog/_nuxt/pages/slides/graphql-start-server.276c2c70ca2456b29eca.js" rel="prefetch"><link href="/blog/_nuxt/pages/slides/graphql-start-client.2a25f0f16a8e53f9858b.js" rel="prefetch"><link href="/blog/_nuxt/pages/slides/developer-life.ed86c51ec99f2d9f6307.js" rel="prefetch"><link href="/blog/_nuxt/layouts/default.bc7cb36f71b5f45aefe7.js" rel="prefetch"><link href="/blog/_nuxt/layouts/category.2af23b5a3ee929b272fd.js" rel="prefetch"><style data-vue-ssr-id="7e4b685c:0">.nuxt-progress{position:fixed;top:0;left:0;right:0;height:2px;width:0;-webkit-transition:width .2s,opacity .4s;transition:width .2s,opacity .4s;opacity:1;background-color:#efc14e;z-index:999999}</style>
+  </head>
+  <body data-n-head="">
+    <div id="__nuxt" data-server-rendered="true"><div class="nuxt-progress" style="width:0%;height:2px;background-color:#3b8070;opacity:0"></div><div id="__layout"><div class="reveal" style="position:absolute"><div class="slides"><section><h1>React.js</h1><h3>Javascript View Framework</h3><p><small>Created by <a href="https://jicjjang.github.io/blog">Junseok, Choi</a></small></section><section><p>시작은 페이스북 & 인스타그램 개발자들의 View에만 집중된 프레임워크를 블라블라....(생략)</p><br><h2 class="fragment"><a href="https://facebook.github.io/react/blog/2013/06/05/why-react.html">"지속해서 데이터가 변화하는 대규모 애플리케이션을 구축하기" 용도</a></h2><aside class="notes">
+      물론 data, routing, action에 대한 기능들 사용 가능합니다.
+    </aside></section><section><section><h2>React의 특징</h2><aside class="notes">
+        맨날 사람들이 React, React하는데 왜 그런지 장점에 대해서 한번 살펴보겠습니다.
+      </aside></section><section><h2>Components</h2><p style="width:60%;margin:0 auto"><img src="/blog/static/slides/image/react-basic/component.png"></p><small>
+        출처 - http://www.slideshare.net/taggon/react-js-46357445
+      </small><aside class="notes">
+        Component란, 재사용 가능한 UI 구성 단위입니다. React는 컴포넌트 구조로 이루어져 있으며 컴포넌트를 만들때 JSX문법이 사용됩니다. 상위에서 하위 컴포넌트로 연결되어 서로 결합됩니다. 컴포넌트 별로 데이터가 사용됩니다.
+      </aside></section><section><h2>Components</h2><p style="width:80%;margin:0 auto"><img src="/blog/static/slides/image/react-basic/component_example.png"><aside class="notes">
+        제가 예전에 공부했던 코드입니다.
+        데이터는 state와 prop를 이용하는데, props는 불변하는 객체, state 변하는 객체 입니다.
+        뒤에서 더 자세히 설명드리겠습니다.
+      </aside></section><section><h2>Virtual DOM</h2><p><span>DOM?</span> No..., <span>Virtual DOM?</span> Yes!
+      <aside class="notes">
+        SPA앱에서 사용자가 끊임없이 data를 가져오고, 현재 상태를 확인해서 data-binding을 해줘야 하는데 이 과정은 프로젝트가 커질수록 복잡해집니다.<br>
+        React에서는 가상의 DOM을 사용합니다. Virtual DOM에서는 Reactive Rendering 기법을 이용해 DOM에 변경사항이 생기면 이를 감지하고 변경된 부분만 Re-Rendering을 합니다.
+        브라우저에 의존적이지 않고 / 빠르다는 장점이 있습니다.
+      </aside></section><section><h2>단반향 데이터 흐름</h2><p>
+        상위 컴포넌트 (Parent) to 하위 컴포넌트 (Children)
+      <p style="width:80%;margin:0 auto"><img src="/blog/static/slides/image/react-basic/tree.png"><aside class="notes">
+        앞서 보여드린 코드와 같이 CardList, CardItem, CardDetail 과 같이
+        상위 -> 하위 로 진행되는 구조를 나타냅니다. 이러한 컴포넌트 구조를 따라가며
+        데이터 또한 단방향으로 진행되게 됩니다.
+      </aside></section><section><h2>JSX</h2><p>
+        Javascript + XML
+      <aside class="notes">
+        XML의 문법을 차용하여 사용합니다. 자바스크립트 자체로도 만들 수 있고, 처음엔 불편하기도 하지만
+        조금만 사용해 보면 훨씬 간단하고 쉽게 Comopnent를 만들 수 있습니다.
+        JSX문법으로 만든 후 JSXTransformer로 JS코드 컴파일링을 합니다.
+      </aside></section><section><h2>Flux</h2><p style="width:80%;margin:0 auto"><img src="/blog/static/slides/image/react-basic/mvc.png"><aside class="notes">
+        flux 패턴의 사용은 필수는 아닙니다. 웹의 구조에서 양방향 데이터 바인딩 형식인 mvc 패턴의 사진입니다.
+      </aside></section><section><h2>Flux</h2><p style="width:80%;margin:0 auto"><img src="/blog/static/slides/image/react-basic/flux.png"><aside class="notes">
+        flux 패턴은 MVC와는 다르게 단방향 데이터 통신에 맞게 나온 새로운 패턴입니다.
+        Dispatcher, Stores, View 로 구성되어 있는데, action을 실행하고, 저장하고, 보여줄 수 있는
+        구조로 구성되어 있습니다.
+      </aside></section><section><h2>Flux</h2><p style="width:80%;margin:0 auto"><img src="/blog/static/slides/image/react-basic/flux1.png"><aside class="notes">
+        state는 액션마다 재기록 되는데, 각각의 액션 전, 후로 state를 구분해줘야 합니다.
+      </aside></section><section><h2>Flux</h2><p style="width:80%;margin:0 auto"><img src="/blog/static/slides/image/react-basic/flux2.png"><aside class="notes">
+        그리고 middleware를 쉽게 붙일 수 있어야 하는데, 이 또한 쉽지 않습니다.
+      </aside></section><section><h2>Redux</h2><p style="width:80%;margin:0 auto"><img src="/blog/static/slides/image/react-basic/redux1.png"><aside class="notes">
+        이를 해결하기 위해 Flux 기반의 Redux 라이브러리를 사용합니다.
+        액션 전, 후로 state를 구분하지 못하는 문제는 액션 마다 상태를 수정하지 않는 대신
+        상태를 복사하여 각각의 복사본을 수정해주는 방식을 택했습니다.
+      </aside></section><section><h2>Redux</h2><p style="width:80%;margin:0 auto"><img src="/blog/static/slides/image/react-basic/redux2.png"><aside class="notes">
+        그리고 연결하기 힘든 middleware는 액션에만 적용하여 데이터와는 관심사를 분리시켰습니다.
+      </aside></section></section><section><h2>기타 등등...</h2><p>기타 등등이라고 중요하지 않은 것은 아닙니다.<ul><li class="fragment">es6<li class="fragment">webpack<li class="fragment">npm<li class="fragment">...</ul><aside class="notes">
+      React로 개발을 시작하면 무조건 만날 수 밖에 없는 요소들이지만
+      지금 세미나에선 생략하겠습니다.
+    </aside></section><section><h2>환경 설정</h2><p style="position:absolute" class="fragment fade-out">이제 npm으로 babel와 react, 부가적인 라이브러리를 설치하고 babel로 JSX를 JS로 컴파일 하는 환경과 webpack.config.js로 개발환경 전용 서버를 돌아가게 하는 세팅을 하고...<h3 class="fragment fade-in">이 모든 것을 간단하게!<br><a href="https://github.com/facebookincubator/create-react-app">create-react-app!</a></h3><aside class="notes">
+      초반에는 설정이 꽤나 복잡했습니다. React의 컨트리뷰터인 Dan Abramov 이런 문제를 인지하고 있었는데, (제가 듣기론 Vue.js였던 것 같습니다.) 컨퍼런스의 Framework 내장 shell 환경을 보고
+      자동으로 세팅을 해주는 환경을 만들었다고 합니다. 이 환경을 install해주고, run만 해주면 바로 React 전용 서버가 켜지게 됩니다. dev환경에서 사용하는 서버이기 때문에, 개발이 끝난 후 build를 하면
+      개발 시 사용되었던 라이브러리들이 한꺼번에 build되어 나타납니다.
+    </aside></section><section data-markdown><script type="text/template">
+      ## 환경 설정
+      ```
+      $ npm install -g create-react-app
+      $ create-react-app my-app
+      $ npm start
+      ```
+      #### 끝.
+    </script></section><section><h2>개발</h2><p style="width:60%;margin:0 auto" class="fragment"><img src="/blog/static/slides/image/react-basic/develop.png"><aside class="notes">
+      이제 실제 개발에 대해 알아보겠습니다.
+    </aside></section><section><section data-markdown style="font-size:28px"><script type="text/template">
+        ## Data를 사용하기 위한 필요 요소
+        ### 1. props
+        ```
+        class hello extends Component {
+          // 3. 생성자에서 this.props를 사용하기 위해서는
+          // super에 props를 넣어주어야 합니다.
+          constructor(props) {
+            super(props);
+          }
+
+          render() {
+            // 4. return 은 단일 태그로만 가능.
+            return (
+              // 5. 부모 컴포넌트에서 전달해 준 name을 넣어준다.
+              // =&gt; Hello junseok!
+              &lt;p&gt;Hello {this.props.name}!&lt;/p&gt;
+            )
+          }
+        }
+
+        ReactDOM.render(
+          &lt;hello name=&quot;junseok&quot; /&gt;,	// 1. 컴포넌트를 호출하면서 name props를 넘겨준다.
+          document.getElementsById(&quot;root&quot;)	// 2. 호출한 컴포넌트를 해당 DOM에 넣어준다.
+        );
+        ```
+      </script><aside class="notes">
+        props는 부모 컴포넌트에서 자식 컴포넌트로 넣어준 데이터로, 상수처럼 변하지 않는 값 입니다. 위 예제처럼 호출하면서 넣어준 데이터를 하위 컴포넌트에서 사용할 수 있습니다.
+      </aside></section><section data-markdown style="font-size:28px"><script type="text/template">
+        ## Data를 사용하기 위한 필요 요소
+        ### 2. state
+        ```
+        class hello extends Component {
+          constructor(props) {
+            super(props);
+            // 1. state를 초기화해준다.
+            this.state = {
+              count: 0
+            }
+          }
+          // 2. 이벤트가 들어오면 count가 1 증가하는 함수
+          increase() {
+            this.setState({count: this.state.count+1});
+          }
+          render() {
+            // 3. JSX에서 onclick같은 부분은 camel-case로 써야한다.
+            // ps. css도 마찬가지 (backgroundImage, backgroundColor...)
+            // 4. a에 click 이벤트를 연결해준다.
+            return (
+              &lt;a onClick={this.increase.bind(this)}&gt;Click me!&lt;/a&gt;
+            )
+          }
+        }
+        ```
+      </script><aside class="notes">
+        state는 변수처럼 변할 수 있는 데이터를 들고있습니다. 여러 이벤트에 사용할 수 있습니다. 상위컴포넌트의 state를 자식에게 준다면 어떻게 될까요?
+        자식에서는 props로 사용하게 됩니다. 하지만 부모 요소의 this.state.a가 바뀐다고 하면 Re-Rendering이 되기 때문에 자식 또한 바뀌게 됩니다.
+      </aside></section><section style="font-size:28px"><h2>Data를 사용하기 위한 필요 요소</h2><h3>3. Life Cycle</h3><p style="width:80%;margin:0 auto"><img src="/blog/static/slides/image/react-basic/lifecycle.png"></p><small>출처 - https://www.reddit.com/r/javascript/comments/45khex/reactjs_life_cycle_diagram_oc/</small><aside class="notes">
+        생명주기 입니다. 만들어 질 때, 업데이트 될 때, 없어질 때 3가지 케이스로 나눠져 rendering이 되는데
+        rendering이 되는 과정에 거쳐가는 메서드 들입니다. 이 메서드 들을 이용해 컴포넌트가
+        생성이나 업데이트 전에 데이터를 가져오거나 초기화 하는 기능, 지워지기 직전에 어떠한 행동 등을 할 수 있습니다.
+      </aside></section></section><section><h2>Think about it</h2><h3 class="fragment">어라?</h3><p class="fragment">그렇다면 state와 props는<br>각각의 컴포넌트가 모두 들고있는 건가?<h2 class="fragment">ㅇㅇ</h2><aside class="notes">
+      네. 모든 컴포넌트는 각각의 state와 props를 가지고 있습니다. 그렇기에 data가 어디에서 어떻게 사용되는지 주의깊게 살피고 사용해야 합니다.
+    </aside></section><section><section><h2>이쯤에서 다시보는 Redux</h2><p style="width:80%;margin:0 auto" class="fragment"><img src="/blog/static/slides/image/react-basic/withRedux.png"><small>출처 - https://css-tricks.com/learning-react-redux/</small><aside class="notes">
+        Flux 패턴은 꼭 있어야 하는 것은 아니지만 거의 필수처럼 자리잡고 있습니다.
+        Redux가 없는 Flux에서는 왼쪽과 같이 각각의 데이터가 어지럽게 사용됩니다. 그러나 Redux는 Store를 공유하기때문에 어디서든 자유롭게 사용할 수 있습니다.
+      </aside></section><section data-markdown style="font-size:28px"><script type="text/template">
+        ## 이쯤에서 다시보는 Redux
+        ```
+        ...
+        // action을 props로 넣어주는 예제
+        const mapDispatchToProps = (dispatch) =&gt; bindActionCreators({
+          name: function(state, action) {
+            const {type, changeFunc} = action;
+
+            switch (type) {
+              case 'CHANGE_FUNCTION':
+                return changeFunc;
+              default:
+                return state;
+            }
+          }
+        }, dispatch);
+
+        // state와 action을 props로 넣어줍니다.
+        export default connect(mapStateToProps, mapDispatchToProps)(MyApp);
+        ```
+      </script><aside class="notes">
+        이런식으로 코드가 나오는데 자세한 것은 코드를 보면서 진행하겠습니다.
+      </aside></section></section><section><h2>이제 코드를 보며 이해해 보겠습니다.</h2><a href="localhost:3000">localhost:3000</a></section></div></div></div></div><script type="text/javascript">window.__NUXT__={layout:"slides",data:[{}],error:null,state:{baseUrl:"https://jicjjang.github.io/blog",postList:[{id:52,layout:"post",path:"post/scale-up-for-security",title:"보안 강화를 위한 기술 정리",date:"2019-01-12",category:"Etc",description:"FIDO, HMAC",image:"static/image/etc/scale-up-for-security/background.jpg"},{id:51,layout:"post",path:"post/review-rxjs",title:"[Review] RxJS 프로그래밍",date:"2018-10-09",category:"Review",description:"[Review] 75가지 핵심 문법과 예제로 익히는 RxJS 기초",image:"static/image/review/rxjs/background.jpg"},{id:50,layout:"post",path:"post/review-modern-startup",title:"[Review] 모던 스타트업",date:"2018-09-17",category:"Review",description:"[Review] 모던 스타트업 - 팀 생산성을 높여주는 21가지 도구와 서비스",image:"static/image/review/modern-startup/background.jpg"},{id:49,layout:"slides",path:"slides/vuetiful-korea-5",title:"[Presentation] Vuetiful korea 5회 세미나",date:"2018-08-15",category:"Presentation",description:"Vuetiful korea 5회 세미나 내용 정리",image:"static/slides/image/vuetiful-korea/background.jpg"},{id:48,layout:"post",path:"post/liff-app-dev",title:"LIFF 활용기",date:"2018-08-02",category:"Frontend",description:"Liff를 활용한 실사용 앱개발",image:"static/image/etc/liff/background.jpg"},{id:47,layout:"post",path:"post/review-think-data-structures",title:"[Review] Think Data Structures",date:"2018-07-24",category:"Review",description:"[Review] 자바로 배우는 핵심 자료구조와 알고리즘",image:"static/image/review/think-data-structures/background.jpg"},{id:46,layout:"post",path:"post/liff-app",title:"심심풀이 LIFF 앱개발",date:"2018-07-09",category:"Frontend",description:"블로그 업뎃이 너무 없어 심심풀이로 만드는 Liff 앱",image:"static/image/etc/liff/background.jpg"},{id:45,layout:"post",path:"post/new-jobs",title:"이직기",date:"2018-04-28",category:"Life",description:"벅스에서의 도전을 마무리하며",image:"static/slides/image/oss/background.jpg"},{id:44,layout:"post",path:"post/review-functional-programming",title:"[Review] 함수형 자바스크립트",date:"2018-04-17",category:"Review",description:"[Review] 함수형 자바스크립트 한빛미디어 도서 리뷰",image:"static/image/review/functional-programming/background.png"},{id:43,layout:"slides",path:"slides/vue-apollo-graphql",title:"[Presentation] Apollo로 알아보는 Vue in the GraphQL",date:"2018-04-16",category:"Presentation",description:"Vuetiful korea 4th 발표자료",image:"static/image/javascript/vue/background.jpg"},{id:42,layout:"slides",path:"slides/graphql-start-client",title:"[Presentation] Graphql 시작하기 (client)",date:"2018-03-06",category:"Presentation",description:"NHN벅스 팀 세미나 발표 자료",image:"static/slides/image/graphql-start/background.jpg"},{id:41,layout:"slides",path:"slides/graphql-start-server",title:"[Presentation] Graphql 시작하기 (server)",date:"2018-03-05",category:"Presentation",description:"NHN벅스 팀 세미나 발표 자료",image:"static/slides/image/graphql-start/background.jpg"},{id:40,layout:"post",path:"post/review-learning-http-2",title:"[Review] learning http/2",date:"2018-02-14",category:"Review",description:"20년만에 업데이트된 HTTP 프로토콜에 대한 간결한(?) 입문서",image:"static/image/review/learning-http2/background.jpg"},{id:39,layout:"post",path:"post/prototypal-inheritance-model",title:"자바스크립트 상속 모델",date:"2018-02-12",category:"Javascript",description:"클래스가 아닌, 자바스크립트 프로토 타입 상속 모델에 대해",image:"static/image/javascript/javascript.jpg"},{id:38,layout:"post",path:"post/welcome-vue-card-layer",title:"오픈소스 소개",date:"2018-02-11",category:"Frontend",description:"Vue.js 뉴스에 소개된 오픈소스",image:"static/image/frontend/welcome-vue-card-layer/background.jpg"},{id:37,layout:"post",path:"post/blog-renewal",title:"블로그 리뉴얼",date:"2018-02-10",category:"Frontend",description:"코딩에 현타가 온 일상을 타파하기 위해 진행한 블로그 리뉴얼 작업!!!",image:"static/image/frontend/blog-renewal/background.jpg"},{id:36,layout:"post",path:"post/review-2018-it-trend-special-report",title:"[Review] 2018 IT 트렌트 스페셜 리포트",date:"2017-12-17",category:"Review",description:"[Review] 2018 IT 트렌트 스페셜 리포트",image:"static/image/review/ittrend/background.jpg"},{id:35,layout:"post",path:"post/life",title:"서울시 공공앱 공모전",date:"2017-12-13",category:"Life",description:"일상",image:"static/image/beat.png"},{id:34,layout:"slides",path:"slides/vue-pwa-start",title:"[Presentation] Vue pwa 시작하기",date:"2017-11-30",category:"Presentation",description:"Vuetiful korea 3rd 발표자료",image:"static/image/javascript/vue/background.jpg"},{id:33,layout:"post",path:"post/seoul-app-contest-with-node-and-react-native",title:"seoul app contest with node and react native",date:"2017-11-11",category:"Javascript",description:"2017 서울 앱 공모전",image:"static/image/javascript/seoul-app-contest/background.jpg"},{id:32,layout:"slides",path:"slides/how-to-use-rxjs",title:"[Presentation] How to use RxJs",date:"2017-11-30",category:"Presentation",description:"NHN벅스 웹서비스팀 세미나 자료",image:"static/slides/image/rxjs/background.jpg"},{id:31,layout:"post",path:"post/review-you-dont-know-js",title:"[Review] 중급자를 위한 You don't know JS",date:"2017-08-20",category:"Review",description:"[Review] 중급자를 위한 You don't know JS",image:"static/image/review/youdontknowjs/you-dont-know-js.jpg"},{id:30,layout:"post",path:"post/jwt",title:"Would you mind using a JWT?",date:"2017-08-09",category:"Etc",description:"JWT에 대해",image:"static/image/etc/jwt/background.jpg"},{id:29,layout:"slides",path:"slides/developer-life",title:"[Presentation] 현실적인 개발로 먹고살기",date:"2017-07-15",category:"Presentation",description:"OSS 개발자 포럼 발표 자료",image:"static/slides/image/oss/background.jpg"},{id:28,layout:"post",path:"post/dooray-bot-server",title:"Dooray bot scheduler (Server)",date:"2017-06-27",category:"Etc",description:"사내 메신저 봇 스케쥴러 만들기",image:"static/image/etc/dooray/background.png"},{id:27,layout:"post",path:"post/dooray-bot-front",title:"Dooray bot scheduler (Front)",date:"2017-06-27",category:"Etc",description:"사내 메신저 봇 스케쥴러 만들기",image:"static/image/etc/dooray/background.png"},{id:26,layout:"post",path:"post/airbnb-review",title:"Airbnb 이용 후기",date:"2017-06-13",category:"Life",description:"시카고에서 터진 일에 대한 Airbnb의 대처",image:"static/image/life/airbnb/background.jpg"},{id:25,layout:"post",path:"post/javascript-optimize-8",title:"자바스크립트 성능 최적화 8",date:"2017-05-20",category:"Javascript",description:"자바스크립트 성능 최적화 8",image:"static/image/javascript/optimize/background.jpg"},{id:24,layout:"post",path:"post/javascript-optimize-7",title:"자바스크립트 성능 최적화 7",date:"2017-05-19",category:"Javascript",description:"자바스크립트 성능 최적화 7",image:"static/image/javascript/optimize/background.jpg"},{id:23,layout:"post",path:"post/javascript-optimize-6",title:"자바스크립트 성능 최적화 6",date:"2017-05-19",category:"Javascript",description:"자바스크립트 성능 최적화 6",image:"static/image/javascript/optimize/background.jpg"},{id:22,layout:"post",path:"post/javascript-optimize-4",title:"자바스크립트 성능 최적화 4",date:"2017-05-19",category:"Javascript",description:"자바스크립트 성능 최적화 4",image:"static/image/javascript/optimize/background.jpg"},{id:21,layout:"post",path:"post/javascript-optimize-3",title:"자바스크립트 성능 최적화 3",date:"2017-05-18",category:"Javascript",description:"자바스크립트 성능 최적화 3",image:"static/image/javascript/optimize/background.jpg"},{id:20,layout:"post",path:"post/javascript-optimize-2",title:"자바스크립트 성능 최적화 2",date:"2017-05-18",category:"Javascript",description:"자바스크립트 성능 최적화 2",image:"static/image/javascript/optimize/background.jpg"},{id:19,layout:"post",path:"post/javascript-optimize-1",title:"자바스크립트 성능 최적화 1",date:"2017-05-18",category:"Javascript",description:"자바스크립트 성능 최적화 1",image:"static/image/javascript/optimize/background.jpg"},{id:18,layout:"post",path:"post/front-end-question",title:"웹 front-end 개발 질문",date:"2017-04-25",category:"Frontend",description:"매우 기본적인 front end 개발 질문에 대한 응답",image:"static/image/frontend/background.jpg"},{id:17,layout:"slides",path:"slides/vue-basic-presentation",title:"[Presentation] Vue.js basic",date:"2017-04-08",category:"Presentation",description:"NHN벅스 팀 세미나 발표 자료",image:"static/image/javascript/vue/background.jpg"},{id:16,layout:"post",path:"post/promise-and-async-await",title:"자바스크립트 promise와 async/await",date:"2017-02-05",category:"Javascript",description:"자바스크립트의 동기",image:"static/image/javascript/javascript.jpg"},{id:15,layout:"post",path:"post/first-react-project-2",title:"첫 React 프로젝트 - 서버 세팅",date:"2016-12-30",category:"Etc",description:"React 프로젝트 시작하기",image:"static/image/etc/server-setting/background.jpg"},{id:14,layout:"post",path:"post/first-react-project-1",title:"첫 React 프로젝트 - 개발",date:"2016-12-28",category:"Javascript",description:"React 프로젝트 시작하기",image:"static/image/javascript/react/background.jpg"},{id:13,layout:"slides",path:"slides/react-basic",title:"[Presentation] React basic",date:"2016-11-23",category:"Presentation",description:"NHN벅스 팀 세미나 발표 자료",image:"static/image/javascript/react/background.jpg"},{id:12,layout:"post",path:"post/to-deployment-pip",title:"PIP로 라이브러리 배포 및 사용하기",date:"2016-06-26",category:"Python",description:"PIP로 라이브러리 배포 및 사용하기",image:"static/image/python/pip/background.jpg"},{id:11,layout:"post",path:"post/problem-in-el-capitan",title:"Problem in El Capitan",date:"2015-11-20",category:"Etc",description:"Yosemite 에서 El Capitan 업그레이드 후 발생한 문제 리뷰",image:"static/image/etc/el-capitan/background.jpg"},{id:10,layout:"post",path:"post/seoul-app-contest-with-django",title:"seoul app contest with django",date:"2015-11-08",category:"Python",description:"2015 서울 앱 공모전",image:"static/image/python/seoul-app-contest/background.png"},{id:9,layout:"post",path:"post/java-foundation4",title:"<자바기초> component에 색상 넣기",date:"2015-09-02",category:"Java",description:"component에 색상 넣기",image:"static/image/java/java.jpg"},{id:8,layout:"post",path:"post/java-foundation3",title:"<자바기초> generic에서 타입 제한하기",date:"2015-08-30",category:"Java",description:"generic에서 타입 제한하기",image:"static/image/java/java.jpg"},{id:7,layout:"post",path:"post/java-foundation2",title:"<자바기초> map에서 iterator 사용하기",date:"2015-08-29",category:"Java",description:"map에서 iterator 사용하기",image:"static/image/java/java.jpg"},{id:6,layout:"post",path:"post/java-foundation1",title:"<자바기초> next(), nextLine() 차이점",date:"2015-08-28",category:"Java",description:"next(), nextLine() 차이점",image:"static/image/java/java.jpg"},{id:5,layout:"post",path:"post/browserify",title:"Browserify와 Watchify",date:"2015-08-11",category:"Etc",description:"Browserify와 Watchify의 관계",image:"static/image/etc/browserify/browserify.jpg"},{id:4,layout:"post",path:"post/malware",title:"여행중인 나를 당황하게 한 멀웨어 공격",date:"2015-07-20",category:"Etc",description:"Ringing at your dorbell",image:"static/image/etc/malware/security.jpg"},{id:3,layout:"post",path:"post/php-fastcgi",title:"Fast CGI",date:"2015-07-11",category:"Php",description:"ERROR: An another FPM instance seems to already listen on /var/run/php5-fpm.sock 오류 해결하기",image:"static/image/php/fastcgi/fastcgi.jpg"},{id:2,layout:"post",path:"post/RESTful",title:"RESTful",date:"2015-06-24",category:"Etc",description:"RESTful한 코드작성과 REST, CRUD에 대해",image:"static/image/etc/RESTful/restful-web-services.jpg"},{id:1,layout:"post",path:"post/web-presentation",title:"Web Presentation",date:"2015-02-11",category:"Etc",description:"prezi와 같은 web presentation을 직접 코드로 동작해보기",image:"static/image/etc/web-presentation/web-presentation.png"}],categoryList:[{title:"Javascript",image:"static/image/javascript/javascript.jpg"},{title:"Frontend",image:"static/image/frontend/frontend.jpg"},{title:"Presentation",image:"static/image/presentation/presentation.jpg"},{title:"Etc",image:"static/image/etc/etc.jpg"},{title:"Php",image:"static/image/php/php.jpg"},{title:"Java",image:"static/image/java/java.jpg"},{title:"Python",image:"static/image/python/python.jpg"},{title:"Life",image:"static/image/life/life.jpg"},{title:"Review",image:"static/image/review/review.jpg"},{title:"Revlog",image:"static/image/revlog/revlog.jpg"}]},serverRendered:!0}</script><script src="/blog/_nuxt/manifest.a29c69e4928e1561f820.js" defer></script><script src="/blog/_nuxt/layouts/slides.5b1e0dc11c18aa1b34fe.js" defer></script><script src="/blog/_nuxt/pages/slides/react-basic.c7996b1cc20f0d0fbbab.js" defer></script><script src="/blog/_nuxt/vendor.aa15ae3874886e7051dd.js" defer></script><script src="/blog/_nuxt/app.62f0bf766469e2fb872d.js" defer></script>
+  
+

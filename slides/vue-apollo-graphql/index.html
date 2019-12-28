@@ -1,0 +1,289 @@
+<!doctype html>
+<html data-n-head="" data-n-head-ssr>
+  <head>
+    <meta data-n-head="true" charset="utf-8"><meta data-n-head="true" content="width=device-width,initial-scale=1" name="viewport"><meta data-n-head="true" content="This blog has been used since 2018 using Nuxtjs with Vuejs" name="description" data-hid="description"><meta data-n-head="true" content="Junseok, Choi <jicjjang12@gmail.com>" name="author" data-hid="author"><meta data-n-head="true" content="blog" name="og:type" data-hid="og:type"><meta data-n-head="true" content="summary" name="twitter:card" data-hid="twitter:card"><meta data-n-head="true" content="@jicjjang" name="twitter:creator" data-hid="twitter:creator"><meta data-n-head="true" content="June" name="twitter:site" data-hid="twitter:site"><meta data-n-head="true" content="DL3OehOD_wV9A1S0SRWoeXbMtlE5SeUZPlwGrFvPHQ8" name="google-site-verification" data-hid="google-site-verification"><meta data-n-head="true" content="[Presentation] Apollo로 알아보는 Vue in the GraphQL" name="apple-mobile-web-app-capable" data-hid="apple-mobile-web-app-capable"><meta data-n-head="true" content="black-translucent" name="apple-mobile-web-app-status-bar-style" data-hid="apple-mobile-web-app-status-bar-style"><meta data-n-head="true" content="[Presentation] Apollo로 알아보는 Vue in the GraphQL" name="og:title" data-hid="og:title"><meta data-n-head="true" content="https://jicjjang.github.io/blog/slides/vue-apollo-graphql" name="og:url" data-hid="og:url"><meta data-n-head="true" content="June" name="og:site_name" data-hid="og:site_name"><meta data-n-head="true" content="Vuetiful korea 4th 발표자료" name="og:description" data-hid="og:description"><meta data-n-head="true" content="https://jicjjang.github.io/blog/static/image/javascript/vue/background.jpg" name="og:image" data-hid="og:image"><meta data-n-head="true" content="https://jicjjang.github.io/blog/slides/vue-apollo-graphql" name="twitter:domain" data-hid="twitter:domain"><meta data-n-head="true" content="Vuetiful korea 4th 발표자료" name="twitter:description" data-hid="twitter:description"><meta data-n-head="true" content="[Presentation] Apollo로 알아보는 Vue in the GraphQL" name="twitter:title" data-hid="twitter:title"><meta data-n-head="true" content="https://jicjjang.github.io/blog/slides/vue-apollo-graphql" name="twitter:url" data-hid="twitter:url"><meta data-n-head="true" content="https://jicjjang.github.io/blog/static/image/javascript/vue/background.jpg" name="twitter:image" data-hid="twitter:image"><title data-n-head="true">June</title><link href="/blog/static/favicon.png" rel="icon" data-n-head="true" type="image/x-icon"><link href="https://jicjjang.github.io/blog" rel="alternate" data-n-head="true" hreflang="x-default"><link href="https://jicjjang.github.io/blog" rel="alternate" data-n-head="true" hreflang="ko-kr"><link href="https://fonts.googleapis.com/css?family=Inconsolata|Lora|Space+Mono:700" rel="stylesheet" data-n-head="true"><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" data-n-head="true"><link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" rel="stylesheet" data-n-head="true"><link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css" rel="stylesheet" data-n-head="true"><link href="/blog/static/css/main.css" rel="stylesheet" data-n-head="true"><link href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css" rel="stylesheet" data-n-head="true"><link href="/blog/static/slides/css/reveal.css" rel="stylesheet" data-n-head="true"><link href="/blog/static/slides/css/theme/black.css" rel="stylesheet" data-n-head="true"><link href="/blog/static/slides/lib/css/zenburn.css" rel="stylesheet" data-n-head="true"><script src="/blog/static/script/google-analytics.js" data-n-head="true" type="text/javascript"></script><script src="/blog/static/script/redirect-new-blog.js" data-n-head="true" type="text/javascript"></script><script src="/blog/static/slides/js/reveal.js" data-n-head="true" type="text/javascript" async></script><script src="/blog/static/slides/lib/js/head.min.js" data-n-head="true" type="text/javascript"></script><base href="/blog/"><link href="/blog/_nuxt/manifest.a29c69e4928e1561f820.js" rel="preload" as="script"><link href="/blog/_nuxt/vendor.aa15ae3874886e7051dd.js" rel="preload" as="script"><link href="/blog/_nuxt/app.62f0bf766469e2fb872d.js" rel="preload" as="script"><link href="/blog/_nuxt/layouts/slides.5b1e0dc11c18aa1b34fe.js" rel="preload" as="script"><link href="/blog/_nuxt/pages/slides/vue-apollo-graphql.8c866bcd93f120e94f35.js" rel="preload" as="script"><link href="/blog/_nuxt/pages/slides/how-to-use-rxjs.0337b995dd4c2569ddd8.js" rel="prefetch"><link href="/blog/_nuxt/pages/_post/_postName.5055412b9bb6195807cd.js" rel="prefetch"><link href="/blog/_nuxt/pages/page/_id.010433fbc0f2804611c5.js" rel="prefetch"><link href="/blog/_nuxt/pages/index.c76f6b3006d1687db412.js" rel="prefetch"><link href="/blog/_nuxt/pages/archive.c9f6097666a59bfd8774.js" rel="prefetch"><link href="/blog/_nuxt/pages/resume.4e79aa929e3307560c42.js" rel="prefetch"><link href="/blog/_nuxt/layouts/resume.d3dfa2d63de09727c8e0.js" rel="prefetch"><link href="/blog/_nuxt/layouts/post.6899ca782bd2e58245e1.js" rel="prefetch"><link href="/blog/_nuxt/pages/slides/vuetiful-korea-5.256bc5548fa8d3837c7c.js" rel="prefetch"><link href="/blog/_nuxt/pages/slides/vue-pwa-start.e50b9870efd696190964.js" rel="prefetch"><link href="/blog/_nuxt/pages/slides/vue-basic-presentation.52320d01ee002855258c.js" rel="prefetch"><link href="/blog/_nuxt/pages/slides/react-basic.c7996b1cc20f0d0fbbab.js" rel="prefetch"><link href="/blog/_nuxt/pages/category/_categoryName.d0b32c5890a516d389a9.js" rel="prefetch"><link href="/blog/_nuxt/pages/slides/graphql-start-server.276c2c70ca2456b29eca.js" rel="prefetch"><link href="/blog/_nuxt/pages/slides/graphql-start-client.2a25f0f16a8e53f9858b.js" rel="prefetch"><link href="/blog/_nuxt/pages/slides/developer-life.ed86c51ec99f2d9f6307.js" rel="prefetch"><link href="/blog/_nuxt/layouts/default.bc7cb36f71b5f45aefe7.js" rel="prefetch"><link href="/blog/_nuxt/layouts/category.2af23b5a3ee929b272fd.js" rel="prefetch"><style data-vue-ssr-id="7e4b685c:0">.nuxt-progress{position:fixed;top:0;left:0;right:0;height:2px;width:0;-webkit-transition:width .2s,opacity .4s;transition:width .2s,opacity .4s;opacity:1;background-color:#efc14e;z-index:999999}</style>
+  </head>
+  <body data-n-head="">
+    <div id="__nuxt" data-server-rendered="true"><div class="nuxt-progress" style="width:0%;height:2px;background-color:#3b8070;opacity:0"></div><div id="__layout"><div class="reveal" style="position:absolute"><div class="slides"><section data-background="/blog/static/image/javascript/vue/vuetifulkorea4_background.png"><aside class="notes">
+      안녕하세요. NHN벅스 최준석입니다. GraphQL, Apollo가 생소한 주제일 수 하지만
+      개발하면서 Slack 채널에 질문을 해도 이미 충분히 많은 분들이 사용해보셨고, 실무에 사용하시는 분도 있으셨습니다.
+      GraphQL과 Apollo의 본질에 대한 설명이나 서버 파트에 대해서 설명을 드리겠습니다.
+      잘부탁드립니다.
+    </aside></section><section><div><h2>순서</h2><ul style="list-style:none;margin:0"><li class="fragment">1. 왜 쓰는지 납득을 해야 쓰지<li class="fragment">2. REST API를 GraphQL로<li class="fragment">3. Client<li class="fragment">4. 왜 이걸 써야하는거죠<li class="fragment">Q & A</ul></div></section><section><h2>들어가기전에</h2><div class="fragment" style="margin-top:20px"><a href="https://jicjjang.github.io/blog/slides/graphql-start-server" target="_blank">기본적인 백엔드 내용은 이 링크를!</a></div><div class="fragment" style="margin-top:20px"><a href="https://jicjjang.github.io/blog/slides/graphql-start-client" target="_blank">기본적인 프론트 내용은 이 링크를!</a></div><div class="fragment" style="margin-top:20px"><a href="https://github.com/seouldrinker/seoulDrinkerGraphql" target="_blank">오늘의 코드는 이곳에<br>(https://github.com/seouldrinker/seoulDrinkerGraphql)!</a></div><div class="fragment" style="margin-top:20px">더 자세한 내용은 구글링...! (내용은 백엔드 쪽에 거의 다 있어요 헤헤)</div><aside class="notes">
+      이미 한차례 사내 세미나를 했었고, 그때 자료도 있으니 발표 후에 한번 둘러봐주세요 :)
+      이 자료들과 겹치는 내용도 있겠지만, 이해를 돕기위해 추가하기도 했습니다.
+    </aside></section><section><section><h2>1. 왜 쓰는지 납득을 해야 쓰지</h2><div class="fragment">그동안 잘쓰고 있던 API. 한계는??</div><ul style="margin-top:20px" class="fragment"><li>플랫폼마다 조금씩 다른 쿼리,<br>그때 그때 원하는 데이터만 보고싶은데...<li>생각보다 편하다고 쓰고있었는데, 정형화된 규칙이 있을까?<br>(JSON이 규칙을 가지고 있진 않음)<li>필터는? 정렬은?<li>페이지네이ㅅ....<li>읍읍</ul><aside class="notes">
+        나름 편하다고 쓰고 있는 API는 깊게들어갈수록 생각보다 어렵습니다. 뭔가 규칙도 없고, 정렬, 필터, pagination 등등...
+        최종 선택은 본인과 팀의 결정이지만, 규칙이 없다는 건 리미터가 없다는 것이니 생각보다 위험합니다.
+        이런 문제들에 대해 일부라도 해결할 수 있다면 한번쯤 사용해 볼만 하겠죠.
+      </aside></section><section><h3>그렇다면 DB... DB를 보자!!</h3><div style="font-size:30px"><div class="fragment" style="display:inline-block;width:20%;padding-left:1%;padding-right:1%;margin-left:1%;vertical-align:top;border-left:1px solid #fff;border-right:1px solid #fff">GraphQL에서 `RDB`가 나을까 `NoSQL`이 나을까?</div><div class="fragment" style="display:inline-block;width:20%;padding-left:1%;padding-right:1%;margin-left:1%;vertical-align:top;border-left:1px solid #fff;border-right:1px solid #fff">보통 DB에서 성능에 영향을 많이 주더라도 사용하게 되는 JOIN... 하지만 JOIN이 힘든 NoSql에서 쿼리가 급격히 늘어날수도...</div><div class="fragment" style="display:inline-block;width:20%;padding-left:1%;padding-right:1%;margin-left:1%;vertical-align:top;border-left:1px solid #fff;border-right:1px solid #fff">RDB가 나쁠 이유는 없는데?</div><div class="fragment" style="display:inline-block;width:20%;padding-left:1%;padding-right:1%;margin-left:1%;vertical-align:top;border-left:1px solid #fff;border-right:1px solid #fff">심지어 각각의 클라이언트에서 Depth에 대한 난이도 조절 가능...!</div></div><aside class="notes">
+        그렇다면 디비는 어떨까요? 회사 세미나의 예제 코드는 MongoDB로, NoSQL 환경이었습니다.<br>
+        과도한 DB를 버텨야 하는 회사 업무에서는 어울리지 않아 보인다는 의견이 있었으나<br>
+        RDB로 적용한 사용자들의 리뷰에서는 충분히 잘 사용하고 있다는 의견 또한 많았습니다.
+      </aside></section><section><h3>Depth 조절이 가능하다니 무슨 소리죠?</h3><div class="fragment" style="display:inline-block;width:30%"><pre><code data-noescape data-trim style="font-size:15px">
+          module.exports = `
+            type A {
+              _id: String!
+              Aprop1: String
+              Aprop2: String
+              Aprop3: [B]
+            }
+            type b {
+              _id: String!
+              Bprop1: String
+              Bprop2: [C]
+            }
+            ...
+          `
+        </code></pre></div><div class="fragment" style="display:inline-block;width:30%;vertical-align:top"><pre><code data-noescape data-trim style="font-size:15px">
+          module.exports = `
+            type C {
+              _id: String!
+              Cprop1: String
+              Cprop2: [D]
+            }
+            type D {
+              _id: String!
+              Dprop1: String
+              Dprop2: [A]       // 두둥...!
+            }
+            ...
+          `
+        </code></pre></div><div class="fragment" style="display:inline-block;width:40%;margin-top:60px;vertical-align:top">
+        이런 Recursive한 관계...<br>서비스를 하다보면 없을 순 없다 ㅠㅠ...
+      </div><aside class="notes">
+        코드에 대해선 뒤에서 설명드리겠으니 여기선 Depth 조절만 알아봅시다.<br>
+        이런 방식으로 GraphQL의 type들을 선언하는데, PK, FK 등<br>
+        다른 타입에 대한 의존성이 있을 수 있는데 이런 관계에 대해<br>
+        어느 정도까지 연결 되게 할 것인지 정할 수 있다는 것입니다.
+      </aside></section><section><h2>GraphQL의 목표</h2><div style="width:90%;margin:0 auto"><span style="display:inline-block;width:58%;margin:5px;vertical-align:top"><img src="/blog/static/slides/image/graphql-start/about1.jpg" style="margin:0 auto" class="fragment" data-fragment-index="1"><div class="fragment" style="margin-top:20px;font-size:20px" data-fragment-index="3">필요한 것만 정확히 물어볼 수있는 기능을 제공하며 시간이 지남에 따라 API를 쉽게 개발할 수 있도록...</div></span><span style="display:inline-block;width:38%;margin:5px"><img src="/blog/static/slides/image/graphql-start/about2.jpg" style="margin:0 auto" class="fragment" data-fragment-index="2"><div class="fragment" style="margin-top:20px;font-size:20px" data-fragment-index="4">GraphQL은 단독 버전 관리를 통해 기존 코드 수정없이 보다 깨끗하고 유지보수가 쉽게 사용이 가능...</div></span></div><aside class="notes">
+        단편적인 내용들이지만, 규칙을 정하고 유지보수를 용의하게 하기 위해,
+        즉, GraphQL은<br>
+        필요한 것만 물어보는 것으로<br>
+        여러 플랫폼에 대해 단독 버전 관리를<br>
+        하는 것이 목표입니다.
+      </aside></section></section><section><section><h2>2. REST API를 GraphQL로</h2><div>솔직히 한번쯤은 들어봤을 GraphQL. but, 노관심</div><br><div class="fragment" style="font-size:32px"><div style="display:inline-block;width:50%;text-align:center"><div>REST API</div><p><span style="color:red">URI</span> 중심으로 데이터의 CRUD 진행<div style="width:60%;max-width:580px;margin:0 auto;vertical-align:top"><img src="/blog/static/slides/image/vue-apollo-graphql/query_api.png" style="display:block;margin:0 auto"></div></div><div style="display:inline-block;width:50%;text-align:center;vertical-align:top"><div>GraphQL</div><p><span style="color:red">Query</span>와 <span style="color:red">Mutation</span>으로 데이터의 CRUD를 진행<div style="width:60%;max-width:580px;margin:0 auto;vertical-align:top"><img src="/blog/static/slides/image/vue-apollo-graphql/query_graphql.png" style="display:block;margin:0 auto"></div></div></div><aside class="notes">
+        이제 실제로 구현해봐야겠죠? backend의 endpoint에 대한 개발을 하지 않으시는 분들도 있으시겠지만,
+        서버 얘기를 하지 않을 수 없습니다 ㅠㅠ. 함께 적용을 하고 함께 변경해야 하니까요. REST와
+        GraphQL을 동시에 사용할 수도 있습니다.
+        <br>---<br>
+        기존에 사용하던 API는 URI중심으로 데이터를 쿼리합니다. 그에 반해 GraphQL은 Query와 Mutation을 중심으로 데이터를 쿼리합니다.
+        uri에 보이시는 대로 GraphQL은 `/graphql` 하나로 사용하는데, 이는 GraphQL의 권장사항 입니다.
+      </aside></section><section><h3>서버는 살짝만</h3><div class="fragment" style="font-size:32px" data-fragment-index="1">하기에는... 생각보단 쉬워요! (클라이언트보단)</div><div class="fragment" style="margin-top:20px" data-fragment-index="2"><a href="https://github.com/seouldrinker/seoulDrinkerApi" target="_blank">기존 API 코드</a>와
+        <a href="https://github.com/seouldrinker/seoulDrinkerGraphql" target="_blank">GraphQL 코드</a></div><div class="fragment" data-fragment-index="2">어떤 부분이 달라졌는지 확인해봅시다.</div><aside class="notes">
+        서버 코드는 Node고 매우 짧습니다. ppt 2장으로 끝나니 GraphQL에 대해 간단히 훑어보겠습니다.
+      </aside></section><section><h3>우선 라우팅부터</h3><div class="fragment" style="font-size:32px">
+        API에서 GraphQL로 경로가 바뀌었습니다.
+      </div><br><div class="fragment" style="display:inline-block;width:60%"><pre><code data-noescape data-trim style="font-size:15px">
+          ...
+          // server.js
+          import { graphqlExpress, graphiqlExpress } from 'apollo-server-express'
+          import schema from './graphql'
+          app.use('/graphql', cors(), bodyParser.json(), graphqlExpress({ schema }))
+          app.use('/graphiql', cors(), graphiqlExpress({ endpointURL: '/graphql' }))
+          ...
+        </code></pre><pre style="margin-top:20px"><code data-noescape data-trim style="font-size:15px">
+          // graphql/index.js
+          import { makeExecutableSchema } from 'graphql-tools'
+          import typeDefs from './typeDefs'     // 타입 정의
+          import resolvers from './resolvers'   // 정의된 타입 구현
+
+          export default makeExecutableSchema({ typeDefs, resolvers })
+        </code></pre></div><div style="display:inline-block;width:40%;vertical-align:top"><div class="fragment">graphql과 graphiql의 차이</div><div class="fragment" style="margin:20px auto 0 auto"><img src="/blog/static/slides/image/vue-apollo-graphql/graphiql.png" style="display:block;margin:0 auto"></div></div><aside class="notes">
+        라우팅 경로를 추가해줍니다. 위에서 `/graphql` 하나만 넣는게 권장사항이라 했으나, 2개가 들어가있는 이유는
+        디버깅 용도로 사용하는 graphiql 입니다. 이 또한 endpoint는 `/graphql`을 가리키고 있습니다.
+        <br>---<br>
+        graphql 라우터는 schema를 받는데, schema는 typeDefs와 resolvers를 실행 가능하게 만든 모듈입니다.
+      </aside></section><section><h3>typedef와 resolver</h3><div class="fragment" style="font-size:32px">
+        정말 단순하게도, 이 파일 2개를 만들면 서버는 끝.
+      </div><br><div class="fragment" style="display:inline-block;width:50%"><pre><code data-noescape data-trim style="font-size:15px">
+          // graphql/typedef.js
+          module.exports = `
+            scalar Date       // 다른 타입에 대해서는 Date와 같이 scalar로 정의
+
+            type News {       // DB에서 가져올 타입은 scalar없이 정의.
+              _id: String!    // graphql의 기본 데이터 형은 String과 Int 두개
+              context: String // !는 requied
+              image: String
+              is_ok: Int!
+              crt_dt: Date!
+              udt_dt: Date!
+            }
+            type Query {
+              newsList: [News]
+            }
+          `
+        </code></pre></div><div class="fragment" style="display:inline-block;width:50%;vertical-align:top"><pre><code data-noescape data-trim style="font-size:15px">
+          // graphql/resolver.js
+          import { getNewsList } from '../modules/news'
+
+          module.exports = {
+            Query: {
+              newsList: () => getNewsList()
+            }
+          }
+        </code></pre><pre style="margin-top:20px"><code data-noescape data-trim style="font-size:15px">
+          // modules/news.js
+          // API에서 쓰던 모듈과 같음
+          // MongoDB 조회. 끝.
+          export function getNewsList () {
+            return News.find({is_ok: 1}).sort({crt_dt: -1})
+          }
+        </code></pre></div><aside class="notes">
+        이 두 파일만 더 살펴보면 끝입니다. 매우 간단하죠?
+        <br>---<br>
+        우선 스트링 형태로 타입을 정의합니다. News라는 데이터를 위주로 보기 위해 정의해 놨습니다.
+        바로 아래 Query는 해당 타입의 리스트를 가져오겠다는 뜻입니다.
+        기술 해놓지는 않았지만 type Mutation 을 지정해서 데이터의 저장, 수정, 삭제를 할 수 있습니다.
+        graphql에서는 조회만 Query, 나머진 Mutation 이거든요 ㅎㅎ
+        <br>---<br>
+        resolvers에서는 정의된 내용을 구현합니다. News 타입에 대해 데이터 리스트를 가져올 내용은
+        getNewsList라는 함수인데요, 이 함수는 MongoDB 에서 데이터를 조회합니다. API에서 사용하던
+        모듈과 동일하고, 이 예제가 포함된 Repository에서 대부분이 API에서 사용하던 함수들을 재사용하며
+        포팅했습니다.
+        <br>---<br>
+        자 이렇게 서버에 대한 코드 설명이 끝났습니다. 처음 보시는데도 그다지 어렵지 않으셨을겁니다.
+      </aside></section></section><section><section><h2>3. Client</h2><div class="fragment" style="font-size:32px" data-fragment-index="1">클라이언트도 서버처럼</div><div class="fragment" style="margin-top:20px" data-fragment-index="2">
+        지난 3월 발표에서 보여드린 <a href="https://github.com/seouldrinker/seoulDrinkerPwa" target="_blank">PWA 코드</a>의 api 호출을
+        <a href="https://github.com/seouldrinker/seoulDrinkerGraphql" target="_blank">GraphQL</a>로
+      </div><div class="fragment" data-fragment-index="2">어떻게 바꾸는지 알아봅시다.</div><aside class="notes">
+        이번엔 클라이언트 코드를 바꿔보겠습니다.
+      </aside></section><section><h3>Vue 객체에 apollo provider 주입</h3><div class="fragment" style="display:inline-block;width:50%"><pre><code data-noescape data-trim style="font-size:15px">
+          // apollo-provider.js
+          import Vue from 'vue'
+          import VueApollo from 'vue-apollo'
+          import {HttpLink} from "apollo-link-http/lib/index"
+          import {ROOT_URL} from "./config"
+          import {InMemoryCache} from "apollo-cache-inmemory/lib/index"
+
+          Vue.use(VueApollo)
+
+          // This can hold multiple apollo clients
+          const apolloProvider = new VueApollo({
+            defaultClient: new ApolloClient({
+              link: new HttpLink({uri: `${ROOT_URL}/graphql`}),
+              cache: new InMemoryCache(),
+              connectToDevTools: true
+            }),
+            defaultOptions: {
+              $loadingKey: 'loading'
+            }
+          })
+
+          export default apolloProvider
+        </code></pre></div><div style="display:inline-block;width:50%;margin:0 auto;vertical-align:top"><div class="fragment"><pre style="margin:0 auto"><code data-noescape data-trim style="font-size:15px">
+            // main.js
+            ...
+            import apolloProvider from './apollo-provider'
+
+            /* eslint-disable no-new */
+            new Vue({
+              el: '#app',
+              router,
+              provide: apolloProvider.provide(),  // Provider 주입
+              store,
+              template: '<app></app>',
+              components: { App }
+            })
+          </code></pre></div><div class="fragment" style="margin-top:20px">
+          provider는 공급자.<br>
+          공급자가 하나일 필요는 없음<br>
+          여러개로 늘려도? 상관 없음
+        </div></div><aside class="notes">
+        vuex로 치면 store에 대한 설정이 끝난거죠.<br>
+        리액트를 사용하셨던 분들은 provider가 조금 더 친절할 것 같네요.
+      </aside></section><section><h3>호출부에 대한 설정 완료! 이제는 SPC!</h3><div class="fragment" style="display:inline-block;width:50%"><pre><code data-noescape data-trim style="font-size:15px">
+          // container/News.vue
+          ...
+          &lt;template>
+          ...
+            &lt;li v-for="(news, index) in newsList" :key="index">
+              ...
+            &lt;/li>
+          ...
+          &lt;/template>
+          &lt;script>
+          import apollo from '../graphql/news'
+          ...
+          export default {
+            apollo,   // apollo news 모듈
+            data () {
+              return {
+                newsList: [],
+                ...
+              }
+            },
+            ...
+          }
+          &lt;/script>
+          ...
+        </code></pre></div><div class="fragment" style="display:inline-block;width:50%;vertical-align:top"><pre><code data-noescape data-trim style="font-size:15px">
+          // graphql/news.js
+          import gql from 'graphql-tag'
+
+          export default {
+            newsList: {
+              // 가져올 column만 명시.
+              query: gql`query NewsList {
+                newsList {
+                  _id
+                  context
+                  image
+                }
+              }`,
+              result ({ data, loader, networkStatus }) {
+                console.log('We got some result!')
+              },
+              // Error handling
+              error (error) {
+                console.error('We\'ve got an error!', error)
+              },
+              loadingKey: 'loading'
+            }
+          }
+        </code></pre></div><aside class="notes">
+        this.$apollo.~~~ 하는 방식으로도 사용할 수 있지만, 위 코드와 같은 방식으로 해야
+        smart query가 동작하여 data에 있는 newsList로 조회된 데이터가 자동 매핑됩니다.
+      </aside></section><section><h3>간단하게 설명했지만</h3><div class="fragment" style="display:inline-block;width:50%"><pre><code data-noescape data-trim style="font-size:20px">
+          export default {
+            module: {
+              rules: [
+                // ...
+                {
+                  test: /\.(graphql|gql)$/,
+                  exclude: /node_modules/,
+                  loader: 'graphql-tag/loader'
+                }
+              ]
+            }
+          }
+        </code></pre></div><div style="display:inline-block;width:50%;vertical-align:top"><div class="fragment">
+          1. 코드를 분리하려면 꼭 필요한 webpack loader 설정
+        </div><div class="fragment" style="margin-top:30px">
+          2. pub/sub 모델을 넣고 소켓으로 DB 변화를 `구독` 하려면 추가해야하는 <a href="https://github.com/apollographql/graphql-subscriptions" target="_blank">graphql-subscriptions</a></div><div class="fragment" style="margin-top:30px">
+          3. vuex에서 데이터 변화를 조금 더 쉽게 관찰할 수 있게 해줄 <a href="https://github.com/Akryum/vue-supply" target="_blank">vue-supply</a></div><div class="fragment" style="margin-top:30px">
+          4. 기타 등등 ....
+        </div></div><aside class="notes">
+        설명은 간단했지만, 서비스에 넣을 정도의 스펙이 된다면 추가 및 수정해야할 것들이 약간 늘어납니다.
+        DB 변화를 감지할 pub/sub 모델, vuex에 데이터 변화를 쉽게 연동할 수 있게 해줄 vue-supply 등등
+        신경쓸게 늘어납니다.
+      </aside></section></section><section><section><h2>3. 단점에 대해</h2><div class="fragment" data-fragment-index="1">
+        사실 여기서부터가 나눠보고 싶은 얘기.
+      </div><div class="fragment" data-fragment-index="2">
+        페이스북에서 <a href="https://code.facebook.com/posts/1691455094417024/graphql-a-data-query-language/" target="_blank">"write once, run anywhere"</a></div><div class="fragment" data-fragment-index="2">
+        이라는 이상에 맞추기 위해 만든게 GraphQL.
+      </div><div class="fragment" data-fragment-index="3">
+        안 쓸 이유가 있을까?
+      </div><aside class="notes">
+        물론 안 쓸 이유가 없진 않습니다만, 생각보다 언어가 아닌 명세! graphql에 대한 관리가 열정적으로 이루어지진 않는 것이 대표적입니다.
+      </aside></section><section><h2>주관적인(겪어봤던) 리뷰</h2><div style="margin-top:40px"><div class="fragment" style="display:inline-block;width:18%;margin:1%;font-size:30px;vertical-align:top">실제로 구현하는건 훨씬 복잡한 케이스가 다수</div><div class="fragment" style="display:inline-block;width:18%;margin:1%;font-size:30px;vertical-align:top">에러 관리 (에러가 200으로 떨어지는 케이스)</div><div class="fragment" style="display:inline-block;width:18%;margin:1%;font-size:30px;vertical-align:top">실패한 요청에 대한 재시도 (pub/sub으로 해결 가능함)</div><div class="fragment" style="display:inline-block;width:18%;margin:1%;font-size:30px;vertical-align:top">하지만! 어느정도 잡혀있는 규칙에 대해선 매우 긍정적</div><div class="fragment" style="display:inline-block;width:18%;margin:1%;font-size:30px;vertical-align:top">러닝커브는 모르겠지만, 한번 익숙해지면 rest보다 낫다고 생각할 수 밖에 없음</div></div><aside class="notes">
+        실제 구현시 난이도 상승, 에러가 가끔 200으로 나오는 케이스, 실패에 대한 재시도를 따로 제어하기 힘들다는 점 들이 있습니다.
+      </aside></section><section><h2>느낀 점 & 드리고자 하는 말</h2><div class="fragment">
+        대형 서비스를 기존 REST에서 GraphQL로 모두 바꾸기엔<br>조금은 이른게 아닐까 + 시작해볼만 하다<br><b class="fragment" style="display:block;margin-top:40px;font-size:50px;color:#efdcbc">신규서비스라면 써보라 추천!!</b></div><aside class="notes">
+        facebook에서 graphql + react에 사용하는 relay를 거의 케어하지 않아서
+        apollo로 유저들이 많이 넘어오고 있었는데, relay의 업그레이드 버전이 나온다는 소식도 있습니다.
+        좋은 소식에도 불구하고 당장 큰 규모의 서비스를 쪼개긴 힘들겠지만,
+        모놀리스 서비스를 msa로 바꾸면서 도입해보기 좋다고 생각합니다.
+      </aside></section></section><section><h2>Q&A</h2></section><section><h1>끝</h1><div>감사합니다.</div></section></div></div></div></div><script type="text/javascript">window.__NUXT__={layout:"slides",data:[{}],error:null,state:{baseUrl:"https://jicjjang.github.io/blog",postList:[{id:52,layout:"post",path:"post/scale-up-for-security",title:"보안 강화를 위한 기술 정리",date:"2019-01-12",category:"Etc",description:"FIDO, HMAC",image:"static/image/etc/scale-up-for-security/background.jpg"},{id:51,layout:"post",path:"post/review-rxjs",title:"[Review] RxJS 프로그래밍",date:"2018-10-09",category:"Review",description:"[Review] 75가지 핵심 문법과 예제로 익히는 RxJS 기초",image:"static/image/review/rxjs/background.jpg"},{id:50,layout:"post",path:"post/review-modern-startup",title:"[Review] 모던 스타트업",date:"2018-09-17",category:"Review",description:"[Review] 모던 스타트업 - 팀 생산성을 높여주는 21가지 도구와 서비스",image:"static/image/review/modern-startup/background.jpg"},{id:49,layout:"slides",path:"slides/vuetiful-korea-5",title:"[Presentation] Vuetiful korea 5회 세미나",date:"2018-08-15",category:"Presentation",description:"Vuetiful korea 5회 세미나 내용 정리",image:"static/slides/image/vuetiful-korea/background.jpg"},{id:48,layout:"post",path:"post/liff-app-dev",title:"LIFF 활용기",date:"2018-08-02",category:"Frontend",description:"Liff를 활용한 실사용 앱개발",image:"static/image/etc/liff/background.jpg"},{id:47,layout:"post",path:"post/review-think-data-structures",title:"[Review] Think Data Structures",date:"2018-07-24",category:"Review",description:"[Review] 자바로 배우는 핵심 자료구조와 알고리즘",image:"static/image/review/think-data-structures/background.jpg"},{id:46,layout:"post",path:"post/liff-app",title:"심심풀이 LIFF 앱개발",date:"2018-07-09",category:"Frontend",description:"블로그 업뎃이 너무 없어 심심풀이로 만드는 Liff 앱",image:"static/image/etc/liff/background.jpg"},{id:45,layout:"post",path:"post/new-jobs",title:"이직기",date:"2018-04-28",category:"Life",description:"벅스에서의 도전을 마무리하며",image:"static/slides/image/oss/background.jpg"},{id:44,layout:"post",path:"post/review-functional-programming",title:"[Review] 함수형 자바스크립트",date:"2018-04-17",category:"Review",description:"[Review] 함수형 자바스크립트 한빛미디어 도서 리뷰",image:"static/image/review/functional-programming/background.png"},{id:43,layout:"slides",path:"slides/vue-apollo-graphql",title:"[Presentation] Apollo로 알아보는 Vue in the GraphQL",date:"2018-04-16",category:"Presentation",description:"Vuetiful korea 4th 발표자료",image:"static/image/javascript/vue/background.jpg"},{id:42,layout:"slides",path:"slides/graphql-start-client",title:"[Presentation] Graphql 시작하기 (client)",date:"2018-03-06",category:"Presentation",description:"NHN벅스 팀 세미나 발표 자료",image:"static/slides/image/graphql-start/background.jpg"},{id:41,layout:"slides",path:"slides/graphql-start-server",title:"[Presentation] Graphql 시작하기 (server)",date:"2018-03-05",category:"Presentation",description:"NHN벅스 팀 세미나 발표 자료",image:"static/slides/image/graphql-start/background.jpg"},{id:40,layout:"post",path:"post/review-learning-http-2",title:"[Review] learning http/2",date:"2018-02-14",category:"Review",description:"20년만에 업데이트된 HTTP 프로토콜에 대한 간결한(?) 입문서",image:"static/image/review/learning-http2/background.jpg"},{id:39,layout:"post",path:"post/prototypal-inheritance-model",title:"자바스크립트 상속 모델",date:"2018-02-12",category:"Javascript",description:"클래스가 아닌, 자바스크립트 프로토 타입 상속 모델에 대해",image:"static/image/javascript/javascript.jpg"},{id:38,layout:"post",path:"post/welcome-vue-card-layer",title:"오픈소스 소개",date:"2018-02-11",category:"Frontend",description:"Vue.js 뉴스에 소개된 오픈소스",image:"static/image/frontend/welcome-vue-card-layer/background.jpg"},{id:37,layout:"post",path:"post/blog-renewal",title:"블로그 리뉴얼",date:"2018-02-10",category:"Frontend",description:"코딩에 현타가 온 일상을 타파하기 위해 진행한 블로그 리뉴얼 작업!!!",image:"static/image/frontend/blog-renewal/background.jpg"},{id:36,layout:"post",path:"post/review-2018-it-trend-special-report",title:"[Review] 2018 IT 트렌트 스페셜 리포트",date:"2017-12-17",category:"Review",description:"[Review] 2018 IT 트렌트 스페셜 리포트",image:"static/image/review/ittrend/background.jpg"},{id:35,layout:"post",path:"post/life",title:"서울시 공공앱 공모전",date:"2017-12-13",category:"Life",description:"일상",image:"static/image/beat.png"},{id:34,layout:"slides",path:"slides/vue-pwa-start",title:"[Presentation] Vue pwa 시작하기",date:"2017-11-30",category:"Presentation",description:"Vuetiful korea 3rd 발표자료",image:"static/image/javascript/vue/background.jpg"},{id:33,layout:"post",path:"post/seoul-app-contest-with-node-and-react-native",title:"seoul app contest with node and react native",date:"2017-11-11",category:"Javascript",description:"2017 서울 앱 공모전",image:"static/image/javascript/seoul-app-contest/background.jpg"},{id:32,layout:"slides",path:"slides/how-to-use-rxjs",title:"[Presentation] How to use RxJs",date:"2017-11-30",category:"Presentation",description:"NHN벅스 웹서비스팀 세미나 자료",image:"static/slides/image/rxjs/background.jpg"},{id:31,layout:"post",path:"post/review-you-dont-know-js",title:"[Review] 중급자를 위한 You don't know JS",date:"2017-08-20",category:"Review",description:"[Review] 중급자를 위한 You don't know JS",image:"static/image/review/youdontknowjs/you-dont-know-js.jpg"},{id:30,layout:"post",path:"post/jwt",title:"Would you mind using a JWT?",date:"2017-08-09",category:"Etc",description:"JWT에 대해",image:"static/image/etc/jwt/background.jpg"},{id:29,layout:"slides",path:"slides/developer-life",title:"[Presentation] 현실적인 개발로 먹고살기",date:"2017-07-15",category:"Presentation",description:"OSS 개발자 포럼 발표 자료",image:"static/slides/image/oss/background.jpg"},{id:28,layout:"post",path:"post/dooray-bot-server",title:"Dooray bot scheduler (Server)",date:"2017-06-27",category:"Etc",description:"사내 메신저 봇 스케쥴러 만들기",image:"static/image/etc/dooray/background.png"},{id:27,layout:"post",path:"post/dooray-bot-front",title:"Dooray bot scheduler (Front)",date:"2017-06-27",category:"Etc",description:"사내 메신저 봇 스케쥴러 만들기",image:"static/image/etc/dooray/background.png"},{id:26,layout:"post",path:"post/airbnb-review",title:"Airbnb 이용 후기",date:"2017-06-13",category:"Life",description:"시카고에서 터진 일에 대한 Airbnb의 대처",image:"static/image/life/airbnb/background.jpg"},{id:25,layout:"post",path:"post/javascript-optimize-8",title:"자바스크립트 성능 최적화 8",date:"2017-05-20",category:"Javascript",description:"자바스크립트 성능 최적화 8",image:"static/image/javascript/optimize/background.jpg"},{id:24,layout:"post",path:"post/javascript-optimize-7",title:"자바스크립트 성능 최적화 7",date:"2017-05-19",category:"Javascript",description:"자바스크립트 성능 최적화 7",image:"static/image/javascript/optimize/background.jpg"},{id:23,layout:"post",path:"post/javascript-optimize-6",title:"자바스크립트 성능 최적화 6",date:"2017-05-19",category:"Javascript",description:"자바스크립트 성능 최적화 6",image:"static/image/javascript/optimize/background.jpg"},{id:22,layout:"post",path:"post/javascript-optimize-4",title:"자바스크립트 성능 최적화 4",date:"2017-05-19",category:"Javascript",description:"자바스크립트 성능 최적화 4",image:"static/image/javascript/optimize/background.jpg"},{id:21,layout:"post",path:"post/javascript-optimize-3",title:"자바스크립트 성능 최적화 3",date:"2017-05-18",category:"Javascript",description:"자바스크립트 성능 최적화 3",image:"static/image/javascript/optimize/background.jpg"},{id:20,layout:"post",path:"post/javascript-optimize-2",title:"자바스크립트 성능 최적화 2",date:"2017-05-18",category:"Javascript",description:"자바스크립트 성능 최적화 2",image:"static/image/javascript/optimize/background.jpg"},{id:19,layout:"post",path:"post/javascript-optimize-1",title:"자바스크립트 성능 최적화 1",date:"2017-05-18",category:"Javascript",description:"자바스크립트 성능 최적화 1",image:"static/image/javascript/optimize/background.jpg"},{id:18,layout:"post",path:"post/front-end-question",title:"웹 front-end 개발 질문",date:"2017-04-25",category:"Frontend",description:"매우 기본적인 front end 개발 질문에 대한 응답",image:"static/image/frontend/background.jpg"},{id:17,layout:"slides",path:"slides/vue-basic-presentation",title:"[Presentation] Vue.js basic",date:"2017-04-08",category:"Presentation",description:"NHN벅스 팀 세미나 발표 자료",image:"static/image/javascript/vue/background.jpg"},{id:16,layout:"post",path:"post/promise-and-async-await",title:"자바스크립트 promise와 async/await",date:"2017-02-05",category:"Javascript",description:"자바스크립트의 동기",image:"static/image/javascript/javascript.jpg"},{id:15,layout:"post",path:"post/first-react-project-2",title:"첫 React 프로젝트 - 서버 세팅",date:"2016-12-30",category:"Etc",description:"React 프로젝트 시작하기",image:"static/image/etc/server-setting/background.jpg"},{id:14,layout:"post",path:"post/first-react-project-1",title:"첫 React 프로젝트 - 개발",date:"2016-12-28",category:"Javascript",description:"React 프로젝트 시작하기",image:"static/image/javascript/react/background.jpg"},{id:13,layout:"slides",path:"slides/react-basic",title:"[Presentation] React basic",date:"2016-11-23",category:"Presentation",description:"NHN벅스 팀 세미나 발표 자료",image:"static/image/javascript/react/background.jpg"},{id:12,layout:"post",path:"post/to-deployment-pip",title:"PIP로 라이브러리 배포 및 사용하기",date:"2016-06-26",category:"Python",description:"PIP로 라이브러리 배포 및 사용하기",image:"static/image/python/pip/background.jpg"},{id:11,layout:"post",path:"post/problem-in-el-capitan",title:"Problem in El Capitan",date:"2015-11-20",category:"Etc",description:"Yosemite 에서 El Capitan 업그레이드 후 발생한 문제 리뷰",image:"static/image/etc/el-capitan/background.jpg"},{id:10,layout:"post",path:"post/seoul-app-contest-with-django",title:"seoul app contest with django",date:"2015-11-08",category:"Python",description:"2015 서울 앱 공모전",image:"static/image/python/seoul-app-contest/background.png"},{id:9,layout:"post",path:"post/java-foundation4",title:"<자바기초> component에 색상 넣기",date:"2015-09-02",category:"Java",description:"component에 색상 넣기",image:"static/image/java/java.jpg"},{id:8,layout:"post",path:"post/java-foundation3",title:"<자바기초> generic에서 타입 제한하기",date:"2015-08-30",category:"Java",description:"generic에서 타입 제한하기",image:"static/image/java/java.jpg"},{id:7,layout:"post",path:"post/java-foundation2",title:"<자바기초> map에서 iterator 사용하기",date:"2015-08-29",category:"Java",description:"map에서 iterator 사용하기",image:"static/image/java/java.jpg"},{id:6,layout:"post",path:"post/java-foundation1",title:"<자바기초> next(), nextLine() 차이점",date:"2015-08-28",category:"Java",description:"next(), nextLine() 차이점",image:"static/image/java/java.jpg"},{id:5,layout:"post",path:"post/browserify",title:"Browserify와 Watchify",date:"2015-08-11",category:"Etc",description:"Browserify와 Watchify의 관계",image:"static/image/etc/browserify/browserify.jpg"},{id:4,layout:"post",path:"post/malware",title:"여행중인 나를 당황하게 한 멀웨어 공격",date:"2015-07-20",category:"Etc",description:"Ringing at your dorbell",image:"static/image/etc/malware/security.jpg"},{id:3,layout:"post",path:"post/php-fastcgi",title:"Fast CGI",date:"2015-07-11",category:"Php",description:"ERROR: An another FPM instance seems to already listen on /var/run/php5-fpm.sock 오류 해결하기",image:"static/image/php/fastcgi/fastcgi.jpg"},{id:2,layout:"post",path:"post/RESTful",title:"RESTful",date:"2015-06-24",category:"Etc",description:"RESTful한 코드작성과 REST, CRUD에 대해",image:"static/image/etc/RESTful/restful-web-services.jpg"},{id:1,layout:"post",path:"post/web-presentation",title:"Web Presentation",date:"2015-02-11",category:"Etc",description:"prezi와 같은 web presentation을 직접 코드로 동작해보기",image:"static/image/etc/web-presentation/web-presentation.png"}],categoryList:[{title:"Javascript",image:"static/image/javascript/javascript.jpg"},{title:"Frontend",image:"static/image/frontend/frontend.jpg"},{title:"Presentation",image:"static/image/presentation/presentation.jpg"},{title:"Etc",image:"static/image/etc/etc.jpg"},{title:"Php",image:"static/image/php/php.jpg"},{title:"Java",image:"static/image/java/java.jpg"},{title:"Python",image:"static/image/python/python.jpg"},{title:"Life",image:"static/image/life/life.jpg"},{title:"Review",image:"static/image/review/review.jpg"},{title:"Revlog",image:"static/image/revlog/revlog.jpg"}]},serverRendered:!0}</script><script src="/blog/_nuxt/manifest.a29c69e4928e1561f820.js" defer></script><script src="/blog/_nuxt/layouts/slides.5b1e0dc11c18aa1b34fe.js" defer></script><script src="/blog/_nuxt/pages/slides/vue-apollo-graphql.8c866bcd93f120e94f35.js" defer></script><script src="/blog/_nuxt/vendor.aa15ae3874886e7051dd.js" defer></script><script src="/blog/_nuxt/app.62f0bf766469e2fb872d.js" defer></script>
+  
+
